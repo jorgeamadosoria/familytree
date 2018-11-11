@@ -43,7 +43,7 @@ elements.push(...relNode(4.25, 2.5, pHijo, pNovia, [
     [4.25, 2.25]
 ]));
 elements.push(...relNode(5, 3.25, pHijo, pConyuge, null, '13/12/2012', MARRIAGE, null));
-//---------------------------------------------------------
+
 //more nodes. Also includes the edge from the person node to the more node 
 elements.push(...moreNode(7, 4.25, pHermano, 'hijos del hermano'));
 
