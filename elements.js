@@ -1,63 +1,225 @@
-//People data
-//people(name,nickname,gender/sex,birth,death,comments,profile,photos). Photos is an array, name is mandatory. Gender / sex must be one of [MAN, FEMALE, OTHER] constants
-var pAbuelaMaterna = person('abuela materna', 'Chuchita', WOMAN, '12/12/2012 Camaguey, Cuba', '14/02/2016',  'Comentario sobre la vida y obra de la mujer', defaultProfile, ["https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4057996.jpg", "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3946332.jpg", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgU__1QICoMo8BIEgMnVVIKVpckPzOz1Yn7wwAWfM9vXUthC_D"]);
-var pAbueloMaterno = person('abuelo materno', null, MAN, null, null,  null, defaultProfile, null);
-var pAbueloPaterno = person('abuelo paterno', null,  MAN, null, null, null, defaultProfile, null);
-var pAbuelaPaterna = person('abuela paterna', null, WOMAN, null, null,  null, defaultProfile, null);
-var pMadre = person('madre', null, WOMAN, '12/12/2012', null,  null, 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTERUSEhIWFRUXFRUYGBcWFhUVFxUYFRcWFhUVExcYHSggGBolGxcYITEhJikrLjAuFx8zODMtNygtLisBCgoKDg0OGxAQGDEfHyYtLS0tLS0tLS0tLS0tLS0tListKy0tLS0tLS0rLS0tLS0tLS0rKy0tLS0tLS0tLS0tLf/AABEIANAA8gMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABAIDBQYHAQj/xAA8EAABAwEFBAcHBAEDBQAAAAABAAIDEQQSITFBBQZRYQcTInGBkaEyQlKxwdHwFCNicuGCkvFDorLC0v/EABkBAQADAQEAAAAAAAAAAAAAAAABAgMEBf/EACMRAQACAgMAAQQDAAAAAAAAAAABAgMREiExYRMiQVEEFIH/2gAMAwEAAhEDEQA/AO4oiICIiAiIgIiICIiAiIgIiICIsTt7eSyWNt61WhkQ0Dj2nf1YKud4BBlkXL7d05bOY6kcdolHxNYxrTy7bg70V3ZfTbs2QgSCaDm9gc3xMZcfTRB0tFD2VtWC0s6yzzMlZ8Ubg4A8DTI8ipiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiLWukHecbPsT5wAZCQyJpyMjgaVGoABceTUGrdKvSX+irZbIQ61Edp2bYAcRUZF5GQ0zOgPz1tC1yzSulle6SRxq57jUk9/00WdssZkL5ZSXve4uc52JJJqSeZKrMIrkFScmm9MG49az1R4LzqzwW1shBzHoqnwDgFT6vw0/rfLC7vbctNjmE1mkdG4UrT2Xge7I3Jw5Hwovpzo932i2lBebRkzKCWKtbpOTm8WHQ+BXzubO05tCk7C2pJs+1R2qEnDB7dHsJF5h5EDwIBV632yvhmvb6qRRtm25k8Uc0TrzJGNe08Q4VCkq7EREQEREBERAREQEREBERAREQEREBERAREQEREBcK6cdoumtsdmHsQRhxxwMkuJqOTA2n9jxXdVxDpM2LJBPPb5A10T5GjB1XMwEbAWkY+yMq5qJ8WrrfbQYxdAC9aVAl2rGcbx8nfZTrOagFrXOB1aL48btaeKxmJdlb1/bK7Ns4dmlugDTgE2bawFdtlsjp2nALJqw8uaj2tlWque2Q1oJAvWC97ONeC0hnbUu0dBu0zJYXwONTBJRv9JBeA/3X/RdHXJug+zujfaWnCrY8O50lPmV1ldDhn0RERAiIgIiICIiAiIgIiIC5vtneaezWiVpc7rWuLmsdUxPjPsgDIYajHPuPSFre+27ItkVWG5OwHq35V4xv/ifQ48QaZKzMdNcNq1n7o6T93dux2uK+zBwNHsJ7THZ0PEHQ6+YWVXANm7QlsUvXMJbK03ZI35OAOLHjw8NF2bdbeOK3QCWI0INHsPtRu1aeWoOoUY78oWzYeE7jxmURFowEREBERBE2ttKKzQvnmeGRsFXOPfQDvJIHiuMb0bWZbm210UkhiNxzA4vb1UjGA1a2uFHtrhnUnVb30xRV2XIdGyQucOIEgFPMhch2Owix2mv8AO4Aj6nyVJtqdNqY4mvJrdogaKVN51LzjW8TqXHMniTzVBgicAWtxw7QrSpF4ZgY00zV7rKe00mhNCBxzFQaqplsoy4xjqHSlxv+oVxyGmija+vhjWOm60sjecBWjsfDFeWa/J2nuPZJGGGPhmVk7DFdcXn2ianh3BImiNzsOw43q/CTSteWRr3qOXa305iFiN4of3ZKDQyOpU5YVpUgHyVmGImQMYX1ebjQJLgDn4Nc4kOqK5j1WVnhDj1lWucPevGtAKD0VjZrWmVhaMpGUP+oYj81KtEs+L6R3HiYyzNYyNrTG1kbnhrR1r2sYXyGnEnXWq2JcF2Za5htyPq5XAfqWMLQ40cwtAkBGVLoPjRd6VonbO1JrrYiIpUEREBERAREQEREBERARFTI8AEk0ABJPADMoOedKO55mb+rgb+4wfuNH/UaB7QGrgPMd2Og7qbVlsUotERvNOErK0vtzof5DMH6Ehb5b+lWMOLY4HXa0D3mgI43QKivf8AZc121tJhtLpImdWyTtGMG80E+1cNBgTU0phkue89/bLvw1ma6vHT6D2LtaK1QtmhdeafNp1a8aOHBTl887A3jlsUomhNWGnWM9144Hg7g7TuqD3jY21YrTC2aF15jh4g6tcNCOC1pflDmzYpxz8JyIiuxEREGI3t2X+qsVos4zkicG/2Aqz/ALgF8/7Bhc1trhfUOHVuIcKFpbfaag5Zr6XWqdJVkvWGRwHabjWmNBz8lW0Ncd9dPn55AJCjSygHEEjkpcjMAdaqLewzAFdVjp2bS7FNG8ZkU0OY71HtFrjvUBNdMMPPJUw2aN2bmV5midUAcC1OMJ3aUqJjDiWjyCpwvNDcDeFPPBRYyb2Bw1+6ym6tiM9ts8ejpmA9wNXegKmI7VtbpuvRrZDPtd8xZRsPXvJ0LnuLGDyPou2LFbB3es9ja5tnju3yC4lznlxFaVLiTQVOHMrKrasahxZLcpERFKgiIgIiICIiAiIgIiICpkYCCDiCCD3HNVLD71W+OKzPvyiIvaWtJJBJpk2mPlxSUxG3HN89mMs03Vh7XAk3TeBrTQ0ycBmDQ56YrVuodjdOHDRSrdHFI68x4dU1BHI8xhRVxQXcL1a8lx2mI8epjiZjt7ZIcMfJbHuNvObBO5r69Q9wDxqw5CRo7sCNR3BYiJmCi2ltSfzRZ1vMS0vSLxqX0jDKHNDmkFpAIIxBBxBB4Ktc96H9sGSB9meamEgsr8D64eDq/wC4Lfo31XfWdxt5F68bTC4iIpVFC2zZhJBJGfeY75VU1W7T7Dv6n5IPmXaVlLHOadCq9252QTmQxMkBpW8KkYOHZrlW9ispa3NnYfjaDXmFrLmmudFjMad1LRPsOo2Ta9geK/o2uN9r6dWASWgNGlMhxWC3g2tZSx7GbPjYXVq57WjNxdUBoxxprotVs75wOzKWq1Ox9e28uPNZ8Yb/AGfiJRY4GsbRop+aro/QtsYutBtLhgxpDe84E/nNc/s0N99CQGjFziaADiV9A9G1lYywsdGKNeSQSKFwGAJ4Y1W1I/LkzW1GobUiItHKIiICIiAiIgIiICIiAiIgLn/S/s1z7O2VvuGjuTXa+dAugKLtGytljdG8Va4FrhxBFFExuNLVtxnb5usNmbdPFTmOpgad9FXtvZMlkndE4OoCbpI9ptSGuHGo1VgmoXDeO+3r0mJr0rLicsB+eqszw8DiqLPJdBB9VW6YKml9sjuFvB+ltrHvwY7sPP8AFxHaPcaFd9hz8F8vPb2idD9127os3mbarMInu/fhaGuBzewUDJBxwoDzHMLsxW608/8AlY++UNzqSV71XNeRGhVx7wBUmgWzjUxP0KjWtpdHI0GhLHAd5FFZdbcTTDmefALk9l6YY222ZksRdCHuZHLGbzroIF5zD7QJBPZNaUwJU6HPdqzPilfgWODi1zTm0h1CD4qI7agLTe7LuOhx9F1HfDdqDakZtmz5Y3SkAOANGy0pQP1ZKBhiMRgdCOPbSsj4i6KZhjeM2vF12fA5jmMFSY/betvzDM2a2AtxOvFW7TbgCMcOf0Cx+wN3LVasLPC94qauAowZZvNG+Farpe6vRfC2Rv660Mc/CkDHhtTwc4kOdpg0DvKiMaZzTDUt3dgWjaEojhaWxBwvyH2W4Vq4+86mTBy719F7LjbBCyFlaMaGjjQceapsVhjiDY42NYxoo1rQGgCmQAUsR1PD7LWKxDC15skWe1A4Vx5qu9U4LGuwdUa1p4r2xNewmuNdK/JOKu2S6rmjDXAr1soPLvVLPaqqpesdTArwYnkjzU4KqJ2iC4iIgIiICIiAiIgIiIMFvVu1HbISx2DxUsd8J/8Ak6j7LiNt2S+zyuikaWuaaEH0I4jmvotYjeHd2C1spK2jh7L24Ob46jkVlkx8vPXRgzzj6nxwCeMa+ajGx01qt43g3FtcIJYwTs4x+2B/KPPyqtSjr7JFMaY5gjQrl42r69CuSt/JRCMKUyVWzrTJZ5WzQuLZGGoPzBGoORCvSw0VDYCcqkk0oMak5ADjVWixau+pds3Z3wjtkN4NuytoJGVrQ/E3i06HwWScL2NSfL0WH3I3ObZYb8jR+okb2jn1bTQ9W0+VTqRwAWde27gV213rt5OTjFp4+MRtmfq4ZHDC6x7vENJXysACBmDQeK+r7bBfY4UwIIoda8V8ubbsBgtEsDhTq5HNFeAPYPi2h8VZV7sfaktlkEsEjmP4g4EfC5pwcORBWyTdJFtc1zXizvvOqb0V+tTW7QmlNMla3U6PbVa3BxYYodZJBQkfwacSeZw7108dDljMJLS8SEGjr5wpUA0y5qdI247tXe222gXZbTJcxoxlImUOlyMAHxqsTZLQYntlYKOY5r2ng5hDmnzAU/bmxpbLMYZmFrsaHJrx8TTqPkotksbpJGRNqS9zWCgx7RA+qhL66glYY2zGvaa1wac+0AQ2nHFRI4rzq6nPgOAC8gBcA52Aya3loB99VNpd7IzOJ5cSrKvHyNYKnT8/Aoh2i4+63lnVVvFe0cvdH171ciswpeePBBHjtLycAD4H7qWJ7ooTTuwVt7qd/wCYBWLmp+ylCdFtAD/J/wABTInB2IKwbmJZpjG8HTXuVZqnbY0QFFRYREQEREBERAREQEREBafv/uwy0RGZjQJ2jAjDrB8DuJ4HwW4LC7etOIZyqfHL5FRMb6lMWms7hwdkuN14y9F0ro63Tpdtkw5wsIy4SuHH4fPhT2y7mRzWsWl4/apeczSSSuv8dTxPeVv7Ss6YdTt05f5PKuo/1WwqmaIEKpqrWzkYeaMg00WIO7tlM5tBgjMpp2y0F2GAoTktjtMd48lGdCdFZCzc00U+QUaGjhT7qIwYgc1W+YuBwpp4Jsa9vVu7BbGCOVtaZEYFvceK13crozjslpdaHy9cGgiEFt26T7Tn40caYClMyt8ayuHmrr3U7lKFUR7VdBl3lXCzPiaV/O5VWaOgVbT7R/MlVKwwAu5BVSnXXRUwZn85n6L2R1csuKshaEYzcfAZ+JVVeAogpzPp/le3uVFItOJUS1HDRS5CoFsOCIbBs59YmHl8sFJUewR3Y2D+IUhZS0gREQEREBERAREQEREBavtt37r+5vyW0LU9puvPJ5kHzw9fmphEpWzbZRl2mX1x+qyUU9dFq0Uxaa8Aa+GXhT5LO2KUOa14wqBUcOSuhlGlUy2mmAFeNKfVWJZqDBWWO+ajRteBY/CuPA4HyKEUVpwBwIr3r1raZE9xJI9UFUgF5p/Mlamdmrj2Vb4qM5qC4MAjG1ICtucpUDaCqCQrQNGE96uA4KFa5QI6caeuJ9FAtyPN278WJOVAch4j0VcZw4nuwWPLi41KuximSuhOZLTPDww9KqouBFQQRyoVHZLxVYpWvqM/8hELM7jxPookcBe9rcaVFSe9TLSymOiu7I7UhwwaPU4D0qk9QM0iIsmgiIgIiICIiAiIgIiIC1HaYuyP/sfI4/VbctW2yKyOpmCrVRLDWnAVGI17llI7TcoQKgjLLuWKtFRiPJTL15jT/Ef5VpVhn4Xh7Q4GoPhd5U4q240PiFgrLbDG7i05j6jms6119teIq0pBKsOxoqqqPfrQ/lQrjXoJsGIoozmqqN9PQr2XNBYLdVd62oXhVDmoLpnwI4LFTy3nctFfmhJyKtMh4miaNkYV5oQRf8hVBShVReKpUvKCprq1adVM2HFSO98R9Bh9/NYh0mIpnULZII7rQ0aABVsmq4iIqLiIiAiIgIiICIiAiIgLVbe6sjjzK2iV1ATwBWpTHFWqrZBnYrmz3gsLdWn0NSD+cF7M2qh2N12YDRwcP/b6K0ohdtMeau7Jtt09W49gn/adD3K9OzFY2WOhUJbI8d9eevOqpa5QNl2+tInnH3HH/wAT9PJT5W6jxH1UolJjf8lW52A8lCjkyUgPz8CpQuhy9VppVVUS9IVBaq6rxyIexHLDPAjSv0XkzKfQ/des9k+fkvLS/CvP1/4QWbysTyL0yKFIS5wa3Ek0CCdsaHrJa+6zE9/uj6+C2VRtnWQRMDRnmTxOpUlZzO5XiNCIihIiIgIiICIiAiIgIiIIu05KRnnQeZWsvWf22ewO/wChWvuV6+KStuCxsopKw/zHzWTcoMre23+zfmFYZNzaipzUWaNT81ZLFAw9riwqsjsra16jJPa0J97kf5fNUSxLFWmDFEtmmbqPJVwy4jyWtQW+RpHaJGoP3WUhtIcKg48PzVSrMMux2KuArHRzqVHMiEgFeEqkOXpKJXIzgfL6lRZa9rhd9WY+oJ8lerh81RI79txPP1B+6mEMfPLQKTsGz1lBOgqfkB+cFj2Ak15YLZdh2e6y8c3Y+Ay+vmot4mIZJERZNBERAREQEREH/9k=', null);
-var pPadre = person('padre', null, MAN, null, null,  null, defaultProfile, null);
-var pHijo = person('hijo', null,MAN, null, null,  null, defaultProfile, null);
-var pHermano = person('hermano', null, MAN, null, null,  null, defaultProfile, null);
-var pConyuge = person('cónyuge', null, WOMAN, null, null,  null, 'data:image/jpeg;base64,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', null);
-var pNovia = person('novia', null, WOMAN, null, null,  null, defaultProfile, null);
-var pHijoAdoptivo = person('hijo adoptivo', null, OTHER, null, null,  null, defaultProfile, null);
-
-//------------------------------------------------------------------------------------------------
+//---------------------------------------------------------
+//BEGIN DATA
+//---------------------------------------------------------
 
 
-var elements = [
-    //people nodes
-    personNode(1, 2.5, pAbueloMaterno),
-    personNode(1, 3.5, pAbuelaMaterna),
-    personNode(3, 3, pMadre),
-    personNode(1, 4.5, pAbueloPaterno),
-    personNode(1, 5.5, pAbuelaPaterna),
-    personNode(3, 5, pPadre),
-    personNode(5, 3.75, pHijo),
-    personNode(5, 4.25, pHermano),
-    personNode(5, 2.75, pConyuge),
-    personNode(5, 2.25, pNovia),
-    personNode(7, 2.75, pHijoAdoptivo),
-];
+//PEOPLE DATA
+//object template
+/*
+var person = {
+    name: string, //mandatory
+    nickname:string, //nullable
+gender:string, //mandatory. one of WOMAN, MAN, OTHER
+birth:string, //nullable. One line string with date and location of birth, i.e., '12/12/2012, City, Country'
+death:string, //nullable. One line string with date and location of death, i.e., '12/12/2012, City, Country'
+comments:string, //nullable. Html or text with a summary of the person life
+profile:string, //mandatory. Can be the variable defaultProfile, if there is no picture for this person,
+moreComment: //optional, nullable. The tooltip on the moreNode corresponding to this person, if it's used
+photos:array //nullable. array of urls for person pictures. Can also be an empty array
+    ]
+};  */
+var pAbuelaMaterna = {
+    name: 'abuela materna',
+    nickname: 'Chuchita',
+    gender: WOMAN,
+    birth: '12/12/2012 Camaguey, Cuba',
+    death: '14/02/2016',
+    comments: 'Comentario sobre la vida y obra de la mujer',
+    profile: defaultProfile,
+    photos: ["https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4057996.jpg",
+        "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3946332.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgU__1QICoMo8BIEgMnVVIKVpckPzOz1Yn7wwAWfM9vXUthC_D"
+    ]
+};
+
+var pAbueloMaterno = {
+    name: 'abuelo materno',
+    nickname: null,
+    gender: MAN,
+    birth: null,
+    death: null,
+    comments: null,
+    profile: defaultProfile,
+    photos: null
+};
+var pAbueloPaterno = {
+    name: 'abuelo paterno',
+    nickname: null,
+    gender: MAN,
+    birth: null,
+    death: null,
+    comments: null,
+    profile: defaultProfile,
+    photos: null
+};
+var pAbuelaPaterna = {
+    name: 'abuela paterna',
+    nickname: null,
+    gender: WOMAN,
+    birth: null,
+    death: null,
+    comments: null,
+    profile: defaultProfile,
+    photos: null
+};
+var pMadre = {
+    name: 'madre',
+    nickname: null,
+    gender: WOMAN,
+    birth: '12/12/2012',
+    death: null,
+    comments: null,
+    profile: defaultProfile,
+    photos: null
+};
+var pPadre = {
+    name: 'padre',
+    nickname: null,
+    gender: MAN,
+    birth: null,
+    death: null,
+    comments: null,
+    profile: defaultProfile,
+    photos: null
+};
+var pHijo = {
+    name: 'hijo',
+    nickname: null,
+    gender: MAN,
+    birth: null,
+    death: null,
+    comments: null,
+    profile: defaultProfile,
+    photos: null
+};
+var pHermano = {
+    name: 'hermano',
+    nickname: null,
+    gender: MAN,
+    birth: null,
+    death: null,
+    comments: null,
+    profile: defaultProfile,
+    moreComment: 'hijos del hermano',
+    photos: null
+};
+var pConyuge = {
+    name: 'cónyuge',
+    nickname: null,
+    gender: WOMAN,
+    birth: null,
+    death: null,
+    comments: null,
+    profile: defaultProfile,
+    photos: null
+};
+var pNovia = {
+    name: 'novia',
+    nickname: null,
+    gender: WOMAN,
+    birth: null,
+    death: null,
+    comments: null,
+    profile: defaultProfile,
+    photos: null
+};
+var pHijoAdoptivo = {
+    name: 'hijo adoptivo',
+    nickname: null,
+    gender: OTHER,
+    birth: null,
+    death: null,
+    comments: null,
+    profile: defaultProfile,
+    photos: null
+};
+
+//RELATIONSHIP DATA
+/*
+var relationship = {
+    people : array, //mandatory, a list of all the people related through this node. 
+                    //The order is important if the edges are going to bend later on the add() call
+    date : date, //null. The date in which the relationship was formalized
+    type: string //type of relationship, one of MARRIAGE, RELATIONSHIP
+}
+ */
+var mtPadreMadre = {
+    date: '13/12/2012',
+    type: MARRIAGE
+};
+var mtAbuelaPaternaAbueloPaterno = {
+    date: '13/12/2012',
+    type: MARRIAGE
+};
+var mtAbueloMaternoAbuelaMaterna = {
+    date: '13/12/2012',
+    type: MARRIAGE
+};
+var rlHijoNovia = {
+    date: '13/12/2012',
+    type: RELATIONSHIP
+};
+var mtHijoConyuge = {
+    date: '13/12/2012',
+    type: MARRIAGE
+};
 
 //---------------------------------------------------------
-//relationship nodes. These also include the edges from both people to the central relationship node, as well as any invisible node required for segmented edges, if required.
-elements.push(...relNode(3, 4, pMadre, pPadre, null, '13/12/2012', MARRIAGE, null));
-elements.push(...relNode(1, 5, pAbuelaPaterna, pAbueloPaterno, null, '13/12/2012', MARRIAGE, null));
-elements.push(...relNode(1, 3, pAbueloMaterno, pAbuelaMaterna, null, '13/12/2012', MARRIAGE, null));
-elements.push(...relNode(4.25, 2.5, pHijo, pNovia, [
-    [5, 3.5],
-    [4.25, 3.5],
+//END DATA
+//---------------------------------------------------------
 
-], '13/12/2012', RELATIONSHIP, [
-    [4.25, 2.25]
-]));
-elements.push(...relNode(5, 3.25, pHijo, pConyuge, null, '13/12/2012', MARRIAGE, null));
+//---------------------------------------------------------
+//BEGIN DRAWING
+//---------------------------------------------------------
+//change the row,col numbers to position the nodes
 
-//more nodes. Also includes the edge from the person node to the more node 
-elements.push(...moreNode(7, 4.25, pHermano, 'hijos del hermano'));
+//people nodes
+add(1, 2.5, pAbueloMaterno);
+add(1, 3.5, pAbuelaMaterna);
+add(3, 3, pMadre);
+add(1, 4.5, pAbueloPaterno);
+add(1, 5.5, pAbuelaPaterna);
+add(3, 5, pPadre);
+add(5, 3.75, pHijo);
+add(5, 4.25, pHermano);
+add(5, 2.75, pConyuge);
+add(5, 2.25, pNovia);
+add(7, 2.75, pHijoAdoptivo);
 
+//---------------------------------------------------------
+//relationship nodes. 
+//These also include the edges from all people related to the central relationship node, 
+//as well as any invisible node required for segmented edges, if present.
+add(1, 5, mtAbuelaPaternaAbueloPaterno, [pAbuelaPaterna, pAbueloPaterno, pPadre]);
+add(1, 3, mtAbueloMaternoAbuelaMaterna, [pAbueloMaterno, pAbuelaMaterna, pMadre]);
+add(5, 3.25, mtHijoConyuge, [pHijo, pConyuge]);
+add(4.25, 2.5, rlHijoNovia, [
+    [
+        pHijo, [4.25, 3.5],
+        [5, 3.5]
+    ],
+    [
+        pNovia, [4.25, 2.25]
+    ]
+]);
+add(3, 4, mtPadreMadre, [
+    [pMadre],
+    [pPadre],
+    //hijo
+    [pHijo, [4, 4],
+        [4, 3.75]
+    ],
+    //hermano
+    [pHermano, [4, 4],
+        [4, 4.25]
+    ]
+]);
+//'more' nodes. Also includes the edge from the person node to the more node 
+more(7, 4.25, pHermano);
 
-//edges from relationships to children, and directly from parent to children
-elements.push(...edge(pPadre.id, relId(pAbueloPaterno, pAbuelaPaterna)));
-elements.push(...edge(pMadre.id, relId(pAbueloMaterno, pAbuelaMaterna)));
-elements.push(...edge(pHijo.id, relId(pHijo, pConyuge)));
-elements.push(...edge(pConyuge.id, pHijoAdoptivo.id));
-elements.push(...edge(relId(pMadre, pPadre), pHijo.id, [
-    [4, 4],
-    [4, 3.75]
-]));
-elements.push(...edge(relId(pMadre, pPadre), pHermano.id, [
-    [4, 4],
-    [4, 4.25]
-]));
+//edges directly between two people, without a relationship
+rel(pConyuge, pHijoAdoptivo);
+
+//---------------------------------------------------------
+//END DRAWING
+//---------------------------------------------------------

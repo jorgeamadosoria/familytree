@@ -17,7 +17,7 @@ var idPerson = 1;
 
 
 //used to create a person data, which is later included in a person node
-function person(name, nickname,gender, birth, death,  comments, profile, photos) {
+function person(name, nickname, gender, birth, death, comments, profile, photos) {
     return {
         birth: birth,
         death: death,
@@ -25,29 +25,31 @@ function person(name, nickname,gender, birth, death,  comments, profile, photos)
         comments: comments,
         photos: photos,
         name: name,
-        id: idPerson++,
         profile: profile,
         classes: gender
     };
 }
 
-function relationship(row,col,person1, person2, date, classes){
+function relationshipNode(row, col, people, date, classes) {
+    console.log(people);
     return {
         data: {
             row: row,
             col: col,
-            id: relId(person1, person2),
+            id: relId(people),
             relationship: {
                 tip: date
             },
-            debug: DEBUG ? relId(person1, person2) : ''
+            debug: DEBUG ? relId(people) : ''
         },
         classes: classes
-    }; 
+    };
 }
 
 function personNode(row, col, person) {
-    return { // node a
+    person.id = idPerson++;
+    //cytoscape node format
+    return {
         data: {
             row: row,
             col: col,
@@ -55,7 +57,7 @@ function personNode(row, col, person) {
             person: person,
             debug: DEBUG ? person.id : ''
         },
-        classes: person.classes
+        classes: person.gender
     };
 }
 
@@ -64,37 +66,51 @@ function moreId(node) {
     return 'more-' + node.id;
 }
 
-function relId(person1, person2) {
-
-    return 'rel-' + Math.min(person1.id, person2.id) + '-' + Math.max(person1.id, person2.id);
+function relId(people) {
+    console.log('rel id' + JSON.stringify(people));
+    console.log('rel ' + people.reduce((acc, person) => acc ? (acc + '-' + person.id) : 'rel '));
+    return 'rel-' + people.reduce((acc, person) => acc + '-' + person.id);
 }
 
-function relNode(row, col, person1, person2, invNodes1, date, classes, invNodes2) {
-    var rel = relationship(row,col,person1,person2,date,classes);
+
+function relNode(row, col, relationship, peopleArray) {
+    var relNode = relationshipNode(row, col, peopleArray.map((ele) => ele instanceof Array ? ele[0] : ele),
+        relationship.date, relationship.type);
+    relationship.id = relNode.data.id;
 
     var results = [];
-    results.push(...edge(person1.id, rel.data.id, invNodes1));
-    results.push(rel);
-    results.push(...edge(rel.data.id, person2.id, invNodes2));
+    results.push(relNode);
+    for (var i = 0; i < peopleArray.length; i++) {
+
+        if (peopleArray && i < peopleArray.length && peopleArray[i] instanceof Array) {
+            /*     console.log(i);
+                 console.log(relationship);
+                 console.log(peopleArray[i]);
+                 console.log(peopleArray[i].slice(1));*/
+            results.push(...edge(relNode.data, peopleArray[i][0], peopleArray[i].slice(1)));
+        } else
+            results.push(...edge(relNode.data, peopleArray[i]));
+    }
     return results;
 }
 
-function moreNode(row, col, node, text) {
+function moreNode(row, col, node, invNodes) {
     var moreId = 'more-' + node.id;
-
-    return [{
-            data: {
-                row: row,
-                col: col,
-                id: moreId,
-                relationship: {
-                    tip: text
-                },
-                debug: DEBUG ? relId(node) : ''
+    var moreNode = {
+        id: moreId,
+        data: {
+            row: row,
+            col: col,
+            id: moreId,
+            relationship: {
+                tip: node.moreComment
             },
-            classes: 'more'
+            debug: DEBUG ? node.id : ''
         },
-        ...edge(node.id, moreId)
+        classes: 'more'
+    };
+    return [moreNode,
+        ...edge(node, moreNode, invNodes)
     ];
 }
 
@@ -110,7 +126,9 @@ function invNode(row, col, id) {
     }
 }
 
-function edge(sourceId, targetId, invArray) {
+function edge(source, target, invArray) {
+    var sourceId = source.id;
+    var targetId = target.id;
     var result = [];
     if (invArray) {
 
@@ -151,4 +169,23 @@ function edge(sourceId, targetId, invArray) {
     }
 
     return result;
+}
+
+
+//Elements management
+var elements = [];
+
+function add(row, col, node, peopleArray) {
+    if ('name' in node)
+        elements.push(personNode(row, col, node));
+    else
+        elements.push(...relNode(row, col, node, peopleArray));
+}
+
+function more(row, col, node, invNodes) {
+    elements.push(...moreNode(row, col, node, invNodes));
+}
+
+function rel(node1, node2, invNodes) {
+    elements.push(...edge(node1, node2, invNodes));
 }
