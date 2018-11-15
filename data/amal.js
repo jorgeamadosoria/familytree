@@ -172,28 +172,27 @@ var mtHijoConyuge = {
 //BEGIN DRAWING
 //---------------------------------------------------------
 //change the row,col numbers to position the nodes
-
+var graph = new Graph('amal','#graph');
 //people nodes
-add(1, 2.5, pAbueloMaterno);
-add(1, 3.5, pAbuelaMaterna);
-add(3, 3, pMadre);
-add(1, 4.5, pAbueloPaterno);
-add(1, 5.5, pAbuelaPaterna);
-add(3, 5, pPadre);
-add(5, 3.75, pHijo);
-add(5, 4.25, pHermano);
-add(5, 2.75, pConyuge);
-add(5, 2.25, pNovia);
-add(7, 2.75, pHijoAdoptivo);
+graph.add(1, 2.5, pAbueloMaterno);
+graph.add(1, 3.5, pAbuelaMaterna);
+graph.add(3, 3, pMadre);
+graph.add(1, 4.5, pAbueloPaterno);
+graph.add(1, 5.5, pAbuelaPaterna);
+graph.add(3, 5, pPadre);
+graph.add(5, 3.75, pHijo);
+graph.add(5, 4.25, pHermano);
+graph.add(5, 2.75, pConyuge);
+graph.add(5, 2.25, pNovia);
 
 //---------------------------------------------------------
 //relationship nodes. 
 //These also include the edges from all people related to the central relationship node, 
 //as well as any invisible node required for segmented edges, if present.
-add(1, 5, mtAbuelaPaternaAbueloPaterno, [pAbuelaPaterna, pAbueloPaterno, pPadre]);
-add(1, 3, mtAbueloMaternoAbuelaMaterna, [pAbueloMaterno, pAbuelaMaterna, pMadre]);
-add(5, 3.25, mtHijoConyuge, [pHijo, pConyuge]);
-add(4.25, 2.5, rlHijoNovia, [
+graph.add(1, 5, mtAbuelaPaternaAbueloPaterno, [pAbuelaPaterna, pAbueloPaterno, pPadre]);
+graph.add(1, 3, mtAbueloMaternoAbuelaMaterna, [pAbueloMaterno, pAbuelaMaterna, pMadre]);
+graph.add(5, 3.25, mtHijoConyuge, [pHijo, pConyuge]);
+graph.add(4.25, 2.5, rlHijoNovia, [
     [
         pHijo, [4.25, 3.5],
         [5, 3.5]
@@ -202,7 +201,7 @@ add(4.25, 2.5, rlHijoNovia, [
         pNovia, [4.25, 2.25]
     ]
 ]);
-add(3, 4, mtPadreMadre, [
+graph.add(3, 4, mtPadreMadre, [
     [pMadre],
     [pPadre],
     //hijo
@@ -214,12 +213,7 @@ add(3, 4, mtPadreMadre, [
         [4, 4.25]
     ]
 ]);
-//'more' nodes. Also includes the edge from the person node to the more node 
-more(7, 4.25, pHermano);
-
-//edges directly between two people, without a relationship
-rel(pConyuge, pHijoAdoptivo);
-
 //---------------------------------------------------------
 //END DRAWING
 //---------------------------------------------------------
+graph.createCytoscape();
