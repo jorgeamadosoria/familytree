@@ -31,7 +31,7 @@ function person(name, nickname, gender, birth, death, comments, profile, photos)
 }
 
 function relationshipNode(row, col, people, date, classes) {
-    console.log(people);
+  //  console.log(people);
     return {
         data: {
             row: row,
@@ -67,11 +67,10 @@ function moreId(node) {
 }
 
 function relId(people) {
-    console.log('rel id' + JSON.stringify(people));
-    console.log('rel ' + people.reduce((acc, person) => acc ? (acc + '-' + person.id) : 'rel '));
-    return 'rel-' + people.reduce((acc, person) => acc + '-' + person.id);
+ //   console.log('rel id' + JSON.stringify(people));
+ //   console.log('rel ' + people.map(ele => ele.id).reduce((acc, person) => acc += '-' + person));
+    return 'rel-' + people.map(ele => ele.id).reduce((acc, person) => acc += '-' + person);
 }
-
 
 function relNode(row, col, relationship, peopleArray) {
     var relNode = relationshipNode(row, col, peopleArray.map((ele) => ele instanceof Array ? ele[0] : ele),
@@ -83,10 +82,6 @@ function relNode(row, col, relationship, peopleArray) {
     for (var i = 0; i < peopleArray.length; i++) {
 
         if (peopleArray && i < peopleArray.length && peopleArray[i] instanceof Array) {
-            /*     console.log(i);
-                 console.log(relationship);
-                 console.log(peopleArray[i]);
-                 console.log(peopleArray[i].slice(1));*/
             results.push(...edge(relNode.data, peopleArray[i][0], peopleArray[i].slice(1)));
         } else
             results.push(...edge(relNode.data, peopleArray[i]));
@@ -130,13 +125,13 @@ function edge(source, target, invArray) {
     var sourceId = source.id;
     var targetId = target.id;
     var result = [];
-    if (invArray) {
+    if (invArray && invArray.length) {
 
         var id = 1;
         var invNodes = invArray.map(function(val) {
             return invNode(val[0], val[1], 'inv-' + sourceId + '-' + targetId + '-' + id++);
         });
-        //    console.log(invNodes);
+            
         result.unshift({
             data: {
                 source: sourceId,
