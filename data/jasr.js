@@ -110,6 +110,7 @@ var pConyuge = {
     birth: null,
     death: null,
     comments: null,
+    treeRef:'amal',
     profile: defaultProfile,
     photos: null
 };

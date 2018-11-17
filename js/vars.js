@@ -14,10 +14,12 @@ var DEBUG = false;
 var AUTOLOCK = true;
 //id counter for person nodes
 var idPerson = 1;
+//default tree to load if none is specified
+DEFAULT_TREE = 'jasr';
 
 class Graph {
 
-    constructor(name,selector) {
+    constructor(name, selector) {
         this.name = name;
         this.elements = [];
         this.selector = selector;
@@ -65,6 +67,18 @@ class Graph {
                 debug: DEBUG ? person.id : ''
             },
             classes: person.gender
+        };
+    }
+
+    treeRefNode(row, col, person) {
+        return {
+            data: {
+                row: row + .25,
+                col: col + .2,
+                id: person.treeRef,
+                debug: DEBUG ? person.treeRef : ''
+            },
+            classes: 'tree'
         };
     }
 
@@ -171,9 +185,12 @@ class Graph {
     }
 
     add(row, col, node, peopleArray) {
-        if ('name' in node)
+        if ('name' in node) {
             this.elements.push(this.personNode(row, col, node));
-        else
+            console.log(JSON.stringify(node));
+            if ('treeRef' in node)
+                this.elements.push(this.treeRefNode(row, col, node));
+        } else
             this.elements.push(...this.relNode(row, col, node, peopleArray));
     }
 
@@ -185,7 +202,7 @@ class Graph {
         this.elements.push(...this.edge(node1, node2, invNodes));
     }
 
-    createCytoscape(){
+    createCytoscape() {
         this.cy = cytoscape({
             container: $(this.selector), // container to render in
             elements: this.elements,
@@ -236,6 +253,17 @@ class Graph {
                         'background-image': 'data(person.profile)'
                     }
                 }, {
+                    selector: 'node.tree',
+                    style: {
+                        'width': 40,
+                        'height': 40,
+                        'label': '',
+                        'text-outline-width': 2,
+                        'text-outline-color': '#888',
+                        'background-color':'white',
+                        'background-image': 'img/tree.png'
+                    }
+                }, {
                     selector: 'node.marriage',
                     style: {
                         'width': 40,
@@ -269,9 +297,9 @@ class Graph {
                 }
             ],
             layout: {
-        
+
                 name: 'grid',
-                position: function(node) {
+                position: function (node) {
                     return node._private.data;
                 },
                 rows: 8,
@@ -279,9 +307,9 @@ class Graph {
             }
         });
         this.cy.autolock(AUTOLOCK);
-        
+
         //detail model function
-        var modalFn = function(evt) {
+        var modalFn = function (evt) {
             var node = evt.target;
             //clear modal and hide all elements. they will be shown if data exists on each one
             $("div#person.modal #birth").text('');
@@ -298,22 +326,22 @@ class Graph {
             //-----------------------------------
             //add data to modal elements
             $("div#person.modal #name").text(node.data().person.name);
-        
+
             if (node.data().person.nickname)
                 $("div#person.modal #nickname-content").show().find("#nickname").text(node.data().person.nickname);
-        
+
             if (node.data().person.birth)
                 $("div#person.modal #birth-content").show().find("#birth").text(node.data().person.birth);
-        
+
             if (node.data().person.death)
                 $("div#person.modal #death-content").show().find("#death").text(node.data().person.death);
-        
+
             if (node.data().person.comments)
                 $("div#person.modal #comments").show().text(node.data().person.comments);
-        
-        
+
+
             if (node.data().person.photos) {
-                $.each(node.data().person.photos, function(idx, val) {
+                $.each(node.data().person.photos, function (idx, val) {
                     var template = $("#carousel-template").clone();
                     template.toggleClass("hidden").attr('id', '').find("img").attr("src", val);
                     $("div#person.modal #photos .carousel-inner").prepend(template);
@@ -323,16 +351,16 @@ class Graph {
             //-----------------------------------
             $("div#person.modal").modal('toggle');
         };
-        
+
         //bind event to people nodes to launch modal
         this.cy.on('tap', 'node.man', modalFn);
         this.cy.on('tap', 'node.woman', modalFn);
         this.cy.on('tap', 'node.other', modalFn);
         //-----------------------------------
         //-----marriage/relationship detail function with tippy, not modal-----
-        var makeTippy = function(node, text) {
+        var makeTippy = function (node, text) {
             return tippy(node.popperRef(), {
-                html: (function() {
+                html: (function () {
                     var div = document.createElement('div');
                     div.innerHTML = text;
                     return div;
@@ -345,12 +373,33 @@ class Graph {
                 placement: 'top'
             }).tooltips[0];
         };
-        this.cy.on('mouseover', 'node.marriage,node.relationship,node.more', function(evt) {
+        this.cy.on('mouseover', 'node.marriage,node.relationship,node.more', function (evt) {
             var node = evt.target;
             var tippyA = makeTippy(node, node.data().relationship.tip);
             tippyA.show();
+        });
+
+        this.cy.on('tap', 'node.tree', function(evt){
+            window.location.href = 'home.html?tree=' + evt.target.data().id;
         });
         //--------------------------------------------
         return this.cy;
     }
 }
+
+var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = window.location.search.substring(1),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? DEFAULT_TREE : decodeURIComponent(sParameterName[1]);
+        }
+    }
+
+    return DEFAULT_TREE;
+};

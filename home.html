@@ -20,7 +20,7 @@
 <body>
     <nav class="navbar navbar-light bg-light">
         <img class="navbar-brand logo" src="img/logo.png">
-        <h3 class="d-flex justify-content-center">My árbol genealógico</h3>
+        <h3 class="d-flex justify-content-center">My &aacute;rbol geneal&oacute;gico</h3>
         <ul class="nav d-inline-flex">
             <li class="list-inline-item"><a class="nav-link" href="https://github.com/jorgeamadosoria/familytree" title="github"><i
                         class="fab fa-github fa-2x text-muted"></i></a></li>
@@ -150,7 +150,10 @@
     </div>
     <!-- do not change the order of these scripts! Since this is vanillaJS, the order of import matters -->
     <script src="js/vars.js"></script>
-    <script src="data/amal.js"></script>
+    <script>
+        var tree = getUrlParameter('tree');
+        $.getScript("./data/" + tree +".js");
+    </script>
 </body>
 
 </html>
