@@ -109,10 +109,13 @@ var pConyuge = {
     gender: WOMAN,
     birth: null,
     death: null,
-    comments: null,
     treeRef:'amal',
+    comments: 'Comentario sobre la vida y obra de la mujer',
     profile: defaultProfile,
-    photos: null
+    photos: ["https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4057996.jpg",
+        "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3946332.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgU__1QICoMo8BIEgMnVVIKVpckPzOz1Yn7wwAWfM9vXUthC_D"
+    ]
 };
 var pNovia = {
     name: 'novia',
@@ -225,4 +228,4 @@ graph.rel(pConyuge, pHijoAdoptivo);
 //END DRAWING
 //---------------------------------------------------------
 
-graph.createCytoscape();
+graph.init();

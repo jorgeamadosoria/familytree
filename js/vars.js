@@ -70,18 +70,6 @@ class Graph {
         };
     }
 
-    treeRefNode(row, col, person) {
-        return {
-            data: {
-                row: row + .25,
-                col: col + .2,
-                id: person.treeRef,
-                debug: DEBUG ? person.treeRef : ''
-            },
-            classes: 'tree'
-        };
-    }
-
     moreId(node) {
         return 'more-' + node.id;
     }
@@ -187,9 +175,6 @@ class Graph {
     add(row, col, node, peopleArray) {
         if ('name' in node) {
             this.elements.push(this.personNode(row, col, node));
-            console.log(JSON.stringify(node));
-            if ('treeRef' in node)
-                this.elements.push(this.treeRefNode(row, col, node));
         } else
             this.elements.push(...this.relNode(row, col, node, peopleArray));
     }
@@ -202,7 +187,7 @@ class Graph {
         this.elements.push(...this.edge(node1, node2, invNodes));
     }
 
-    createCytoscape() {
+    init() {
         this.cy = cytoscape({
             container: $(this.selector), // container to render in
             elements: this.elements,
@@ -251,17 +236,6 @@ class Graph {
                         'label': 'data(person.name)',
                         'background-color': 'lightgrey',
                         'background-image': 'data(person.profile)'
-                    }
-                }, {
-                    selector: 'node.tree',
-                    style: {
-                        'width': 40,
-                        'height': 40,
-                        'label': '',
-                        'text-outline-width': 2,
-                        'text-outline-color': '#888',
-                        'background-color':'white',
-                        'background-image': 'img/tree.png'
                     }
                 }, {
                     selector: 'node.marriage',
@@ -323,9 +297,13 @@ class Graph {
             $("div#person.modal #death-content").hide();
             $("div#person.modal #comments").hide();
             $("div#person.modal #photos").hide();
+            $("div#person.modal #tree-content").hide();
             //-----------------------------------
             //add data to modal elements
             $("div#person.modal #name").text(node.data().person.name);
+
+            if (node.data().person.treeRef)
+                $("div#person.modal #tree-content").show().find("#tree").attr("href","home.html?tree=" + node.data().person.treeRef);
 
             if (node.data().person.nickname)
                 $("div#person.modal #nickname-content").show().find("#nickname").text(node.data().person.nickname);
@@ -352,10 +330,15 @@ class Graph {
             $("div#person.modal").modal('toggle');
         };
 
+        var navigationFn = function (param) {
+            window.location.href = 'home.html?tree=' + param;
+        };
         //bind event to people nodes to launch modal
         this.cy.on('tap', 'node.man', modalFn);
         this.cy.on('tap', 'node.woman', modalFn);
         this.cy.on('tap', 'node.other', modalFn);
+        //bind event to tree nodes to navigate and reload cytoscape
+        this.cy.on('tap', 'node.tree', (evt) => navigationFn(evt.target.data().id));
         //-----------------------------------
         //-----marriage/relationship detail function with tippy, not modal-----
         var makeTippy = function (node, text) {
@@ -379,9 +362,8 @@ class Graph {
             tippyA.show();
         });
 
-        this.cy.on('tap', 'node.tree', function(evt){
-            window.location.href = 'home.html?tree=' + evt.target.data().id;
-        });
+        $('#tree-select').change((evt)=>navigationFn(evt.target.value));
+
         //--------------------------------------------
         return this.cy;
     }

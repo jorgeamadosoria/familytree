@@ -20,8 +20,12 @@
 <body>
     <nav class="navbar navbar-light bg-light">
         <img class="navbar-brand logo" src="img/logo.png">
-        <h3 class="d-flex justify-content-center">My &aacute;rbol geneal&oacute;gico</h3>
+        <h3 class="d-flex">&Aacute;rbol geneal&oacute;gico</h3>
         <ul class="nav d-inline-flex">
+            <li class="list-inline-item">
+                <select id="tree-select" class="custom-select">
+                </select>
+            </li>
             <li class="list-inline-item"><a class="nav-link" href="https://github.com/jorgeamadosoria/familytree" title="github"><i
                         class="fab fa-github fa-2x text-muted"></i></a></li>
             <li class="list-inline-item"><a class="nav-link" href="#" title="about" data-toggle="modal" data-target="#about"><i
@@ -43,9 +47,13 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>Esta aplicación representa el árbol genealógico de mi familia, con información muy básica sobre los miembros de la familia y su relación entre sí.</p>
-                    <p>El objetivo es conservar la memoria de la familia de forma pública y visible, incluyendo tantas personas como sea posible. Se aceptan contribuciones e información adicional sobre familiares <a href="mailto:jorgeamadosoria@gmail.com">aquí</a></p>
-                    <p>Este pequeño proyecto fue hecho con las siguientes tecnologías del lado del cliente (y ninguna del lado del servidor):</p>
+                    <p>Esta aplicación representa el árbol genealógico de mi familia, con información muy básica sobre
+                        los miembros de la familia y su relación entre sí.</p>
+                    <p>El objetivo es conservar la memoria de la familia de forma pública y visible, incluyendo tantas
+                        personas como sea posible. Se aceptan contribuciones e información adicional sobre familiares
+                        <a href="mailto:jorgeamadosoria@gmail.com">aquí</a></p>
+                    <p>Este pequeño proyecto fue hecho con las siguientes tecnologías del lado del cliente (y ninguna
+                        del lado del servidor):</p>
                     <ul class="unstyle list-inline">
                         <li class="list-inline-item">
                             <div class="card">
@@ -120,9 +128,10 @@
                     <div>
                         <p id="birth-content"><sub>Nacimiento:&nbsp;<span id="birth"></span></sub></p>
                         <p id="death-content"><sub>Muerte:&nbsp;<span id="death"></span></sub></p>
+                        <p id="tree-content"><sub><a id="tree" href="#">Ver &aacute;rbol&nbsp;&nbsp;<i class="fa fa-external-link-square-alt"></i></a></sub></p>
                         <p id="comments"></p>
                     </div>
-                    <div id="photos" class="h-50 carousel slide" data-ride="carousel">
+                    <div id="photos" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
 
                         </div>
@@ -151,8 +160,14 @@
     <!-- do not change the order of these scripts! Since this is vanillaJS, the order of import matters -->
     <script src="js/vars.js"></script>
     <script>
+        var trees = ['jasr', 'amal'];
         var tree = getUrlParameter('tree');
-        $.getScript("./data/" + tree +".js");
+        $(trees).each((idx, val) => {
+            $('#tree-select').append("<option " + (tree == val?'selected':'')+ " value=" + val + ">" + val + "</option>")
+        });
+        
+
+        $.getScript("./data/" + tree + ".js");
     </script>
 </body>
 
