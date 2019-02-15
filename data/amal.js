@@ -18,12 +18,12 @@ moreComment: //optional, nullable. The tooltip on the moreNode corresponding to 
 photos:array //nullable. array of urls for person pictures. Can also be an empty array
     ]
 };  */
-var pAbuelaMaterna = {
-    name: 'abuela materna',
-    nickname: 'Chuchita',
+var pSenobiaHermeloMoreno = {
+    name: 'Zenobia Hermelo Moreno',
+    nickname: 'Queno',
     gender: WOMAN,
-    birth: '12/12/2012 Camaguey, Cuba',
-    death: '14/02/2016',
+    birth: '30/10/2012 Pinar del Rio, Cuba',
+    death: '',
     comments: 'Comentario sobre la vida y obra de la mujer',
     profile: defaultProfile,
     photos: ["https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4057996.jpg",
