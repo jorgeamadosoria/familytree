@@ -18,12 +18,38 @@ moreComment: //optional, nullable. The tooltip on the moreNode corresponding to 
 photos:array //nullable. array of urls for person pictures. Can also be an empty array
     ]
 };  */
-var pAbuelaMaterna = {
-    name: 'abuela materna',
-    nickname: 'Chuchita',
+var pObdulioHermelo = {
+    name: 'Obdulio Hermelo',
+    nickname: '',
+    gender: MAN,
+    birth: 'Pinar del Rio, Cuba',
+    death: '',
+    comments: 'Comentario sobre la vida y obra',
+    profile: defaultProfile,
+    photos: ["https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4057996.jpg",
+        "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3946332.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgU__1QICoMo8BIEgMnVVIKVpckPzOz1Yn7wwAWfM9vXUthC_D"
+    ]
+};
+var pVirginiaMoreno = {
+    name: 'Virginia Moreno',
+    nickname: '',
     gender: WOMAN,
-    birth: '12/12/2012 Camaguey, Cuba',
-    death: '14/02/2016',
+    birth: 'Pinar del Rio, Cuba',
+    death: '',
+    comments: 'Comentario sobre la vida y obra de la mujer',
+    profile: defaultProfile,
+    photos: ["https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4057996.jpg",
+        "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3946332.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgU__1QICoMo8BIEgMnVVIKVpckPzOz1Yn7wwAWfM9vXUthC_D"
+    ]
+};
+var pZenobiaHermeloMoreno = {
+    name: 'Zenobia Hermelo Moreno',
+    nickname: 'Queno',
+    gender: WOMAN,
+    birth: '29/10/1936 Pinar del Rio, Cuba',
+    death: '',
     comments: 'Comentario sobre la vida y obra de la mujer',
     profile: defaultProfile,
     photos: ["https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4057996.jpg",
@@ -32,108 +58,138 @@ var pAbuelaMaterna = {
     ]
 };
 
-var pAbueloMaterno = {
-    name: 'abuelo materno',
-    nickname: null,
-    gender: MAN,
-    birth: null,
-    death: null,
-    comments: null,
-    profile: defaultProfile,
-    photos: null
-};
-var pAbueloPaterno = {
-    name: 'abuelo paterno',
-    nickname: null,
-    gender: MAN,
-    birth: null,
-    death: null,
-    comments: null,
-    profile: defaultProfile,
-    photos: null
-};
-var pAbuelaPaterna = {
-    name: 'abuela paterna',
-    nickname: null,
+var pLuisaHermeloMoreno = {
+    name: 'Luisa Hermelo Moreno',
+    nickname: 'Nini',
     gender: WOMAN,
-    birth: null,
-    death: null,
-    comments: null,
+    birth: 'Pinar del Rio, Cuba',
+    death: '',
+    comments: 'Comentario sobre la vida y obra de la mujer',
     profile: defaultProfile,
-    photos: null
+    photos: ["https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4057996.jpg",
+        "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3946332.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgU__1QICoMo8BIEgMnVVIKVpckPzOz1Yn7wwAWfM9vXUthC_D"
+    ]
 };
-var pMadre = {
-    name: 'madre',
-    nickname: null,
+var pCandidaHermeloMoreno = {
+    name: 'Candida Hermelo Moreno',
+    nickname: 'Candita',
     gender: WOMAN,
-    birth: '12/12/2012',
-    death: null,
-    comments: null,
+    birth: 'Pinar del Rio, Cuba',
+    death: '',
+    comments: 'Comentario sobre la vida y obra de la mujer',
     profile: defaultProfile,
-    photos: null
+    photos: ["https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4057996.jpg",
+        "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3946332.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgU__1QICoMo8BIEgMnVVIKVpckPzOz1Yn7wwAWfM9vXUthC_D"
+    ]
 };
-var pPadre = {
-    name: 'padre',
-    nickname: null,
-    gender: MAN,
-    birth: null,
-    death: null,
-    comments: null,
-    profile: defaultProfile,
-    photos: null
-};
-var pHijo = {
-    name: 'hijo',
-    nickname: null,
-    gender: MAN,
-    birth: null,
-    death: null,
-    comments: null,
-    profile: defaultProfile,
-    photos: null
-};
-var pHermano = {
-    name: 'hermano',
-    nickname: null,
-    gender: MAN,
-    birth: null,
-    death: null,
-    comments: null,
-    profile: defaultProfile,
-    moreComment: 'hijos del hermano',
-    photos: null
-};
-var pConyuge = {
-    name: 'cónyuge',
-    nickname: null,
+var pEmelinaHermeloMoreno = {
+    name: 'Emelina Hermelo Moreno',
+    nickname: '',
     gender: WOMAN,
-    birth: null,
-    death: null,
-    comments: null,
-    treeRef: 'jasr',
+    birth: 'Pinar del Rio, Cuba',
+    death: '',
+    comments: 'Comentario sobre la vida y obra de la mujer',
     profile: defaultProfile,
-    photos: null
+    photos: ["https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4057996.jpg",
+        "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3946332.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgU__1QICoMo8BIEgMnVVIKVpckPzOz1Yn7wwAWfM9vXUthC_D"
+    ]
 };
-var pNovia = {
-    name: 'novia',
-    nickname: null,
+var pMateoHermeloMoreno = {
+    name: 'Mateo Hermelo Moreno',
+    nickname: '',
+    gender: MAN,
+    birth: 'Pinar del Rio, Cuba',
+    death: '',
+    comments: 'Comentario sobre la vida y obra',
+    profile: defaultProfile,
+    photos: ["https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4057996.jpg",
+        "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3946332.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgU__1QICoMo8BIEgMnVVIKVpckPzOz1Yn7wwAWfM9vXUthC_D"
+    ]
+};
+var pRaulHermeloMoreno = {
+    name: 'Raúl Hermelo Moreno',
+    nickname: 'Pirre',
+    gender: MAN,
+    birth: 'Pinar del Rio, Cuba',
+    death: '',
+    comments: 'Comentario sobre la vida y obra de la mujer',
+    profile: defaultProfile,
+    photos: ["https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4057996.jpg",
+        "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3946332.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgU__1QICoMo8BIEgMnVVIKVpckPzOz1Yn7wwAWfM9vXUthC_D"
+    ]
+};
+var pFranciscaHermelo = {
+    name: 'Francisca Hermelo Moreno',
+    nickname: '',
     gender: WOMAN,
-    birth: null,
-    death: null,
-    comments: null,
+    birth: 'Pinar del Rio, Cuba',
+    death: '',
+    comments: 'Hija solo de Obdulio, medio hermana de mi abuela',
     profile: defaultProfile,
-    photos: null
+    photos: ["https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4057996.jpg",
+        "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3946332.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgU__1QICoMo8BIEgMnVVIKVpckPzOz1Yn7wwAWfM9vXUthC_D"
+    ]
 };
-var pHijoAdoptivo = {
-    name: 'hijo adoptivo',
-    nickname: null,
-    gender: OTHER,
-    birth: null,
-    death: null,
-    comments: null,
+var pMarinaHermelo = {
+    name: 'Marina Hermelo Moreno',
+    nickname: '',
+    gender: WOMAN,
+    birth: 'Pinar del Rio, Cuba',
+    death: '',
+    comments: 'Hija solo de Obdulio, medio hermana de mi abuela',
     profile: defaultProfile,
-    photos: null
+    photos: ["https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4057996.jpg",
+        "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3946332.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgU__1QICoMo8BIEgMnVVIKVpckPzOz1Yn7wwAWfM9vXUthC_D"
+    ]
 };
+var pMaríaBaño = {
+    name: 'María Baño',
+    nickname: '',
+    gender: WOMAN,
+    birth: 'Pinar del Rio, Cuba',
+    death: '',
+    comments: 'Comentario sobre la vida y obra',
+    profile: defaultProfile,
+    photos: ["https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4057996.jpg",
+        "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3946332.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgU__1QICoMo8BIEgMnVVIKVpckPzOz1Yn7wwAWfM9vXUthC_D"
+    ]
+};
+var pConsepcionFonte = {
+    name: 'Consepción Fonte',
+    nickname: '',
+    gender: MAN,
+    birth: 'Pinar del Rio, Cuba',
+    death: '',
+    comments: 'Comentario sobre la vida y obra',
+    profile: defaultProfile,
+    photos: ["https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4057996.jpg",
+        "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3946332.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgU__1QICoMo8BIEgMnVVIKVpckPzOz1Yn7wwAWfM9vXUthC_D"
+    ]
+};
+var pEngracioFonteBaño = {
+    name: 'Engracio Fonte Baño',
+    nickname: '',
+    gender: MAN,
+    birth: '22/07/1933 Pinar del Rio, Cuba',
+    death: '',
+    comments: 'Comentario sobre la vida y obra',
+    profile: defaultProfile,
+    photos: ["https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4057996.jpg",
+        "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3946332.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgU__1QICoMo8BIEgMnVVIKVpckPzOz1Yn7wwAWfM9vXUthC_D"
+    ]
+};
+
+
 
 //RELATIONSHIP DATA
 /*
