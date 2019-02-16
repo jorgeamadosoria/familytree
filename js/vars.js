@@ -40,7 +40,7 @@ class Graph {
     }
 
     relationshipNode(row, col, people, date, classes) {
-        //  console.log(people);
+          console.log(people);
         return {
             data: {
                 row: row,
@@ -58,6 +58,7 @@ class Graph {
     personNode(row, col, person) {
         person.id = idPerson++;
         //cytoscape node format
+        person.name = "(" + row + "," + col + ") " + person.name;
         return {
             data: {
                 row: row,
@@ -66,7 +67,13 @@ class Graph {
                 person: person,
                 debug: DEBUG ? person.id : ''
             },
-            classes: person.gender
+            classes: person.gender,
+            group: "nodes",
+            removed: false,
+            selected: false,
+            selectable: true,
+            locked: false,
+            grabbable: true
         };
     }
 
@@ -77,6 +84,7 @@ class Graph {
     relId(people) {
         //   console.log('rel id' + JSON.stringify(people));
         //   console.log('rel ' + people.map(ele => ele.id).reduce((acc, person) => acc += '-' + person));
+       
         return 'rel-' + people.map(ele => ele.id).reduce((acc, person) => acc += '-' + person);
     }
 
@@ -191,6 +199,8 @@ class Graph {
         this.cy = cytoscape({
             container: $(this.selector), // container to render in
             elements: this.elements,
+            boxSelectionEnabled: false,
+            autounselectify: true,
             style: [ // the stylesheet for the graph
                 {
                     selector: 'node',
@@ -250,8 +260,7 @@ class Graph {
                     style: {
                         'width': 40,
                         'height': 40,
-                        'label': '',
-                        'background-image': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStN8H_mBNznW0odQqBD6qgjKEUMR7dxlK1SsWYJKh-YfLds5UK',
+                        'label': ''
                     }
                 }, {
                     selector: 'node.more',
@@ -280,7 +289,7 @@ class Graph {
                 col: 5
             }
         });
-        this.cy.autolock(AUTOLOCK);
+    //    this.cy.autolock(AUTOLOCK);
 
         //detail model function
         var modalFn = function (evt) {
@@ -300,7 +309,7 @@ class Graph {
             $("div#person.modal #tree-content").hide();
             //-----------------------------------
             //add data to modal elements
-            $("div#person.modal #name").text(node.data().person.name);
+            $("div#person.modal #name").text(node.renderedPosition().x +" - " +node.renderedPosition().y + " "+ node.data().person.name);
 
             if (node.data().person.treeRef)
                 $("div#person.modal #tree-content").show().find("#tree").attr("href","home.html?tree=" + node.data().person.treeRef);
