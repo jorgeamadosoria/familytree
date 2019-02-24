@@ -100,7 +100,7 @@ var pDignaElenaMatosMatos = {
 };
 
 var pManuelAmadoRamirezFlores = {
-    name: 'Manuel',
+    name: 'Manuel Amado',
     nickname: 'Amadito',
     gender: MAN,
     birth: '',
@@ -130,7 +130,7 @@ var pJorgeLuisSoriaMaceira = {
 };
 
 var pJorgeAmadoSoriaRamirez = {
-    name: '',
+    name: 'Jorge Amado',
     //nickname: '',
     gender: MAN,
     birth: '14 dic 1984',
@@ -169,13 +169,13 @@ var pCaridadMartinAlvarez = {
     profile: defaultProfile
 };
 
-var pPilarMartin = {
+var pPilarMartinAlvarez = {
     name: 'Pilar',
     //nickname: '',
     gender: WOMAN,
     birth: '',
     //death: '',
-    comments: 'Pilar Martin, gemela de Cary',
+    comments: 'Pilar Martin Alvarez, gemela de Cary',
     profile: defaultProfile
 };
 
@@ -188,7 +188,7 @@ var pRaulMartin = {
     comments: 'Raul Martin',
     profile: defaultProfile
 };
-var pCuca = {
+var pCucaAlvarez = {
     name: 'Cuca',
     //nickname: '',
     gender: WOMAN,
@@ -197,7 +197,7 @@ var pCuca = {
     comments: 'Cuca es la mama de Pilar y Cary',
     profile: defaultProfile
 };
-var pLucia = {
+var pLuciaAlvarez = {
     name: 'Lucia',
     //nickname: '',
     gender: WOMAN,
@@ -314,7 +314,7 @@ var pRoxana = {
 };
 
 var pRolandito = {
-    name: '',
+    name: 'Rolando',
     //nickname: '',
     gender: WOMAN,
     birth: '',
@@ -334,7 +334,7 @@ var pWilfredo = {
 };
 
 var pGisela = {
-    name: '',
+    name: 'Gisela',
     //nickname: '',
     gender: WOMAN,
     birth: '',
@@ -343,8 +343,8 @@ var pGisela = {
     profile: defaultProfile
 };
 
-var pGisela = {
-    name: '',
+var pGiselaHija = {
+    name: 'Gisela',
     //nickname: '',
     gender: WOMAN,
     birth: '',
@@ -423,15 +423,6 @@ var pMujerNegra = {
     profile: defaultProfile
 };
 
-var pHijaNegrita = {
-    name: '???',
-    //nickname: '',
-    gender: WOMAN,
-    birth: '',
-    //death: '',
-    comments: 'hija negra',
-    profile: defaultProfile
-};
 
 var pDoraMatosMatos = {
     name: 'Dora',
@@ -453,7 +444,7 @@ var pTelmoMaciasMatos = {
     profile: defaultProfile
 };
 
-var pTelmoMaciasMatos = {
+var pTelmoMaciasMatosHijo = {
     name: 'Telmo',
     nickname: "Telmito",
     gender: MAN,
@@ -474,7 +465,7 @@ var pIlda = {
 };
 
 var pTelmoMacias = {
-    name: '',
+    name: 'Telmo',
     nickname: "Telmitico",
     gender: MAN,
     birth: '',
@@ -551,7 +542,7 @@ var pElsaMatosMatos = {
     profile: defaultProfile
 };
 var pManuelDiaz = {
-    name: 'Manuel',
+    name: 'Manuel Diaz',
     nickname: "Manolito",
     gender: MAN,
     birth: '',
@@ -576,33 +567,6 @@ var pHeysel = {
     birth: '',
     //death: '',
     comments: 'Heysel( ? )',
-    profile: defaultProfile
-};
-var pHeysel2 = {
-    name: 'Heysel',
-    //nickname: '',
-    gender: MAN,
-    birth: '',
-    //death: '',
-    comments: 'Heysel( ? )',
-    profile: defaultProfile
-};
-var phembra1 = {
-    name: 'hembra 1',
-    //nickname: '',
-    gender: WOMAN,
-    birth: '',
-    //death: '',
-    comments: 'hembra 1',
-    profile: defaultProfile
-};
-var phembra2 = {
-    name: 'hembra 2',
-    //nickname: '',
-    gender: WOMAN,
-    birth: '',
-    //death: '',
-    comments: 'hembra 2( ? )',
     profile: defaultProfile
 };
 
@@ -1037,13 +1001,13 @@ var pIsabela = {
     profile: defaultProfile
 };
 
-var pFelixRamirez = {
+var pFelixRamirezMilan = {
     name: 'Felix',
     //nickname: '',
     gender: MAN,
     birth: '',
     //death: '',
-    comments: 'Felix Ramirez',
+    comments: 'Felix Ramirez Milan',
     profile: defaultProfile
 };
 
@@ -1109,16 +1073,16 @@ var mtMiguelEnriqueRamirezMatosGisela = {
 var mtAntoniodeMarcosRamirezMatosGladysAveraztruces = {
     type: MARRIAGE
 };
-var mtAntoniodeMarcosRamirezAveraztrucesElbaAguilar = {
+var mtAntoniodeMarcosRamirezMatosElbaAguilar = {
     type: MARRIAGE
 };
-var mtAntoniodeMarcosRamirezAveraztrucesMujerNegra = {
+var rlAntoniodeMarcosRamirezMatosMujerNegra = {
     type: RELATIONSHIP
 };
 var mtDoraMatosMatosTelmoMaciasMatos = {
     type: MARRIAGE
 };
-var mtTelmoMaciasMatosIlda = {
+var mtTelmoMaciasMatosHijoIlda = {
     type: MARRIAGE
 };
 var mtMarcelinoMatosMatosLuzDivina = {
@@ -1186,201 +1150,611 @@ var graph = new Graph('jasr', "#graph");
 
 
 //people nodes
-graph.add(1, 1, pBlancaMatosGuisado);
-graph.add(1, 10, pMarcelinoMatosRondon);
-graph.add(5, 1, pDignaElenaMatosMatos);
-graph.add(5, 3, pDoraMatosMatos);
-graph.add(5, 5, pMarcelinoMatosMatos);
-graph.add(5, 7, pElsaMatosMatos);
-graph.add(5, 9, pAbelinaMatosMatos);
-graph.add(5, 11, pLuisEnriqueMatosMatos);
+var GEN_SEPARATOR=5;
+var FIRST_GEN_ROW=0;
+var SECOND_GEN_ROW=FIRST_GEN_ROW+GEN_SEPARATOR;
+var THIRD_GEN_ROW=SECOND_GEN_ROW+GEN_SEPARATOR;
+var FOURTH_GEN_ROW=THIRD_GEN_ROW+GEN_SEPARATOR;
+var FIFTH_GEN_ROW=FOURTH_GEN_ROW+GEN_SEPARATOR;
+x = 3;
+i = 2;
+x -= i;
+pBlancaMatosGuisado.row = FIRST_GEN_ROW;
+pBlancaMatosGuisado.col = x += i;
+graph.addPerson(pBlancaMatosGuisado);
+pMarcelinoMatosRondon.row = FIRST_GEN_ROW;
+pMarcelinoMatosRondon.col = x += i;
+graph.addPerson(pMarcelinoMatosRondon);
+pAbelina.row = FIRST_GEN_ROW;
+pAbelina.col = x += i;
+graph.addPerson(pAbelina);
+pCorsina.row = FIRST_GEN_ROW;
+pCorsina.col = x += i;
+graph.addPerson(pCorsina);
+pMiguelRamirezNunez.row = FIRST_GEN_ROW;
+pMiguelRamirezNunez.col = x += i;
+graph.addPerson(pMiguelRamirezNunez);
+pPurificacionFloresProenza.row = FIRST_GEN_ROW;
+pPurificacionFloresProenza.col = x += i;
+graph.addPerson(pPurificacionFloresProenza);
+pFela.row = FIRST_GEN_ROW;
+pFela.col = x += i;
+graph.addPerson(pFela);
+pLuzMatosRondon.row = FIRST_GEN_ROW;
+pLuzMatosRondon.col = x += i;
+graph.addPerson(pLuzMatosRondon);
 
-graph.add(10, 2, pAbelina);
-graph.add(10, 3, pCorsina);
-graph.add(10, 5, pFela);
-graph.add(10, 6, pLuzMatosRondon);
-graph.add(10, 7, pMiguelRamirezNunez);
-graph.add(10, 8, pPurificacionFloresProenza);
+x = 1;
+i = 2;
+x -= i;
+pDoraMatosMatos.row = SECOND_GEN_ROW;
+pDoraMatosMatos.col = x += i;
+graph.addPerson(pDoraMatosMatos);
+pMarcelinoMatosMatos.row = SECOND_GEN_ROW;
+pMarcelinoMatosMatos.col = x += i;
+graph.addPerson(pMarcelinoMatosMatos);
+pLuzDivina.row = SECOND_GEN_ROW;
+pLuzDivina.col = x += i;
+graph.addPerson(pLuzDivina);
+pElsaMatosMatos.row = SECOND_GEN_ROW;
+pElsaMatosMatos.col = x += i;
+graph.addPerson(pElsaMatosMatos);
+pManuelDiaz.row = SECOND_GEN_ROW;
+pManuelDiaz.col = x += i;
+graph.addPerson(pManuelDiaz);
+x += i*1.5;
+pAbelinaMatosMatos.row = SECOND_GEN_ROW;
+pAbelinaMatosMatos.col = x += i;
+graph.addPerson(pAbelinaMatosMatos);
+pRubenAguileraAcuna.row = SECOND_GEN_ROW;
+pRubenAguileraAcuna.col = x += i;
+graph.addPerson(pRubenAguileraAcuna);
+x += i*3.5;
+pLuisEnriqueMatosMatos.row = SECOND_GEN_ROW;
+pLuisEnriqueMatosMatos.col = x += i;
+graph.addPerson(pLuisEnriqueMatosMatos);
+pIrmaMorales.row = SECOND_GEN_ROW;
+pIrmaMorales.col = x += i;
+graph.addPerson(pIrmaMorales);
+x += i*8;
+pDignaElenaMatosMatos.row = SECOND_GEN_ROW;
+pDignaElenaMatosMatos.col = x += i;
+graph.addPerson(pDignaElenaMatosMatos);
+pManuelAmadoRamirezFlores.row = SECOND_GEN_ROW;
+pManuelAmadoRamirezFlores.col = x += i;
+graph.addPerson(pManuelAmadoRamirezFlores);
+pTelmoMaciasMatos.row = SECOND_GEN_ROW;
+pTelmoMaciasMatos.col = x += i;
+graph.addPerson(pTelmoMaciasMatos);
+x += i*4.5;
+pCucaAlvarez.row = SECOND_GEN_ROW;
+pCucaAlvarez.col = x += i;
+graph.addPerson(pCucaAlvarez);
+pLuciaAlvarez.row = SECOND_GEN_ROW;
+pLuciaAlvarez.col = x += i;
+graph.addPerson(pLuciaAlvarez);
+pMiguelRamirezFlores.row = SECOND_GEN_ROW;
+pMiguelRamirezFlores.col = x += i;
+graph.addPerson(pMiguelRamirezFlores);
+pEmiliaGonzalezFruto.row = SECOND_GEN_ROW;
+pEmiliaGonzalezFruto.col = x += i;
+graph.addPerson(pEmiliaGonzalezFruto);
+pVictorRamirezFlores.row = SECOND_GEN_ROW;
+pVictorRamirezFlores.col = x += i;
+graph.addPerson(pVictorRamirezFlores);
+pOfeliaVargas.row = SECOND_GEN_ROW;
+pOfeliaVargas.col = x += i;
+graph.addPerson(pOfeliaVargas);
+x += i*3;
+pCesarRamirezFlores.row = SECOND_GEN_ROW;
+pCesarRamirezFlores.col = x += i;
+graph.addPerson(pCesarRamirezFlores);
+pLidiaMilanReytor.row = SECOND_GEN_ROW;
+pLidiaMilanReytor.col = x += i;
+graph.addPerson(pLidiaMilanReytor);
+pEgidioRamirezFlores.row = SECOND_GEN_ROW;
+pEgidioRamirezFlores.col = x += i;
+graph.addPerson(pEgidioRamirezFlores);
+pNoeliaRamirezFlores.row = SECOND_GEN_ROW;
+pNoeliaRamirezFlores.col = x += i;
+graph.addPerson(pNoeliaRamirezFlores);
+pErnestinaRamirezFlores.row = SECOND_GEN_ROW;
+pErnestinaRamirezFlores.col = x += i;
+graph.addPerson(pErnestinaRamirezFlores);
+pNonamePereda.row = SECOND_GEN_ROW;
+pNonamePereda.col = x += i;
+graph.addPerson(pNonamePereda);
 
-graph.add(20, 2, pManuelAmadoRamirezFlores);
-graph.add(20, 3, pCuca);
-graph.add(20, 4, pLucia);
-graph.add(20, 6, pTelmoMaciasMatos);
-graph.add(20, 8, pLuzDivina);
-graph.add(20, 10, pManuelDiaz);
-graph.add(20, 12, pRubenAguileraAcuna);
-graph.add(20, 14, pIrmaMorales);
-graph.add(20, 15, pManuelAmadoRamirezFlores);
-graph.add(20, 16, pErnestinaRamirezFlores);
-graph.add(20, 17, pNonamePereda);
-graph.add(20, 18, pMiguelRamirezFlores);
-graph.add(20, 19, pEmiliaGonzalezFruto);
-graph.add(20, 20, pVictorRamirezFlores);
-graph.add(20, 21, pOfeliaVargas);
-graph.add(20, 22, pCesarRamirezFlores);
-graph.add(20, 23, pLidiaMilanReytor);
-graph.add(20, 24, pEgidioRamirezFlores);
-graph.add(20, 25, pNoeliaRamirezFlores);
+x = 0;
+i = 2;
+x -= i;
+pTelmoMaciasMatosHijo.row = THIRD_GEN_ROW;
+pTelmoMaciasMatosHijo.col = x += i;
+graph.addPerson(pTelmoMaciasMatosHijo);
+pIlda.row = THIRD_GEN_ROW;
+pIlda.col = x += i;
+graph.addPerson(pIlda);
+pBlancaMariaMatos.row = THIRD_GEN_ROW;
+pBlancaMariaMatos.col = x += i;
+graph.addPerson(pBlancaMariaMatos);
+pSamuel.row = THIRD_GEN_ROW;
+pSamuel.col = x += i;
+graph.addPerson(pSamuel);
+pElsaDiazMatos.row = THIRD_GEN_ROW;
+pElsaDiazMatos.col = x += i;
+graph.addPerson(pElsaDiazMatos);
+pHeysel.row = THIRD_GEN_ROW;
+pHeysel.col = x += i;
+graph.addPerson(pHeysel);
+pKeniaAguileraMatos.row = THIRD_GEN_ROW;
+pKeniaAguileraMatos.col = x += i;
+graph.addPerson(pKeniaAguileraMatos);
+pGerardoPelaez.row = THIRD_GEN_ROW;
+pGerardoPelaez.col = x += i;
+graph.addPerson(pGerardoPelaez);
+x += i*1;
+pCarlosNunez.row = THIRD_GEN_ROW;
+pCarlosNunez.col = x += i;
+graph.addPerson(pCarlosNunez);
+pRubenAguileraMatos.row = THIRD_GEN_ROW;
+pRubenAguileraMatos.col = x += i;
+graph.addPerson(pRubenAguileraMatos);
+pSandra.row = THIRD_GEN_ROW;
+pSandra.col = x += i;
+graph.addPerson(pSandra);
+pIrmaMatosMorales.row = THIRD_GEN_ROW;
+pIrmaMatosMorales.col = x += i;
+graph.addPerson(pIrmaMatosMorales);
+pSoniaMatosMorales.row = THIRD_GEN_ROW;
+pSoniaMatosMorales.col = x += i;
+graph.addPerson(pSoniaMatosMorales);
+pLuisEnriqueMatosMorales.row = THIRD_GEN_ROW;
+pLuisEnriqueMatosMorales.col = x += i;
+graph.addPerson(pLuisEnriqueMatosMorales);
+x += i*0.5;
+pMiguelEnriqueRamirezMatos.row = THIRD_GEN_ROW;
+pMiguelEnriqueRamirezMatos.col = x += i;
+graph.addPerson(pMiguelEnriqueRamirezMatos);
+pAnaPerezFonseca.row = THIRD_GEN_ROW;
+pAnaPerezFonseca.col = x += i;
+graph.addPerson(pAnaPerezFonseca);
+x += i*3;
+pGisela.row = THIRD_GEN_ROW;
+pGisela.col = x += i;
+graph.addPerson(pGisela);
+x += i*0.5;
+pBlancaDeLaPurificacionRamirezMatos.row = THIRD_GEN_ROW;
+pBlancaDeLaPurificacionRamirezMatos.col = x += i;
+graph.addPerson(pBlancaDeLaPurificacionRamirezMatos);
+pJorgeLuisSoriaMaceira.row = THIRD_GEN_ROW;
+pJorgeLuisSoriaMaceira.col = x += i;
+graph.addPerson(pJorgeLuisSoriaMaceira);
+pAntoniodeMarcosRamirezMatos.row = THIRD_GEN_ROW;
+pAntoniodeMarcosRamirezMatos.col = x += i;
+graph.addPerson(pAntoniodeMarcosRamirezMatos);
+pGladysAveraztruces.row = THIRD_GEN_ROW;
+pGladysAveraztruces.col = x += i;
+graph.addPerson(pGladysAveraztruces);
+x += i*0.5;
+pElbaAguilar.row = THIRD_GEN_ROW;
+pElbaAguilar.col = x += i;
+graph.addPerson(pElbaAguilar);
+pMujerNegra.row = THIRD_GEN_ROW;
+pMujerNegra.col = x += i;
+graph.addPerson(pMujerNegra);
+pAmadoMarcelinoRamirezMatos.row = THIRD_GEN_ROW;
+pAmadoMarcelinoRamirezMatos.col = x += i;
+graph.addPerson(pAmadoMarcelinoRamirezMatos);
+pCaridadMartinAlvarez.row = THIRD_GEN_ROW;
+pCaridadMartinAlvarez.col = x += i;
+graph.addPerson(pCaridadMartinAlvarez);
+pPilarMartinAlvarez.row = THIRD_GEN_ROW;
+pPilarMartinAlvarez.col = x += i;
+graph.addPerson(pPilarMartinAlvarez);
+pMauricioRamirezGonzalez.row = THIRD_GEN_ROW;
+pMauricioRamirezGonzalez.col = x += i;
+graph.addPerson(pMauricioRamirezGonzalez);
+pXiomaraRamirezGonzalez.row = THIRD_GEN_ROW;
+pXiomaraRamirezGonzalez.col = x += i;
+graph.addPerson(pXiomaraRamirezGonzalez);
+pMiriamRamirezGonzalez.row = THIRD_GEN_ROW;
+pMiriamRamirezGonzalez.col = x += i;
+graph.addPerson(pMiriamRamirezGonzalez);
+pPurificacionRamirezVargas.row = THIRD_GEN_ROW;
+pPurificacionRamirezVargas.col = x += i;
+graph.addPerson(pPurificacionRamirezVargas);
+pSalomeRodriguezPino.row = THIRD_GEN_ROW;
+pSalomeRodriguezPino.col = x += i;
+graph.addPerson(pSalomeRodriguezPino);
+pRaulMartin.row = THIRD_GEN_ROW;
+pRaulMartin.col = x += i;
+graph.addPerson(pRaulMartin);
+pCesarRamirezMilan.row = THIRD_GEN_ROW;
+pCesarRamirezMilan.col = x += i;
+graph.addPerson(pCesarRamirezMilan);
+pEstrellaRamirezMilan.row = THIRD_GEN_ROW;
+pEstrellaRamirezMilan.col = x += i;
+graph.addPerson(pEstrellaRamirezMilan);
+pObduliaRamirezMilan.row = THIRD_GEN_ROW;
+pObduliaRamirezMilan.col = x += i;
+graph.addPerson(pObduliaRamirezMilan);
+pTomasFerrandiSayasBazan.row = THIRD_GEN_ROW;
+pTomasFerrandiSayasBazan.col = x += i;
+graph.addPerson(pTomasFerrandiSayasBazan);
+pFelixRamirezMilan.row = THIRD_GEN_ROW;
+pFelixRamirezMilan.col = x += i;
+graph.addPerson(pFelixRamirezMilan);
 
-graph.add(30, 1, pBlancaDeLaPurificacionRamirezMatos);
-graph.add(30, 2, pJorgeLuisSoriaMaceira);
-graph.add(30, 3, pAmadoMarcelinoRamirezMatos);
-graph.add(30, 4, pCaridadMartinAlvarez);
-graph.add(30, 5, pPilarMartin);
-graph.add(30, 6, pRaulMartin);
-graph.add(30, 7, pMiguelEnriqueRamirezMatos);
-graph.add(30, 8, pAnaPerezFonseca);
-graph.add(30, 9, pGisela);
-graph.add(30, 0, pAntoniodeMarcosRamirezMatos);
-graph.add(30, 11, pGladysAveraztruces);
-graph.add(30, 12, pTelmoMaciasMatos);
-graph.add(30, 13, pIlda);
-graph.add(30, 14, pBlancaMariaMatos);
-graph.add(30, 15, pSamuel);
-graph.add(30, 16, pElsaDiazMatos);
-graph.add(30, 17, pHeysel);
-graph.add(30, 18, pKeniaAguileraMatos);
-graph.add(30, 19, pGerardoPelaez);
-graph.add(30, 20, pCarlosNunez);
-graph.add(30, 21, pRubenAguileraMatos);
-graph.add(30, 22, pSandra);
-graph.add(30, 23, pIrmaMatosMorales);
-graph.add(30, 24, pSoniaMatosMorales);
-graph.add(30, 25, pLuisEnriqueMatosMorales);
-graph.add(30, 26, pMauricioRamirezGonzalez);
-graph.add(30, 27, pXiomaraRamirezGonzalez);
-graph.add(30, 28, pMiriamRamirezGonzalez);
-graph.add(30, 29, pPurificacionRamirezVargas);
-graph.add(30, 30, pSalomeRodriguezPino);
-graph.add(30, 31, pCesarRamirezFlores);
-graph.add(30, 32, pEstrellaRamirezMilan);
-graph.add(30, 33, pObduliaRamirezMilan);
-graph.add(30, 34, pFelixRamirez);
+x = 1;
+i = 2;
+x -= i;
+pTelmoMacias.row = FOURTH_GEN_ROW;
+pTelmoMacias.col = x += i;
+graph.addPerson(pTelmoMacias);
+x += i*0.5;
+pAntonio.row = FOURTH_GEN_ROW;
+pAntonio.col = x += i;
+graph.addPerson(pAntonio);
+pJacqueline.row = FOURTH_GEN_ROW;
+pJacqueline.col = x += i;
+graph.addPerson(pJacqueline);
+x += i*2.5;
+pAlinetPelaezAguilera.row = FOURTH_GEN_ROW;
+pAlinetPelaezAguilera.col = x += i;
+graph.addPerson(pAlinetPelaezAguilera);
+pAdrian.row = FOURTH_GEN_ROW;
+pAdrian.col = x += i;
+graph.addPerson(pAdrian);
+pCarlosNunezAguilera.row = FOURTH_GEN_ROW;
+pCarlosNunezAguilera.col = x += i;
+graph.addPerson(pCarlosNunezAguilera);
+x += i*0.5;
+pRubenAguilera.row = FOURTH_GEN_ROW;
+pRubenAguilera.col = x += i;
+graph.addPerson(pRubenAguilera);
+pHijaRubenNoname.row = FOURTH_GEN_ROW;
+pHijaRubenNoname.col = x += i;
+graph.addPerson(pHijaRubenNoname);
+x += i*3;
+pYanitsiaRamirezPerez.row = FOURTH_GEN_ROW;
+pYanitsiaRamirezPerez.col = x += i;
+graph.addPerson(pYanitsiaRamirezPerez);
+pHilderTorres.row = FOURTH_GEN_ROW;
+pHilderTorres.col = x += i;
+graph.addPerson(pHilderTorres);
+pYaritskeRamirezPerez.row = FOURTH_GEN_ROW;
+pYaritskeRamirezPerez.col = x += i;
+graph.addPerson(pYaritskeRamirezPerez);
+pOrlando.row = FOURTH_GEN_ROW;
+pOrlando.col = x += i;
+graph.addPerson(pOrlando);
+pWilfredo.row = FOURTH_GEN_ROW;
+pWilfredo.col = x += i;
+graph.addPerson(pWilfredo);
+pGiselaHija.row = FOURTH_GEN_ROW;
+pGiselaHija.col = x += i;
+graph.addPerson(pGiselaHija);
+x += i*1;
+pJorgeAmadoSoriaRamirez.row = FOURTH_GEN_ROW;
+pJorgeAmadoSoriaRamirez.col = x += i;
+graph.addPerson(pJorgeAmadoSoriaRamirez);
+pJorgeLuisSoriaRamirez.row = FOURTH_GEN_ROW;
+pJorgeLuisSoriaRamirez.col = x += i;
+graph.addPerson(pJorgeLuisSoriaRamirez);
+pAndyMarcosRamirezAveraztruces.row = FOURTH_GEN_ROW;
+pAndyMarcosRamirezAveraztruces.col = x += i;
+graph.addPerson(pAndyMarcosRamirezAveraztruces);
+pAntoniodeMarcosRamirezAveraztruces.row = FOURTH_GEN_ROW;
+pAntoniodeMarcosRamirezAveraztruces.col = x += i;
+graph.addPerson(pAntoniodeMarcosRamirezAveraztruces);
+pMonicaMariaRamirez.row = FOURTH_GEN_ROW;
+pMonicaMariaRamirez.col = x += i;
+graph.addPerson(pMonicaMariaRamirez);
+x+=3;
+pCarlosEnriqueRamirezMartin.row = FOURTH_GEN_ROW;
+pCarlosEnriqueRamirezMartin.col = x += i;
+graph.addPerson(pCarlosEnriqueRamirezMartin);
+pRaulRamirezMartin.row = FOURTH_GEN_ROW;
+pRaulRamirezMartin.col = x += i;
+graph.addPerson(pRaulRamirezMartin);
+x+=8;
+pImirsiRodriguezRamirez.row = FOURTH_GEN_ROW;
+pImirsiRodriguezRamirez.col = x += i;
+graph.addPerson(pImirsiRodriguezRamirez);
+pRonaldRodriguezRamirez.row = FOURTH_GEN_ROW;
+pRonaldRodriguezRamirez.col = x += i;
+graph.addPerson(pRonaldRodriguezRamirez);
+x+=6;
+pSandraFerrandiRamirez.row = FOURTH_GEN_ROW;
+pSandraFerrandiRamirez.col = x += i;
+graph.addPerson(pSandraFerrandiRamirez);
+pDaniaFerrandiRamirez.row = FOURTH_GEN_ROW;
+pDaniaFerrandiRamirez.col = x += i;
+graph.addPerson(pDaniaFerrandiRamirez);
 
-graph.add(40, 1, pJorgeAmadoSoriaRamirez);
-graph.add(40, 2, pJorgeLuisSoriaRamirez);
-graph.add(40, 3, pCarlosEnriqueRamirezMartin);
-graph.add(40, 4, pRaulRamirezMartin);
-graph.add(40, 5, pYanitsiaRamirezPerez);
-graph.add(40, 6, pHilderTorres);
-graph.add(40, 7, pYaritskeRamirezPerez);
-graph.add(40, 8, pOrlando);
-graph.add(40, 9, pGisela);
-graph.add(40, 10, pWilfredo);
-graph.add(40, 11, pAndyMarcosRamirezAveraztruces);
-graph.add(40, 12, pAntoniodeMarcosRamirezAveraztruces);
-graph.add(40, 13, pElbaAguilar);
-graph.add(40, 14, pMonicaMariaRamirez);
-graph.add(40, 15, pMujerNegra);
-graph.add(40, 16, pHijaNegrita);
-graph.add(40, 17, pTelmoMacias);
-graph.add(40, 18, pAntonio);
-graph.add(40, 19, pJacqueline);
-graph.add(40, 20, pHeysel2);
-graph.add(40, 21, phembra1);
-graph.add(40, 22, phembra2);
-graph.add(40, 23, pAlinetPelaezAguilera);
-graph.add(40, 24, pAdrian);
-graph.add(40, 25, pCarlosNunezAguilera);
-graph.add(40, 26, pRubenAguilera);
-graph.add(40, 27, pImirsiRodriguezRamirez);
-graph.add(40, 28, pRonaldRodriguezRamirez);
-graph.add(40, 29, pTomasFerrandiSayasBazan);
-graph.add(40, 30, pSandraFerrandiRamirez);
-graph.add(40, 31, pDaniaFerrandiRamirez);
-graph.add(40, 32, pHijaRubenNoname);
+x = 1;
+i = 2;
+x -= i;
+x+=29;
+pJavierAlejandroTorresRamirez.row = FIFTH_GEN_ROW;
+pJavierAlejandroTorresRamirez.col = x += i;
+graph.addPerson(pJavierAlejandroTorresRamirez);
+pMiguelAlejandroTorresRamirez.row = FIFTH_GEN_ROW;
+pMiguelAlejandroTorresRamirez.col = x += i;
+graph.addPerson(pMiguelAlejandroTorresRamirez);
+pRoxana.row = FIFTH_GEN_ROW;
+pRoxana.col = x += i;
+graph.addPerson(pRoxana);
+pRolandito.row = FIFTH_GEN_ROW;
+pRolandito.col = x += i;
+graph.addPerson(pRolandito);
+pKarlaNunez.row = FIFTH_GEN_ROW;
+pKarlaNunez.col = x += i;
+graph.addPerson(pKarlaNunez);
+x+=41;
+pIsabela.row = FIFTH_GEN_ROW;
+pIsabela.col = x += i;
+graph.addPerson(pIsabela);
 
-graph.add(50, 1, pJavierAlejandroTorresRamirez);
-graph.add(50, 2, pMiguelAlejandroTorresRamirez);
-graph.add(50, 3, pRoxana);
-graph.add(50, 4, pRolandito);
-graph.add(50, 5, pKarlaNunez);
-graph.add(50, 6, pIsabela);
+
 
 //relationship nodes
-graph.add(1, 5, mtBlancaMatosGuisadoMarcelinoMatosRondon,
-    [pBlancaMatosGuisado, pMarcelinoMatosRondon, pDignaElenaMatosMatos,
-        pDoraMatosMatos, pMarcelinoMatosMatos, pElsaMatosMatos,
-        pAbelinaMatosMatos, pLuisEnriqueMatosMatos
+graph.rel(pDaniaFerrandiRamirez, pIsabela);
+graph.rel(pCucaAlvarez, pPilarMartinAlvarez,[[pCucaAlvarez.row+3,pCucaAlvarez.col],[pPilarMartinAlvarez.row-2,pPilarMartinAlvarez.col]]);
+graph.rel(pCucaAlvarez, pCaridadMartinAlvarez,[[pCucaAlvarez.row+3,pCucaAlvarez.col],[pCaridadMartinAlvarez.row-2,pCaridadMartinAlvarez.col]]);
+graph.add(pBlancaMatosGuisado.row, pMarcelinoMatosRondon.col - 1,
+    mtBlancaMatosGuisadoMarcelinoMatosRondon,
+    [pBlancaMatosGuisado, pMarcelinoMatosRondon,
+        [pDignaElenaMatosMatos,
+            [pBlancaMatosGuisado.row + 3, pMarcelinoMatosRondon.col - 1],
+            [pDignaElenaMatosMatos.row - 2, pDignaElenaMatosMatos.col]
+        ],
+        [pDoraMatosMatos,
+            [pBlancaMatosGuisado.row + 3, pMarcelinoMatosRondon.col - 1],
+            [pDoraMatosMatos.row - 2, pDoraMatosMatos.col]
+        ],
+        [pMarcelinoMatosMatos,
+            [pBlancaMatosGuisado.row + 3, pMarcelinoMatosRondon.col - 1],
+            [pMarcelinoMatosMatos.row - 2, pMarcelinoMatosMatos.col]
+        ],
+        [pElsaMatosMatos,
+            [pBlancaMatosGuisado.row + 3, pMarcelinoMatosRondon.col - 1],
+            [pElsaMatosMatos.row - 2, pElsaMatosMatos.col]
+        ],
+        [pAbelinaMatosMatos,
+            [pBlancaMatosGuisado.row + 3, pMarcelinoMatosRondon.col - 1],
+            [pAbelinaMatosMatos.row - 2, pAbelinaMatosMatos.col]
+        ],
+        [pLuisEnriqueMatosMatos,
+            [pBlancaMatosGuisado.row + 3, pMarcelinoMatosRondon.col - 1],
+            [pLuisEnriqueMatosMatos.row - 2, pLuisEnriqueMatosMatos.col]
+        ]
+    ]
+);
+graph.add(pMiguelRamirezNunez, pPurificacionFloresProenza.col - 1,
+    mtMiguelRamirezNunezPurificacionFloresProenza,
+    [pMiguelRamirezNunez, pPurificacionFloresProenza, pManuelAmadoRamirezFlores, pErnestinaRamirezFlores, pMiguelRamirezFlores, pVictorRamirezFlores, pCesarRamirezFlores, pEgidioRamirezFlores, pNoeliaRamirezFlores]);
+graph.add(pLuisEnriqueMatosMatos.row, pIrmaMorales.col - 1,
+    mtLuisEnriqueMatosMatosIrmaMorales, 
+    [pLuisEnriqueMatosMatos, pIrmaMorales, 
+        [pIrmaMatosMorales,
+            [pLuisEnriqueMatosMatos.row+3,pIrmaMorales.col - 1],
+            [pIrmaMatosMorales.row - 2,pIrmaMatosMorales.col]
+        ], 
+        [pSoniaMatosMorales,
+            [pLuisEnriqueMatosMatos.row+3,pIrmaMorales.col - 1],
+            [pSoniaMatosMorales.row - 2,pSoniaMatosMorales.col]
+        ], 
+        [pLuisEnriqueMatosMorales,
+            [pLuisEnriqueMatosMatos.row+3,pIrmaMorales.col - 1],
+            [pLuisEnriqueMatosMorales.row - 2,pLuisEnriqueMatosMorales.col]
+        ]
+    ]
+);
+graph.add(pDignaElenaMatosMatos.row, pManuelAmadoRamirezFlores.col - 1,
+    mtDignaElenaMatosMatosManuelAmadoRamirezFlores, 
+    [pDignaElenaMatosMatos, pManuelAmadoRamirezFlores, 
+        [pBlancaDeLaPurificacionRamirezMatos,
+            [pDignaElenaMatosMatos.row+3,pManuelAmadoRamirezFlores.col-1],
+            [pBlancaDeLaPurificacionRamirezMatos.row-2,pBlancaDeLaPurificacionRamirezMatos.col]
+        ],
+        [pAmadoMarcelinoRamirezMatos,
+            [pDignaElenaMatosMatos.row+3,pManuelAmadoRamirezFlores.col-1],
+            [pAmadoMarcelinoRamirezMatos.row-2,pAmadoMarcelinoRamirezMatos.col]
+        ],
+        [pMiguelEnriqueRamirezMatos,
+            [pDignaElenaMatosMatos.row+3,pManuelAmadoRamirezFlores.col-1],
+            [pMiguelEnriqueRamirezMatos.row-2,pMiguelEnriqueRamirezMatos.col]
+        ],
+        [pAntoniodeMarcosRamirezMatos,
+            [pDignaElenaMatosMatos.row+3,pManuelAmadoRamirezFlores.col-1],
+            [pAntoniodeMarcosRamirezMatos.row-2,pAntoniodeMarcosRamirezMatos.col]
+        ]
+    ]
+);
+graph.add(pDoraMatosMatos, pTelmoMaciasMatos.col - 1, mtDoraMatosMatosTelmoMaciasMatos,
+    [pDoraMatosMatos, pTelmoMaciasMatos, pTelmoMaciasMatosHijo]
+);
+graph.add(pMarcelinoMatosMatos.row, pLuzDivina.col - 1,
+    mtMarcelinoMatosMatosLuzDivina,
+    [pMarcelinoMatosMatos, pLuzDivina, pBlancaMariaMatos]
+);
+graph.add(pElsaMatosMatos.row, pManuelDiaz.col - 1, mtElsaMatosMatosManuelDiaz,
+    [pElsaMatosMatos, pManuelDiaz, pElsaDiazMatos]
+);
+graph.add(pAbelinaMatosMatos.row, pRubenAguileraAcuna.col - 1,
+    mtAbelinaMatosMatosRubenAguileraAcuna,
+    [pAbelinaMatosMatos, pRubenAguileraAcuna,
+        [pKeniaAguileraMatos, 
+            [pAbelinaMatosMatos.row + 3, pRubenAguileraAcuna.col - 1], 
+            [pKeniaAguileraMatos.row - 2, pKeniaAguileraMatos.col]
+        ],
+        [pRubenAguileraMatos, 
+            [pAbelinaMatosMatos.row + 3, pRubenAguileraAcuna.col - 1],
+            [pRubenAguileraMatos.row - 2, pRubenAguileraMatos.col]
+        ]
+    ]
+);
+graph.add(pErnestinaRamirezFlores.row, pNonamePereda.col - 1,
+    mtErnestinaRamirezFloresNonamePereda,
+    [
+        pErnestinaRamirezFlores,
+        pNonamePereda
+    ]
+);
+graph.add(pMiguelRamirezFlores.row, pEmiliaGonzalezFruto.col - 1,
+    mtMiguelRamirezFloresEmiliaGonzalezFruto,
+    [pMiguelRamirezFlores, pEmiliaGonzalezFruto, 
+        [pMauricioRamirezGonzalez,[pMiguelRamirezFlores.row+3,pEmiliaGonzalezFruto.col-1],[pMauricioRamirezGonzalez.row-2,pMauricioRamirezGonzalez.col]],
+        [pXiomaraRamirezGonzalez,[pMiguelRamirezFlores.row+3,pEmiliaGonzalezFruto.col-1],[pXiomaraRamirezGonzalez.row-2,pXiomaraRamirezGonzalez.col]], 
+        [pMiriamRamirezGonzalez,[pMiguelRamirezFlores.row+3,pEmiliaGonzalezFruto.col-1],[pMiriamRamirezGonzalez.row-2,pMiriamRamirezGonzalez.col]]
+    ]
+);
+graph.add(pVictorRamirezFlores.row, pOfeliaVargas.col - 1,
+    mtVictorRamirezFloresOfeliaVargas,
+    [pVictorRamirezFlores, pOfeliaVargas, pPurificacionRamirezVargas]
+);
+graph.add(pCesarRamirezFlores.row, pLidiaMilanReytor.col - 1,
+    mtCesarRamirezFloresLidiaMilanReytor,
+    [pCesarRamirezFlores,pLidiaMilanReytor,
+        [pCesarRamirezMilan,[pCesarRamirezFlores.row+3,pLidiaMilanReytor.col-1],
+        [pCesarRamirezMilan.row-2,pCesarRamirezMilan.col]],
+        [pEstrellaRamirezMilan,[pCesarRamirezFlores.row+3,pLidiaMilanReytor.col-1],
+        [pEstrellaRamirezMilan.row-2,pEstrellaRamirezMilan.col]],
+        [pObduliaRamirezMilan,[pCesarRamirezFlores.row+3,pLidiaMilanReytor.col-1],
+        [pObduliaRamirezMilan.row-2,pObduliaRamirezMilan.col]],
+        [pFelixRamirezMilan,[pCesarRamirezFlores.row+3,pLidiaMilanReytor.col-1],[pFelixRamirezMilan.row-2,pFelixRamirezMilan.col]]
+    ]
+);
+graph.add(pTelmoMaciasMatosHijo.row, pIlda.col - 1,
+    mtTelmoMaciasMatosHijoIlda,
+    [pTelmoMaciasMatosHijo, pIlda, pTelmoMacias]
+);
+graph.add(pBlancaMariaMatos.row, pSamuel.col - 1,
+    mtBlancaMariaMatosSamuel,
+    [pBlancaMariaMatos, pSamuel, 
+        [pAntonio,[pBlancaMariaMatos.row+3,pSamuel.col-1],[pAntonio.row-2,pAntonio.col]], 
+        [pJacqueline,[pBlancaMariaMatos.row+3,pSamuel.col-1],[pJacqueline.row-2,pJacqueline.col]]
+    ]
+);
+graph.add(pBlancaDeLaPurificacionRamirezMatos.row, pJorgeLuisSoriaMaceira.col - 1,
+    mtBlancaDeLaPurificacionRamirezMatosJorgeLuisSoriaMaceira,
+    [
+        pBlancaDeLaPurificacionRamirezMatos,
+        pJorgeLuisSoriaMaceira,
+        [pJorgeAmadoSoriaRamirez,[pBlancaDeLaPurificacionRamirezMatos.row+3,pJorgeLuisSoriaMaceira.col-1],[pJorgeAmadoSoriaRamirez.row-2,pJorgeAmadoSoriaRamirez.col]],
+        [pJorgeLuisSoriaRamirez,[pBlancaDeLaPurificacionRamirezMatos.row+3,pJorgeLuisSoriaMaceira.col-1],[pJorgeLuisSoriaRamirez.row-2,pJorgeLuisSoriaRamirez.col]]
+    ]
+);
+graph.add(pAmadoMarcelinoRamirezMatos.row, pCaridadMartinAlvarez.col - 1,
+    mtAmadoMarcelinoRamirezMatosCaridadMartinAlvarez,
+    [pAmadoMarcelinoRamirezMatos, pCaridadMartinAlvarez, 
+        [pCarlosEnriqueRamirezMartin,[pAmadoMarcelinoRamirezMatos.row+3,pCaridadMartinAlvarez.col-1],[pCarlosEnriqueRamirezMartin.row-2,pCarlosEnriqueRamirezMartin.col]],
+        [pRaulRamirezMartin,[pAmadoMarcelinoRamirezMatos.row+3,pCaridadMartinAlvarez.col-1],[pRaulRamirezMartin.row-2,pRaulRamirezMartin.col]]
+    ]
+);
+graph.add(pElsaDiazMatos.row, pHeysel.col - 1, mtElsaDiazMatosHeysel,
+    [pElsaDiazMatos, pHeysel]
+);
+graph.add(pMiguelEnriqueRamirezMatos.row - 1, pGisela.col - 1,
+    mtMiguelEnriqueRamirezMatosGisela,
+    [
+        [pMiguelEnriqueRamirezMatos,
+            [
+                pMiguelEnriqueRamirezMatos.row - 1,
+                pMiguelEnriqueRamirezMatos.col
+            ]
+        ],
+        [pGisela, [pGisela.row - 1, pGisela.col]],
+        [pGiselaHija,
+            [
+                pMiguelEnriqueRamirezMatos.row - 1,
+                pGisela.col - 1
+            ],
+            [
+                pGiselaHija.row - 2,
+                pGiselaHija.col
+            ]
+        ]
+    ]
+);
+graph.add(pMiguelEnriqueRamirezMatos.row, pAnaPerezFonseca.col - 1,
+    mtMiguelEnriqueRamirezMatosAnaPerezFonseca,
+    [pMiguelEnriqueRamirezMatos, pAnaPerezFonseca, 
+        [pYaritskeRamirezPerez,[pMiguelEnriqueRamirezMatos.row+3,pAnaPerezFonseca.col-1],[pYaritskeRamirezPerez.row-2,pYaritskeRamirezPerez.col]], 
+        [pYanitsiaRamirezPerez,[pMiguelEnriqueRamirezMatos.row+3,pAnaPerezFonseca.col-1],[pYanitsiaRamirezPerez.row-2,pYanitsiaRamirezPerez.col]]
+    ]
+);
+graph.add(pAntoniodeMarcosRamirezMatos.row, pGladysAveraztruces.col - 1,
+    mtAntoniodeMarcosRamirezMatosGladysAveraztruces,
+    [pAntoniodeMarcosRamirezMatos, pGladysAveraztruces, 
+        [pAndyMarcosRamirezAveraztruces,[pAntoniodeMarcosRamirezMatos.row+3,pGladysAveraztruces.col-1],[pAndyMarcosRamirezAveraztruces.row-2,pAndyMarcosRamirezAveraztruces.col]],
+        [pAntoniodeMarcosRamirezAveraztruces,[pAntoniodeMarcosRamirezMatos.row+3,pGladysAveraztruces.col-1],[pAntoniodeMarcosRamirezAveraztruces.row-2,pAntoniodeMarcosRamirezAveraztruces.col]]
+    ]
+);
+graph.add(pAntoniodeMarcosRamirezMatos.row - 1, pMujerNegra.col - 1,
+    rlAntoniodeMarcosRamirezMatosMujerNegra,
+    [
+        [pAntoniodeMarcosRamirezMatos,
+            [pAntoniodeMarcosRamirezMatos.row - 1, pAntoniodeMarcosRamirezMatos.col]
+        ],
+        [pMujerNegra, [pMujerNegra.row - 1, pMujerNegra.col]]
+    ]
+);
+graph.add(pAntoniodeMarcosRamirezMatos.row - 0.75, pElbaAguilar.col - 1,
+    mtAntoniodeMarcosRamirezMatosElbaAguilar,
+    [
+        [pAntoniodeMarcosRamirezMatos, [pAntoniodeMarcosRamirezMatos.row - 0.75, pAntoniodeMarcosRamirezMatos.col]],
+        [pElbaAguilar, [pElbaAguilar.row - 0.75, pElbaAguilar.col]], pMonicaMariaRamirez
     ]);
-
-graph.add(5, 10, mtDignaElenaMatosMatosManuelAmadoRamirezFlores, [pBlancaDeLaPurificacionRamirezMatos, pAmadoMarcelinoRamirezMatos, pMiguelEnriqueRamirezMatos, pAntoniodeMarcosRamirezMatos]);
-graph.add(1, 10, mtBlancaDeLaPurificacionRamirezMatosJorgeLuisSoriaMaceira, [pBlancaDeLaPurificacionRamirezMatos, pJorgeLuisSoriaMaceira, pJorgeAmadoSoriaRamirez, pJorgeLuisSoriaRamirez]);
-graph.add(1, 12, mtAmadoMarcelinoRamirezMatosCaridadMartinAlvarez, [pAmadoMarcelinoRamirezMatos, pCaridadMartinAlvarez, pCarlosEnriqueRamirezMartin, pRaulRamirezMartin]);
-graph.add(1, 14, mtMiguelEnriqueRamirezMatosAnaPerezFonseca, [pMiguelEnriqueRamirezMatos, pAnaPerezFonseca, pYaritskeRamirezPerez, pYanitsiaRamirezPerez]);
-graph.add(1, 16, mtYanitsiaRamirezPerezHilderTorres, [pYanitsiaRamirezPerez, pHilderTorres, pJavierAlejandroTorresRamirez, pMiguelAlejandroTorresRamirez]);
-graph.add(1, 18, mtYaritskeRamirezPerezOrlando, [pYaritskeRamirezPerez, pOrlando, pRoxana, pRolandito]);
-graph.add(1, 20, mtYaritskeRamirezPerezWilfredo, [pYaritskeRamirezPerez, pWilfredo]);
-graph.add(1, 22, mtMiguelEnriqueRamirezMatosGisela, [pMiguelEnriqueRamirezMatos, pGisela]);
-graph.add(1, 24, mtAntoniodeMarcosRamirezMatosGladysAveraztruces, [pAntoniodeMarcosRamirezMatos, pGladysAveraztruces, pAndyMarcosRamirezAveraztruces, pAntoniodeMarcosRamirezAveraztruces]);
-graph.add(1, 26, mtAntoniodeMarcosRamirezAveraztrucesElbaAguilar, [pAntoniodeMarcosRamirezAveraztruces, pElbaAguilar, pMonicaMariaRamirez]);
-graph.add(1, 28, mtAntoniodeMarcosRamirezAveraztrucesMujerNegra, [pAntoniodeMarcosRamirezAveraztruces, pMujerNegra, pHijaNegrita]);
-graph.add(1, 30, mtDoraMatosMatosTelmoMaciasMatos, [pDoraMatosMatos, pTelmoMaciasMatos, pTelmoMaciasMatos]);
-graph.add(1, 32, mtTelmoMaciasMatosIlda, [pTelmoMaciasMatos, pIlda, pTelmoMacias]);
-graph.add(1, 34, mtMarcelinoMatosMatosLuzDivina, [pMarcelinoMatosMatos, pLuzDivina, pBlancaMariaMatos]);
-graph.add(1, 36, mtBlancaMariaMatosSamuel, [pBlancaMariaMatos, pSamuel, pAntonio, pJacqueline]);
-graph.add(1, 38, mtElsaMatosMatosManuelDiaz, [pElsaMatosMatos, pManuelDiaz, pElsaDiazMatos]);
-graph.add(1, 40, mtElsaDiazMatosHeysel, [pElsaDiazMatos, pHeysel, pHeysel2, phembra1, phembra2]);
-graph.add(1, 42, mtAbelinaMatosMatosRubenAguileraAcuna, [pAbelinaMatosMatos, pRubenAguileraAcuna, pKeniaAguileraMatos, pRubenAguileraMatos]);
-graph.add(1, 44, mtKeniaAguileraMatosGerardoPelaez, [pKeniaAguileraMatos, pGerardoPelaez, pAlinetPelaezAguilera]);
-graph.add(1, 46, mtKeniaAguileraMatosCarlosNunez, [pKeniaAguileraMatos, pCarlosNunez, pCarlosNunezAguilera]);
-graph.add(1, 48, mtRubenAguileraMatosSandra, [pRubenAguileraMatos, pSandra, pRubenAguilera, pHijaRubenNoname]);
-graph.add(1, 50, mtLuisEnriqueMatosMatosIrmaMorales, [pLuisEnriqueMatosMatos, pIrmaMorales, pIrmaMatosMorales, pSoniaMatosMorales, pLuisEnriqueMatosMorales]);
-graph.add(1, 52, mtMiguelRamirezNunezPurificacionFloresProenza, [pMiguelRamirezNunez, pPurificacionFloresProenza,pMiguelRamirezFlores,pVictorRamirezFlores,pCesarRamirezFlores]);
-graph.add(1, 54, mtErnestinaRamirezFloresNonamePereda, [pErnestinaRamirezFlores, pNonamePereda]);
-graph.add(1, 56, mtMiguelRamirezFloresEmiliaGonzalezFruto, [pMiguelRamirezFlores, pEmiliaGonzalezFruto,pMauricioRamirezGonzalez,pXiomaraRamirezGonzalez,pMiriamRamirezGonzalez]);
-graph.add(1, 58, mtVictorRamirezFloresOfeliaVargas, [pVictorRamirezFlores, pOfeliaVargas,pPurificacionRamirezVargas]);
-graph.add(1, 60, mtPurificacionRamirezVargasSalomeRodriguezPino, [pPurificacionRamirezVargas, pSalomeRodriguezPino,pImirsiRodriguezRamirez,pRonaldRodriguezRamirez]);
-graph.add(1, 62, mtCesarRamirezFloresLidiaMilanReytor, [pCesarRamirezFlores, pLidiaMilanReytor,pCesarRamirezMilan,pEstrellaRamirezMilan,pObduliaRamirezMilan]);
-graph.add(1, 64, mtObduliaRamirezTomasFerrandiSayasBazan, [pObduliaRamirezMilan, pTomasFerrandiSayasBazan,pSandraFerrandiRamirez,pDaniaFerrandiRamirez]);
-graph.add(1, 64, mtAlinetPelaezAguileraAdrian, [pAlinetPelaezAguilera, pAdrian]);
-graph.add(1, 66, mtMiguelRamirezNunezPurificacionFloresProenza, [pManuelAmadoRamirezFlores, pErnestinaRamirezFlores, pMiguelRamirezFlores, pVictorRamirezFlores, pCesarRamirezFlores, pEgidioRamirezFlores, pNoeliaRamirezFlores]);
-graph.add(1, 68, mtErnestinaRamirezFloresNonamePereda,[pErnestinaRamirezFlores,pNonamePereda]);
-graph.rel(pDaniaFerrandiRamirez,pIsabela);
-/*
-graph.more(5, 50, mtLuisEnriqueMatosMatosIrmaMorales);
-graph.more(5, 50, pSoniaMatosMorales);
-graph.more(5, 50, pIrmaMatosMorales);
-graph.more(5, 50, pLuisEnriqueMatosMorales);
-*/
-//---------------------------------------------------------
-//relationship nodes. 
-//These also include the edges from all people related to the central relationship node, 
-//as well as any invisible node required for segmented edges, if present.
-
-/*graph.add(1, 5, mtAbuelaPaternaAbueloPaterno, [pAbuelaPaterna, pAbueloPaterno, pPadre]);
-graph.add(1, 3, mtAbueloMaternoAbuelaMaterna, [pAbueloMaterno, pAbuelaMaterna, pMadre]);
-graph.add(5, 3.25, mtHijoConyuge, [pHijo, pConyuge]);
-graph.add(4.25, 2.5, rlHijoNovia, [
+graph.add(pKeniaAguileraMatos.row, pGerardoPelaez.col - 1,
+    mtKeniaAguileraMatosGerardoPelaez,
+    [pKeniaAguileraMatos, pGerardoPelaez, pAlinetPelaezAguilera]);
+graph.add(pKeniaAguileraMatos.row - 1, pCarlosNunez.col - 1,
+    mtKeniaAguileraMatosCarlosNunez,
     [
-        pHijo, [4.25, 3.5],
-        [5, 3.5]
-    ],
-    [
-        pNovia, [4.25, 2.25]
+        [pKeniaAguileraMatos, [pKeniaAguileraMatos.row - 1, pKeniaAguileraMatos.col]],
+        [pCarlosNunez, [pCarlosNunez.row - 1, pCarlosNunez.col]], pCarlosNunezAguilera
+    ]);
+graph.add(pRubenAguileraMatos.row, pSandra.col - 1, mtRubenAguileraMatosSandra, 
+    [pRubenAguileraMatos, pSandra, 
+        [pRubenAguilera,[pRubenAguileraMatos.row+3,pSandra.col-1],[pRubenAguilera.row-2,pRubenAguilera.col]],
+        [pHijaRubenNoname,[pRubenAguileraMatos.row+3,pSandra.col-1],[pHijaRubenNoname.row-2,pHijaRubenNoname.col]]
+    ]
+);
+graph.add(pPurificacionRamirezVargas.row, pSalomeRodriguezPino.col - 1, mtPurificacionRamirezVargasSalomeRodriguezPino, 
+    [pPurificacionRamirezVargas, pSalomeRodriguezPino, 
+        [pImirsiRodriguezRamirez,[pPurificacionRamirezVargas.row+3,pSalomeRodriguezPino.col-1],[pImirsiRodriguezRamirez.row-2,pImirsiRodriguezRamirez.col]], 
+        [pRonaldRodriguezRamirez,[pPurificacionRamirezVargas.row+3,pSalomeRodriguezPino.col-1],[pRonaldRodriguezRamirez.row-2,pRonaldRodriguezRamirez.col]]
+    ]
+);
+graph.add(pObduliaRamirezMilan.row, pTomasFerrandiSayasBazan.col - 1, mtObduliaRamirezTomasFerrandiSayasBazan, 
+    [pObduliaRamirezMilan, pTomasFerrandiSayasBazan, 
+        [pSandraFerrandiRamirez,[pObduliaRamirezMilan.row+3,pTomasFerrandiSayasBazan.col-1],[pSandraFerrandiRamirez.row-2,pSandraFerrandiRamirez.col]], 
+        [pDaniaFerrandiRamirez,[pObduliaRamirezMilan.row+3,pTomasFerrandiSayasBazan.col-1],[pDaniaFerrandiRamirez.row-2,pDaniaFerrandiRamirez.col]
     ]
 ]);
-graph.add(3, 4, mtPadreMadre, [
-    [pMadre],
-    [pPadre],
-    //hijo
-    [pHijo, [4, 4],
-        [4, 3.75]
-    ],
-    //hermano
-    [pHermano, [4, 4],
-        [4, 4.25]
+graph.add(pAlinetPelaezAguilera.row, pAdrian.col - 1, mtAlinetPelaezAguileraAdrian,
+    [pAlinetPelaezAguilera, pAdrian]);
+graph.add(pYanitsiaRamirezPerez.row, pHilderTorres.col - 1, mtYanitsiaRamirezPerezHilderTorres,
+    [pYanitsiaRamirezPerez, pHilderTorres, 
+        [pJavierAlejandroTorresRamirez,[pYanitsiaRamirezPerez.row+3,pHilderTorres.col-1],[pJavierAlejandroTorresRamirez.row-2,pJavierAlejandroTorresRamirez.col]], 
+        [pMiguelAlejandroTorresRamirez,[pYanitsiaRamirezPerez.row+3,pHilderTorres.col-1],[pMiguelAlejandroTorresRamirez.row-2,pMiguelAlejandroTorresRamirez.col]]
     ]
-]);
-*/
-//'more' nodes. Also includes the edge from the person node to the more node 
-
-//graph.more(7, 4.25, pHermano);
-
-//edges directly between two people, without a relationship
-
-//graph.rel(pConyuge, pHijoAdoptivo);
-
+);
+graph.add(pYaritskeRamirezPerez.row, pOrlando.col - 1, mtYaritskeRamirezPerezOrlando,
+    [pYaritskeRamirezPerez, pOrlando, 
+        [pRoxana,[pYaritskeRamirezPerez.row+3,pOrlando.col-1],[pRoxana.row-2,pRoxana.col]], 
+        [pRolandito,[pYaritskeRamirezPerez.row+3,pOrlando.col-1],[pRolandito.row-2,pRolandito.col]]
+    ]
+);
+graph.add(pYaritskeRamirezPerez.row - 1, pWilfredo.col - 1, mtYaritskeRamirezPerezWilfredo,
+    [
+        [pYaritskeRamirezPerez, [pYaritskeRamirezPerez.row - 1, pYaritskeRamirezPerez.col]],
+        [pWilfredo, [pWilfredo.row - 1, pWilfredo.col]]
+    ]);
+//graph.more(12,35,mtElsaDiazMatosHeysel);
+//graph.more(rlAntoniodeMarcosRamirezMatosMujerNegra);
 //---------------------------------------------------------
 //END DRAWING
 //---------------------------------------------------------

@@ -116,7 +116,7 @@ class Graph {
                 relationship: {
                     tip: node.moreComment
                 },
-                debug: DEBUG ? node.id : ''
+                debug: DEBUG ? moreId : ''
             },
             classes: 'more'
         };
@@ -180,6 +180,11 @@ class Graph {
         return result;
     }
 
+    addPerson(node,peopleArray) {
+     //   console.log("node "+ node);
+        this.add(node.row,node.col,node,peopleArray);
+    }
+
     add(row, col, node, peopleArray) {
         if ('name' in node) {
             this.elements.push(this.personNode(row, col, node));
@@ -188,6 +193,7 @@ class Graph {
     }
 
     more(row, col, node, invNodes) {
+        console.log(node);
         this.elements.push(...this.moreNode(row, col, node, invNodes));
     }
 
@@ -294,6 +300,12 @@ class Graph {
         //detail model function
         var modalFn = function (evt) {
             var node = evt.target;
+
+
+            
+            console.log(node);
+            node.label = "(" + node.position.x + "," + node.position.y + ") " + (node.data().person?node.data().person.name:'');
+
             //clear modal and hide all elements. they will be shown if data exists on each one
             $("div#person.modal #birth").text('');
             $("div#person.modal #name").text('');
@@ -309,7 +321,7 @@ class Graph {
             $("div#person.modal #tree-content").hide();
             //-----------------------------------
             //add data to modal elements
-            $("div#person.modal #name").text(node.renderedPosition().x +" - " +node.renderedPosition().y + " "+ node.data().person.name);
+            $("div#person.modal #name").text(node.data().person.name);
 
             if (node.data().person.treeRef)
                 $("div#person.modal #tree-content").show().find("#tree").attr("href","home.html?tree=" + node.data().person.treeRef);
@@ -370,7 +382,14 @@ class Graph {
             var tippyA = makeTippy(node, node.data().relationship.tip);
             tippyA.show();
         });
-
+/*
+        this.cy.on('mouseup', 'node.marriage,node.relationship,node.more', function (evt) {
+            console.log('triggered');
+            var node = evt.target;
+            console.log(node);
+            node.label = "(" + node.position.x + "," + node.position.y + ") " + (node.data().person?node.data().person.name:'');
+        });
+*/
         $('#tree-select').change((evt)=>navigationFn(evt.target.value));
 
         //--------------------------------------------
