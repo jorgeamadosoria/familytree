@@ -40,7 +40,7 @@ class Graph {
     }
 
     relationshipNode(row, col, people, date, classes) {
-          console.log(people);
+        //  console.log(people);
         return {
             data: {
                 row: row,
@@ -303,7 +303,7 @@ class Graph {
 
 
             
-            console.log(node);
+        //    console.log(node);
             node.label = "(" + node.position.x + "," + node.position.y + ") " + (node.data().person?node.data().person.name:'');
 
             //clear modal and hide all elements. they will be shown if data exists on each one

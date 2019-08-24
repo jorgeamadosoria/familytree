@@ -3066,7 +3066,8 @@ graph.add(pYaritskeRamirezPerez.row - 1, pWilfredo.col - 1, mtYaritskeRamirezPer
 ]);
 //graph.more(12,35,mtElsaDiazMatosHeysel);
 //graph.more(rlAntoniodeMarcosRamirezMatosMujerNegra);
-graph.more(pCarlosFreeman);
+
+//graph.more(pCarlosFreeman);
 //---------------------------------------------------------
 //END DRAWING
 //---------------------------------------------------------
