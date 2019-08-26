@@ -24,10 +24,10 @@ photos:array //nullable. array of urls for person pictures. Can also be an empty
 };  */
 var pBlancaMatosGuisado = {
     name: 'Blanca Matos Guisado',
-    //nickname: '',
+
     gender: WOMAN,
     //birth: '',
-    //death: '',
+
     comments: 'Blanca "Abuela Blanca" Matos Guisado',
     profile: defaultProfile,
     //photos: []
@@ -35,10 +35,10 @@ var pBlancaMatosGuisado = {
 
 var pAbelina = {
     name: 'Abelina',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Hermana de abuela blanca',
     profile: defaultProfile
 };
@@ -47,8 +47,8 @@ var pCorsina = {
     name: 'Corsina',
     nickname: "Corsinita",
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Hermana de abuela blanca',
     profile: defaultProfile
 };
@@ -57,38 +57,38 @@ var pMarcelinoMatosRondon = {
     name: 'Marcelino',
     //nickname: 'Papa Matos,Papa Pincete',
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Marcelino Matos Rondon',
     profile: defaultProfile
 };
 
 var pFela = {
     name: 'Fela',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Fela Matos Rondon',
     profile: defaultProfile
 };
 
 var pLuzMatosRondon = {
     name: 'Luz',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Luz Matos Rondon',
     profile: defaultProfile
 };
 /*
 var pNoname = {
     name: 'No name',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'posible padre de Rogelio Matos',
     profile: defaultProfile
 };
@@ -107,48 +107,48 @@ var pManuelAmadoRamirezFlores = {
     name: 'Manuel Amado',
     nickname: 'Amadito',
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Manuel Amado Ramirez Flores',
     profile: defaultProfile
 };
 
 var pBlancaDeLaPurificacionRamirezMatos = {
     name: 'Blanca',
-    //nickname: '',
+
     gender: WOMAN,
     birth: '2 mayo 1950',
-    //death: '',
+
     comments: 'Blanca de la purificacion ramirez matos',
     profile: defaultProfile
 };
 
 var pJorgeLuisSoriaMaceira = {
     name: 'Jorge Luis',
-    //nickname: '',
+
     gender: MAN,
     birth: '20 junio 1953',
-    //death: '',
+
     comments: 'Jorge Luis Soria Maceira (fecha equivocada de carnet de identidad 19 enero 1954)',
     profile: defaultProfile
 };
 
 var pJorgeAmadoSoriaRamirez = {
     name: 'Jorge Amado',
-    //nickname: '',
+
     gender: MAN,
     birth: '14 dic 1984',
-    //death: '',
+
     comments: 'Jorge Amado Soria Ramirez',
     profile: defaultProfile
 };
 
 var pAmalSaifFonte = {
     name: 'Jorge Amado',
-    //nickname: '',
+
     gender: MAN,
     birth: '14 dic 1984',
-    //death: '',
+
     comments: 'Jorge Amado Soria Ramirez',
     profile: defaultProfile
 };
@@ -156,9 +156,9 @@ var pAmalSaifFonte = {
 var pJorgeLuisSoriaRamirez = {
     name: 'Amal',
     nickname: '',
-    gender: MAN,
+    gender: WOMAN,
     birth: '09/08/1990',
-    //death: '',
+
     comments: 'Amal Saif Fonte',
     profile: defaultProfile
 };
@@ -168,7 +168,7 @@ var pAmadoMarcelinoRamirezMatos = {
     //nickname: 'Popi',
     gender: MAN,
     birth: '13 feb 1947?',
-    //death: '',
+
     comments: 'Amado Marcelino Ramirez Matos',
     profile: defaultProfile
 };
@@ -177,242 +177,242 @@ var pCaridadMartinAlvarez = {
     name: 'Caridad',
     //nickname: 'Cary',
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Caridad Martin Alvarez',
     profile: defaultProfile
 };
 
 var pPilarMartinAlvarez = {
     name: 'Pilar',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Pilar Martin Alvarez, gemela de Cary',
     profile: defaultProfile
 };
 
 var pRaulMartin = {
     name: 'Raul',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Raul Martin',
     profile: defaultProfile
 };
 var pCucaAlvarez = {
     name: 'Cuca',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Cuca es la mama de Pilar y Cary',
     profile: defaultProfile
 };
 var pLuciaAlvarez = {
     name: 'Lucia',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'hermana de Cuca',
     profile: defaultProfile
 };
 var pCarlosEnriqueRamirezMartin = {
     name: 'Carlos',
-    //nickname: '',
+
     gender: MAN,
     birth: '02/10/1985',
-    //death: '',
+
     comments: 'Carlos Enrique Ramirez Martin',
     profile: defaultProfile
 };
 
 var pRaulRamirezMartin = {
     name: 'Raul',
-    //nickname: '',
+
     gender: MAN,
     birth: '2 mayo',
-    //death: '',
+
     comments: 'Raul Ramirez Martin',
     profile: defaultProfile
     //photos: []
 };
 var pMiguelEnriqueRamirezMatos = {
     name: 'Miguel',
-    //nickname: '',
+
     gender: MAN,
     birth: '3 oct 1948 - 9 ?',
-    //death: '',
+
     comments: 'Miguel Enrique Ramirez Matos',
     profile: defaultProfile
 };
 var pAnaPerezFonseca = {
     name: 'Ana',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Ana Perez Fonseca',
     profile: defaultProfile
 };
 var pYanitsiaRamirezPerez = {
     name: 'Yanitsia',
-    //nickname: '',
+
     gender: WOMAN,
     birth: '18 sept 1972 - 3 ?',
-    //death: '',
+
     comments: 'Yanitsia Ramirez Perez',
     profile: defaultProfile
 };
 var pHilderTorres = {
     name: 'Hilder',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Hilder Torres',
     profile: defaultProfile
 };
 
 var pJavierAlejandroTorresRamirez = {
     name: 'Javier',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Javier Alejandro Torres Ramirez',
     profile: defaultProfile
 };
 
 var pMiguelAlejandroTorresRamirez = {
     name: 'Miguel',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Miguel Alejandro Torres Ramirez',
     profile: defaultProfile
 };
 
 var pYaritskeRamirezPerez = {
     name: 'Yaritské',
-    //nickname: '',
+
     gender: WOMAN,
     birth: '??/04/1976',
-    //death: '',
+
     comments: 'Yaritské Ramirez Perez',
     profile: defaultProfile
 };
 
 var pOrlando = {
     name: 'Orlando',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Orlando ? ?',
     profile: defaultProfile
 };
 
 var pRoxana = {
     name: 'Roxana',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',-
+
+
     comments: 'Roxana ? ?',
     profile: defaultProfile
 };
 
 var pRolandito = {
     name: 'Rolando',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: '',
     profile: defaultProfile
 };
 
 var pWilfredo = {
     name: 'Wilfredo',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Wilfredo ? ?',
     profile: defaultProfile
 };
 
 var pGisela = {
     name: 'Gisela',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: '',
     profile: defaultProfile
 };
 
 var pGiselaHija = {
     name: 'Gisela',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: '',
     profile: defaultProfile
 };
 
 var pAntoniodeMarcosRamirezMatos = {
     name: 'Antonio de Marcos',
-    //nickname: '',
+
     gender: MAN,
     birth: '18 oct 1953',
-    //death: '',
+
     comments: 'Antonio de Marcos Ramirez Matos, nacido Marco Antonio',
     profile: defaultProfile
 };
 
 var pGladysAveraztruces = {
     name: 'Gladys',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: ' Gladys Averaztruces?',
     profile: defaultProfile
 };
 
 var pAndyMarcosRamirezAveraztruces = {
     name: 'Andy',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Andy Marcos Ramirez Averaztruces?',
     profile: defaultProfile
 };
 
 var pAntoniodeMarcosRamirezAveraztruces = {
     name: 'Antonio de Marcos',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Antonio de Marcos Ramirez Averaztruces?',
     profile: defaultProfile
 };
 
 var pElbaAguilar = {
     name: 'Elba',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Elba Aguilar',
     profile: defaultProfile
 };
@@ -421,18 +421,18 @@ var pMonicaMariaRamirez = {
     name: 'Monica',
     nickname: "Monica Perfecta",
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Monica Maria Ramirez',
     profile: defaultProfile
 };
 
 var pMujerNegra = {
     name: '???',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'MujerNegra(extra mat)',
     profile: defaultProfile
 };
@@ -440,20 +440,20 @@ var pMujerNegra = {
 
 var pDoraMatosMatos = {
     name: 'Dora',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Dora Matos Matos',
     profile: defaultProfile
 };
 
 var pTelmoMaciasMatos = {
     name: 'Telmo',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Telmo Macias Matos(hijo de un hermano de Marcelino Matos)',
     profile: defaultProfile
 };
@@ -462,18 +462,18 @@ var pTelmoMaciasMatosHijo = {
     name: 'Telmo',
     nickname: "Telmito",
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Telmo Macias Matos',
     profile: defaultProfile
 };
 
 var pIlda = {
     name: 'Ilda',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Ilda ? ?',
     profile: defaultProfile
 };
@@ -482,8 +482,8 @@ var pTelmoMacias = {
     name: 'Telmo',
     nickname: "Telmitico",
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Telmo Macias',
     profile: defaultProfile
 };
@@ -492,66 +492,66 @@ var pMarcelinoMatosMatos = {
     name: 'Marcelino',
     nickname: "Bebe",
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Marcelino Matos Matos',
     profile: defaultProfile
 };
 
 var pLuzDivina = {
     name: 'Luz',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Luz Divina',
     profile: defaultProfile
 };
 
 var pBlancaMariaMatos = {
     name: 'Blanca',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Blanca Maria Matos',
     profile: defaultProfile
 };
 
 var pSamuel = {
     name: 'Samuel',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Samuel ? ?',
     profile: defaultProfile
 };
 
 var pAntonio = {
     name: 'Antonio',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Antonio',
     profile: defaultProfile
 };
 var pJacqueline = {
     name: 'Jacqueline',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Jacqueline( ? )',
     profile: defaultProfile
 };
 var pElsaMatosMatos = {
     name: 'Elsa',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Elsa Matos Matos',
     profile: defaultProfile
 };
@@ -559,8 +559,8 @@ var pManuelDiaz = {
     name: 'Manuel Diaz',
     nickname: "Manolito",
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Manuel Diaz',
     profile: defaultProfile
 };
@@ -569,17 +569,17 @@ var pElsaDiazMatos = {
     name: 'Elsa',
     nickname: "Elsita",
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Elsa Diaz Matos',
     profile: defaultProfile
 };
 var pHeysel = {
     name: 'Heysel',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Heysel( ? )',
     profile: defaultProfile
 };
@@ -588,28 +588,28 @@ var pAbelinaMatosMatos = {
     name: 'Abelina',
     nickname: "Niní",
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Abelina Matos Matos',
     profile: defaultProfile
 };
 
 var pRubenAguileraAcuna = {
     name: 'Ruben',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Ruben Aguilera Acuña',
     profile: defaultProfile
 };
 
 var pKeniaAguileraMatos = {
     name: 'Kenia',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Kenia Aguilera Matos',
     profile: defaultProfile
 };
@@ -618,48 +618,48 @@ var pGerardoPelaez = {
     name: 'Gerardo',
     nickname: "El chino",
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Gerardo Pelaez',
     profile: defaultProfile
 };
 
 var pAlinetPelaezAguilera = {
     name: 'Alinet',
-    //nickname: '',
+
     gender: WOMAN,
     birth: '2 oct 1973',
-    //death: '',
+
     comments: 'Alinet Pelaez Aguilera',
     profile: defaultProfile
 };
 
 var pAdrian = {
     name: 'Adrian',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Adrian',
     profile: defaultProfile
 };
 
 var pCarlosNunez = {
     name: 'Carlos',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Carlos Nunez',
     profile: defaultProfile
 };
 
 var pKarlaNunez = {
     name: 'Karla',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Karla Nuñez',
     profile: defaultProfile
 };
@@ -667,49 +667,49 @@ var pKarlaNunez = {
 
 var pCarlosNunezAguilera = {
     name: 'Carlos',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Carlos Nunez Aguilera',
     profile: defaultProfile
 };
 var pRubenAguileraMatos = {
     name: 'Ruben',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Ruben Aguilera Matos',
     profile: defaultProfile
 };
 
 var pSandra = {
     name: 'Sandra',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: '',
     profile: defaultProfile
 };
 
 var pHijaRubenNoname = {
     name: '???',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'hembra hija de Ruben, prima mia, que fue a la secundaria',
     profile: defaultProfile
 };
 
 var pRubenAguilera = {
     name: 'Ruben',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Ruben Aguilera',
     profile: defaultProfile
 };
@@ -717,17 +717,17 @@ var pLuisEnriqueMatosMatos = {
     name: 'Luis Enrique',
     nickname: "Niño",
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Luis Enrique Matos Matos',
     profile: defaultProfile
 };
 var pIrmaMorales = {
     name: 'Irma',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Irma Morales',
     profile: defaultProfile
 };
@@ -736,18 +736,18 @@ var pIrmaMatosMorales = {
     name: 'Irma',
     nickname: "Irmita",
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Irma Matos Morales',
     profile: defaultProfile
 };
 
 var pSoniaMatosMorales = {
     name: 'Sonia',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Sonia Matos Morales',
     profile: defaultProfile
 };
@@ -756,28 +756,28 @@ var pLuisEnriqueMatosMorales = {
     name: 'Luis Enrique',
     nickname: "Niño",
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Luis Enrique Matos Morales',
     profile: defaultProfile
 };
 
 var pMiguelRamirez = {
     name: 'Miguel',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'miguel Ramirez',
     profile: defaultProfile
 };
 
 var pPurificacionFloresProenza = {
     name: 'Purificacion',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Purificacion Flores Proenza',
     profile: defaultProfile
 };
@@ -786,28 +786,28 @@ var pManuelAmadoRamirezFlores = {
     name: 'Manuel',
     nickname: 'Amadito',
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Manuel Amado Ramirez Flores',
     profile: defaultProfile
 };
 
 var pErnestinaRamirezFlores = {
     name: 'Ernestina',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Ernestina Ramirez Flores',
     profile: defaultProfile
 };
 
 var pNonamePereda = {
     name: 'No name',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'No name Pereda',
     profile: defaultProfile
 };
@@ -815,77 +815,73 @@ var pNonamePereda = {
 
 var pMiguelRamirezNunez = {
     name: 'Miguel',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Miguel Ramirez Nuñez',
     profile: defaultProfile
 };
 
 var pMiguelRamirezFlores = {
     name: 'Miguel',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Miguel Ramirez Flores',
     profile: defaultProfile
 };
 
 var pEmiliaGonzalezFruto = {
     name: 'Emilia',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Emilia Gonzalez Fruto',
     profile: defaultProfile
 };
 
 var pMauricioRamirezGonzalez = {
     name: 'Mauricio',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Mauricio Ramirez Gonzalez',
     profile: defaultProfile
 };
 
 var pXiomaraRamirezGonzalez = {
     name: 'Xiomara',
-    //nickname: '',
     gender: WOMAN,
     birth: '14/02/1947-8',
-    //death: '',
-    comments: 'Xiomara Ramirez Gonzalez, misma edad de Popi',
-    profile: defaultProfile
+    comments: 'Xiomara Ramirez Gonzalez, misma edad de Popi'
 };
 var pMiriamRamirezGonzalez = {
     name: 'Miriam',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
-    comments: 'Miriam Ramirez Gonzalez',
-    profile: defaultProfile
+
+
+    comments: 'Miriam Ramirez Gonzalez'
 };
 var pVictorRamirezFlores = {
     name: 'Victor',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Victor Ramirez Flores',
     profile: defaultProfile
 };
 var pOfeliaVargas = {
     name: 'Ofelia',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Ofelia Vargas',
     profile: defaultProfile
 };
@@ -893,8 +889,8 @@ var pPurificacionRamirezVargas = {
     name: 'Purificacion',
     nickname: "Purita",
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Purificacion Ramirez Vargas',
     profile: defaultProfile
 };
@@ -902,44 +898,44 @@ var pSalomeRodriguezPino = {
     name: 'Salomé',
     nickname: "Rigo",
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Salomé Rodriguez Pino, era escolta de Fidel',
     profile: defaultProfile
 };
 var pImirsiRodriguezRamirez = {
     name: 'Imirsi',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Imirsi Rodriguez Ramirez',
     profile: defaultProfile
 };
 var pRonaldRodriguezRamirez = {
     name: 'Ronald',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Ronald Rodriguez Ramirez',
     profile: defaultProfile
 };
 var pCesarRamirezFlores = {
     name: 'Cesar',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Cesar Ramirez Flores',
     profile: defaultProfile
 };
 var pLidiaMilanReytor = {
     name: 'Lidia',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Lidia Milán Reytor',
     profile: defaultProfile
 };
@@ -948,8 +944,8 @@ var pCesarRamirezMilan = {
     name: 'Cesar',
     nickname: "Cesarito",
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Cesar Ramirez Milan',
     profile: defaultProfile
 };
@@ -958,8 +954,8 @@ var pEstrellaRamirezMilan = {
     name: 'Estrella',
     nickname: "Estrellita",
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Estrella Ramirez Milan',
     profile: defaultProfile
 };
@@ -968,8 +964,8 @@ var pObduliaRamirezMilan = {
     name: 'Obdulia',
     nickname: "Yuyi",
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Obdulia Ramirez Milan',
     profile: defaultProfile
 };
@@ -978,28 +974,28 @@ var pTomasFerrandiSayasBazan = {
     name: 'Tomás',
     nickname: "El Chino",
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Tomás "El Chino" Ferrandi Sayas Bazán',
     profile: defaultProfile
 };
 
 var pSandraFerrandiRamirez = {
     name: 'Sandra',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Sandra Ferrandi Ramirez',
     profile: defaultProfile
 };
 
 var pDaniaFerrandiRamirez = {
     name: 'Dania',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Dania Ferrandi Ramirez',
     profile: defaultProfile
 };
@@ -1007,40 +1003,40 @@ var pDaniaFerrandiRamirez = {
 
 var pIsabela = {
     name: 'Isabela',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Isabela',
     profile: defaultProfile
 };
 
 var pFelixRamirezMilan = {
     name: 'Felix',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Felix Ramirez Milan',
     profile: defaultProfile
 };
 
 var pEgidioRamirezFlores = {
     name: 'Egidio',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Egidio Ramirez Flores',
     profile: defaultProfile
 };
 
 var pNoeliaRamirezFlores = {
     name: 'Noelia',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Noelia Ramirez Flores',
     profile: defaultProfile
 };
@@ -1051,30 +1047,30 @@ var pNoeliaRamirezFlores = {
 
 var pMiguelSoria = {
     name: 'Miguel',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'miguel soria (huerfano a los 7 annos)',
     profile: defaultProfile
 };
 
 var pIluminadaRamos = {
     name: 'Iluminada',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Iluminada ramos (murio de pasmo, termino guajiro para el paro cardiaco respiratorio. Sobre los 40 annos de edad)',
     profile: defaultProfile
 };
 
 var pLuisMiroclesSoriaRamos = {
     name: 'Luis Mirocles',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Luis Mirocles Soria Ramos',
     profile: defaultProfile
 };
@@ -1082,8 +1078,8 @@ var pCarmenMaceiraPerez = {
     name: 'Carmen',
     nickname: 'Carmita',
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Carmen "Carmita" Maceira Perez',
     profile: defaultProfile
 };
@@ -1091,53 +1087,53 @@ var pTaniaSoriaMaceira = {
     name: 'Tania',
     nickname: 'Taniecita',
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Tania "Taniecita" Soria Maceira',
     profile: defaultProfile
 };
 var pBernardinoPenaHernandez = {
     name: 'Bernardino',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Bernardino Peña Hernandez',
     profile: defaultProfile
 };
 var pMarietaPenaHernandez = {
     name: 'Marieta',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Marieta Peña Hernandez (n. 19 de julio)',
     profile: defaultProfile
 };
 var pNonameVidal = {
     name: '????',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: '? Vidal',
     profile: defaultProfile
 };
 var pDianetVidalPena = {
     name: 'Dianet',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Dianet Vidal Peña',
     profile: defaultProfile
 };
 var pJuanGualbertoCoronaPerez = {
     name: 'Juan Gualberto',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Juan Gualberto Corona Perez',
     profile: defaultProfile
 };
@@ -1145,182 +1141,144 @@ var pTaniadelCarmenCoronaSoria = {
     name: 'Tania del Carmen',
     nickname: 'Tanin',
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Tania del Carmen "Tanin" Corona Soria',
     profile: defaultProfile
 };
 var pAriel = {
     name: 'Ariel',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Ariel ?',
     profile: defaultProfile
 };
 var pSaulo = {
     name: 'Saulo',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Saulo',
     profile: defaultProfile
 };
 var pBerenice = {
     name: 'Berenice',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Berenice',
     profile: defaultProfile
 };
 var pEleonora = {
     name: 'Eleonora',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Eleonora',
     profile: defaultProfile
 };
 var pTamaraSoriaMaceira = {
     name: 'Tamara',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
-    comments: 'Tamara Soria Maceira',
-    profile: defaultProfile
+
+
+    comments: 'Tamara Soria Maceira'
 };
 var pCharlesFreeman = {
     name: 'Charles',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
-    comments: 'Charles Freeman (cubano descendiente de estadounidenses)',
-    profile: defaultProfile
+
+
+    comments: 'Charles Freeman (cubano descendiente de estadounidenses)'
 };
 var pCarlosLuisFreemanSoria = {
     name: 'Carlos Luis',
     nickname: 'Carlitos',
     gender: MAN,
-    birth: '',
-    //death: '',
-    comments: 'Carlos Luis Freeman Soria',
-    profile: defaultProfile
+    comments: 'Carlos Luis Freeman Soria'
 };
 var pDalia = {
     name: 'Dalia',
-    //nickname: '',
     gender: WOMAN,
-    birth: '',
-    //death: '',
-    comments: '',
-    profile: defaultProfile
 };
 var pCarlosFreeman = {
     name: 'Carlos',
-    //nickname: 'Carlitin',
+    nickname: 'Carlitin',
     gender: MAN,
-    birth: '',
-    //death: '',
-    comments: 'Carlos Freeman ?',
-    profile: defaultProfile
+    comments: 'Carlos Freeman ?'
 };
-/*+ ??
-	2 hijas desconocidas*/
 var pAlina = {
     name: 'Alina',
-    //nickname: '',
     gender: WOMAN,
-    birth: '',
-    //death: '',
-    comments: 'Alina',
-    profile: defaultProfile
 };
 var pJorgeCarlos = {
     name: 'Jorge Carlos',
-    //nickname: '',
     gender: MAN,
-    birth: '',
-    //death: '',
-    comments: 'Jorge Carlos ? ?, hijo de Alina',
-    profile: defaultProfile
+    comments: 'Jorge Carlos ? ?, hijo de Alina'
 };
 var pCarlosAlejandroFreeman = {
     name: 'Carlos Alejandro',
-    //nickname: '',
     gender: MAN,
-    birth: '',
-    //death: '',
-    comments: 'Carlos Alejandro Freeman',
-    profile: defaultProfile
+    comments: 'Carlos Alejandro Freeman'
 };
 var pFelixArañoWanton = {
     name: 'Felix',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
-    comments: 'Felix Araño Wanton (fue Presidente del Poder Popular de la ciudad, recibio numerosas medallas y reconocimiento)',
-    profile: defaultProfile
+
+
+    comments: 'Felix Araño Wanton (fue Presidente del Poder Popular de la ciudad, recibio numerosas medallas y reconocimiento)'
 };
 var pYordankaTitoMoreira = {
     name: 'Yordanka',
-    //nickname: '',
     gender: WOMAN,
     birth: '19 nov 1976',
-    //death: '',
-    comments: 'Yordanka Tito Moreira',
-    profile: defaultProfile
+    comments: 'Yordanka Tito Moreira'
 };
 /*	hijo desconocido',*/
 var pAnnelisPerezLegon = {
     name: 'Annelis',
-    //nickname: 'Nelin',
+    nickname: 'Nelin',
     gender: WOMAN,
     birth: '26 junio 1972',
-    //death: '',
-    comments: 'Annelis "Nelin" Perez Legon',
-    profile: defaultProfile
+    comments: 'Annelis "Nelin" Perez Legon'
 };
 var pCarmenHelenestherSoriaPerez = {
     name: 'Carmen Helenesther',
     nickname: 'Carmencita',
     gender: WOMAN,
     birth: '27 marzo 2001',
-    //death: '',
-    comments: 'Carmen Helenesther Soria Perez (el segundo nombre era una combinacion de Helena y Esther debido a que en su momento no se podian poner tres nombres)',
-    profile: defaultProfile
+    comments: 'Carmen Helenesther Soria Perez (el segundo nombre era una combinacion de Helena y Esther debido a que en su momento no se podian poner tres nombres)'
 };
 var pJorgeLuisSoriaPerez = {
     name: 'JorgeLuis',
     nickname: 'Mondongo, Cabeza de Zapote, Mongopavia',
     gender: MAN,
     birth: '2 oct 2011',
-    //death: '',
-    comments: 'Jorge Luis Soria Perez',
-    profile: defaultProfile
+    comments: 'Jorge Luis Soria Perez'
 };
 var pJorgeAmadoSoriaRamirez = {
     name: '',
     nickname: 'Amado, Gordo',
     gender: MAN,
     birth: '14 dec 1984',
-    //death: '',
+
     comments: 'Jorge "Amado, Gordo" Amado Soria Ramirez',
     profile: defaultProfile
 };
 var pArietaSoriaFernandez = {
     name: 'Arieta',
-    //nickname: '',
+
     gender: WOMAN,
     birth: '9 nov 1983',
-    //death: '',
+
     comments: 'Arieta Soria Fernandez',
     profile: defaultProfile
 };
@@ -1328,107 +1286,107 @@ var pAntonio = {
     name: 'Antonio',
     nickname: 'Tony Culebra',
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'gallero',
     profile: defaultProfile
 };
 var pDavidJeremiasNoNameSoria = {
     name: 'David Jeremias',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'David Jeremias ? Soria',
     profile: defaultProfile
 };
 var pDanieldeJesusNonameSoria = {
     name: 'Daniel de Jesus',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Daniel de Jesus ? Soria',
     profile: defaultProfile
 };
 var pJosueNonameSoria = {
     name: 'Josue',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Josue ? Soria',
     profile: defaultProfile
 };
 var pAdrianSoriaCanela = {
     name: 'Adrian',
-    //nickname: '',
+
     gender: MAN,
     birth: '25 mayo 1985',
-    //death: '',
+
     comments: 'Adrian Soria Canela',
     profile: defaultProfile
 };
 var pIsmaelAdrianSoria = {
     name: 'Ismael Adrian',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Ismael Adrian Soria',
     profile: defaultProfile
 };
 var pAbrahamAhmedSoria = {
     name: 'Abraham Ahmed',
-    //nickname: '',
+
     gender: MAN,
     birth: 'nov 2011',
-    //death: '',
+
     comments: 'Abraham Ahmed Soria',
     profile: defaultProfile
 };
 var pJorgeMiguelSoriaCasero = {
     name: 'Jorge Miguel',
-    //nickname: '',
+
     gender: MAN,
     birth: '16 nov 2000',
-    //death: '',
+
     comments: 'Jorge Miguel Soria Casero',
     profile: defaultProfile
 };
 var pRaylenisSoria = {
     name: 'Raylenis',
-    //nickname: '',
+
     gender: WOMAN,
     birth: '2016',
-    //death: '',
+
     comments: 'Raylenis Soria',
     profile: defaultProfile
 };
 var pZenaidaSoriaRamos = {
     name: 'Zenaida',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Zenaida Soria Ramos	',
     profile: defaultProfile
 };
 var pEstrellaSoriaRamos = {
     name: 'Estrella',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Estrella Soria Ramos ',
     profile: defaultProfile
 };
 var pHeribertoQuevedo = {
     name: 'Heriberto',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Heriberto Quevedo (adinerado con negocios de tostaderos de cafe y una cadena de cafeterias)',
     profile: defaultProfile
 };
@@ -1436,17 +1394,17 @@ var pCaridadQuevedoSoria = {
     name: 'Caridad',
     nickname: 'cachitica',
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Caridad Quevedo Soria',
     profile: defaultProfile
 };
 var pWilliamCambara = {
     name: 'William',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'William Cambara',
     profile: defaultProfile
 };
@@ -1454,53 +1412,53 @@ var pWilliamCambaraQuevedo = {
     name: 'William',
     nickname: 'williancito',
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'William "williancito" Cambara Quevedo (comunista)',
     profile: defaultProfile
 };
 var pAlexander = {
     name: 'Alexander',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Alexander',
     profile: defaultProfile
 };
 var pJorgeLuis = {
     name: 'Jorge Luis',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Jorge Luis (murio muy pequenno, nacido el mismo anno que mi papa)',
     profile: defaultProfile
 };
 var pOniel = {
     name: 'Oniel',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Oniel',
     profile: defaultProfile
 };
 var pAlina = {
     name: 'Alina',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Alina',
     profile: defaultProfile
 };
 var pSoniaQuevedoSoria = {
     name: 'Sonia',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Sonia Quevedo Soria (huyo a USA al triunfo de la revolucion, a la edad de alrededor de 30 annos)	',
     profile: defaultProfile
 };
@@ -1508,80 +1466,80 @@ var pBelkisQuevedoSoria = {
     name: 'Belkis',
     nickname: 'Kiki',
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Belkis Quevedo Soria',
     profile: defaultProfile
 };
 var pNonameVazquez = {
     name: '????',
-    //nickname: '',
+
     gender: OTHER,
-    birth: '',
-    //death: '',
+
+
     comments: '? Vazquez ?',
     profile: defaultProfile
 };
 var pGabrielVazquezQuevedo = {
     name: 'Gabriel',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Gabriel Vazquez Quevedo',
     profile: defaultProfile
 };
 var pAlexanderVazquezQuevedo = {
     name: 'Alexander',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Alexander Vazquez Quevedo',
     profile: defaultProfile
 };
 var pIlianaVazquezQuevedo = {
     name: 'Iliana',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Iliana Vazquez Quevedo',
     profile: defaultProfile
 };
 var pNonameToranzo = {
     name: '????',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: '? Toranzo (oficial de tropas especiales)',
     profile: defaultProfile
 };
 var pValkisToranzoVazquez = {
     name: 'Valkis',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Valkis Toranzo Vazquez',
     profile: defaultProfile
 };
 var pBelkisToranzoVazquez = {
     name: 'Belkis',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Belkis Toranzo Vazquez',
     profile: defaultProfile
 };
 var pBertaQuevedoSoria = {
     name: 'Berta',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Berta Quevedo Soria (peluquera de Tele Rebelde en Santiago)',
     profile: defaultProfile
 };
@@ -1589,27 +1547,27 @@ var pNonameDominguez = {
     name: '????',
     nickname: 'Bichichin',
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: '? "Bichichin" Dominguez ?',
     profile: defaultProfile
 };
 var pRafaelDominguezQuevedo = {
     name: 'Rafael',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Rafael Dominguez Quevedo',
     profile: defaultProfile
 };
 /*	hija desconocida*/
 var pEnrique = {
     name: 'Enrique',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Enrique',
     profile: defaultProfile
 };
@@ -1618,195 +1576,143 @@ var pHeribertoQuevedoSoria = {
     name: 'Heriberto',
     nickname: 'Querer',
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Heriberto "Querer" Quevedo Soria (profesor de ingles en la escuela de idiomas Maiakosky en Santo Tomas)',
     profile: defaultProfile
 };
 var pClaribel = {
     name: 'Claribel',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Claribel (nacida en manzanillo) ?',
     profile: defaultProfile
 };
-var pNoname = {
+var pNonamePuchuchu = {
     name: 'Puchuchú',
     nickname: 'Puchuchú',
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: '? "Puchuchú" ?',
     profile: defaultProfile
 };
 var pJorgeQuevedo = {
     name: 'Jorge',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Jorge Quevedo',
     profile: defaultProfile
 };
 var pVivianQuevedo = {
     name: 'Vivian',
-    //nickname: '',
     gender: WOMAN,
-    birth: '',
-    //death: '',
-    comments: 'Vivian Quevedo ?',
-    profile: defaultProfile
+    comments: 'Vivian Quevedo ?'
 };
 var pRolandoSoriaRamos = {
     name: 'Rolando',
-    //nickname: '',
     gender: MAN,
-    birth: '',
-    //death: '',
-    comments: 'Rolando Soria Ramos',
-    profile: defaultProfile
+    comments: 'Rolando Soria Ramos'
 };
 var pFernanda = {
     name: 'Fernanda',
-    //nickname: '',
     gender: WOMAN,
-    birth: '',
-    //death: '',
-    comments: 'Fernanda',
-    profile: defaultProfile
+    comments: 'Fernanda'
 };
 var pReyterSoria = {
     name: 'Reyter',
-    //nickname: '',
     gender: MAN,
-    birth: '',
-    //death: '',
-    comments: 'Reyter Soria',
-    profile: defaultProfile
+    comments: 'Reyter Soria'
 };
 
-var pReyterSoria = {
+var pNonameReyterSpouse = {
+    gender: MAN,
+};
+
+var pReyterReyticoSoria = {
     name: 'Reyter',
     nickname: 'Reytico',
     gender: MAN,
-    birth: '',
-    //death: '',
-    comments: 'Reyter "Reytico" Soria',
-    profile: defaultProfile
+    comments: 'Reyter "Reytico" Soria'
 };
 var pRobinSoria = {
     name: 'Robin',
-    //nickname: '',
     gender: MAN,
-    birth: '',
-    //death: '',
-    comments: 'Robin Soria (estudio en mendive, un anno mayor que mi hermano, de pelo negro y ojos verdes)',
-    profile: defaultProfile
+    comments: 'Robin Soria (estudio en mendive, un anno mayor que mi hermano, de pelo negro y ojos verdes)'
 };
 var pYolandaPineiro = {
     name: 'Yolanda',
-    //nickname: '',
     gender: MAN,
-    birth: '',
-    //death: '',
-    comments: 'Yolanda Piñeiro ',
-    profile: defaultProfile
+    comments: 'Yolanda Piñeiro '
 };
 var pRoldanSoriaPineiro = {
     name: 'Roldan',
-    //nickname: '',
     gender: MAN,
-    birth: '',
-    //death: '',
-    comments: 'Roldan Soria Piñeiro (cardiologo)',
-    profile: defaultProfile
+    comments: 'Roldan Soria Piñeiro (cardiologo)'
 };
 var pReynierSoriaPineiro = {
     name: 'Reynier',
-    //nickname: '',
     gender: MAN,
-    birth: '',
-    //death: '',
-    comments: 'Reynier Soria Piñeiro (ginecologo)',
-    profile: defaultProfile
+    comments: 'Reynier Soria Piñeiro (ginecologo)'
 };
 var pTeresaSoria = {
     name: 'Teresa',
     nickname: 'Teresita',
     gender: WOMAN,
-    birth: '',
-    //death: '',
-    comments: 'Teresa Soria',
-    profile: defaultProfile
+    comments: 'Teresa Soria'
 };
 /*		hija desconocida*/
 var pJustina = {
     name: 'Justina',
-    //nickname: '',
     gender: WOMAN,
-    birth: '',
-    //death: '',
-    comments: 'Justina ?',
-    profile: defaultProfile
+    comments: 'Justina ?'
 };
 var pLuisSoria = {
     name: 'Luis',
-    //nickname: '',
     gender: MAN,
-    birth: '',
-    //death: '',
-    comments: 'Luis Soria',
-    profile: defaultProfile
+    comments: 'Luis Soria'
 };
 var pRafaelSoria = {
     name: 'Rafael',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
-    comments: 'Rafael Soria (murio de peritonitis en el hospital)',
-    profile: defaultProfile
+
+
+    comments: 'Rafael Soria (murio de peritonitis en el hospital)'
 };
 var pNonameAguilera = {
-    name: '????',
-    //nickname: '',
     gender: MAN,
-    birth: '',
-    //death: '',
-    comments: '? Aguilera',
-    profile: defaultProfile
+    comments: '? Aguilera'
 };
 var pJorgeLuisSoriaAguilera = {
     name: 'Jorge Luis',
-    //nickname: '',
     gender: MAN,
-    birth: '',
-    //death: '',
-    comments: 'Jorge Luis Soria Aguilera',
-    profile: defaultProfile
+
+
+    comments: 'Jorge Luis Soria Aguilera'
 };
 var pRobertoSoria = {
     name: 'Roberto',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
-    comments: 'Roberto Soria (engrasador de la termoelectrica Rente y luego en Nuevitas)',
-    profile: defaultProfile
+
+
+    comments: 'Roberto Soria (engrasador de la termoelectrica Rente y luego en Nuevitas)'
 };
 /*+ ?
 	hijo varon (paracaidista de la FAR)
 	hija hembra*/
 var pLourdesSoria = {
     name: 'Lourdes',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
-    comments: 'Lourdes Soria',
-    profile: defaultProfile
+
+
+    comments: 'Lourdes Soria'
 };
 /*+
 2 hembras desconocidas
@@ -1816,37 +1722,35 @@ var pLourdesSoria = {
 //Arbol de Carmen Maceira Perez
 var pUrsulaBenitezPerez = {
     name: 'Ursula',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
-    comments: 'Ursula Benitez Perez',
-    profile: defaultProfile
+
+
+    comments: 'Ursula Benitez Perez'
 };
 var pJoseMaceira = {
     name: 'Jose',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Jose Maceira (tuvo mas de 36 hijos por la zona de Santiago y el Cristo, algunos conocidos y otros no. En la zona agricultural conocida como los llanos de Maceira)',
     profile: defaultProfile
 };
 var pCarmenMaceiraPerez = {
     name: 'Carmen',
-    //nickname: '',
+
     gender: WOMAN,
     birth: '28 nov 1924',
     death: '6 ago 2014',
-    comments: 'Carmen Maceira Perez (inscrita por error como Perez, pero al final se enorgullecia de eso)',
-    profile: defaultProfile
+    comments: 'Carmen Maceira Perez (inscrita por error como Perez, pero al final se enorgullecia de eso)'
 };
 var pSaraMaceiraBenitez = {
     name: 'Sara',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Sara Maceira Benitez (n. 1923 m. 2004,2005) ',
     profile: defaultProfile
 };
@@ -1854,26 +1758,22 @@ var pRaulVilaCarratala = {
     name: 'Raul',
     nickname: 'Tio Pegueta',
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Raul "Tio Pegueta" Vilá Carratalá (hacia jabas de tiritas, viajante de jabones con buen dinero, renuncio a ello para apoyar la Revolucion. juez lego, primer delegado de la circunscripcion del 26 de julio, vanguardia en zafra, fundador del PSP y el partido comunista)',
     profile: defaultProfile
 };
 var pRamonMaceiraBenitez = {
     name: 'Ramon',
-    //nickname: '',
     gender: MAN,
-    birth: '',
-    //death: '',
-    comments: 'Ramon Maceira Benitez (combatiente del ejercito Rebelde)',
-    profile: defaultProfile
+    comments: 'Ramon Maceira Benitez (combatiente del ejercito Rebelde)'
 };
 var pConcepcion = {
     name: 'Concepcion',
     nickname: 'Concha',
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'cabaretera de bar',
     profile: defaultProfile
 };
@@ -1881,8 +1781,8 @@ var pIsabelMaceira = {
     name: 'Isabela',
     nickname: 'Isabelita',
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Isabel "Isabelita" Maceira',
     profile: defaultProfile
 };
@@ -1890,8 +1790,8 @@ var pNonamePanchitoMaceira = {
     name: 'Panchito',
     //nickname: 'Panchito',
     gender: MAN,
-    birth: '',
-    //death: '',
+
+
     comments: '? "Panchito" Maceira',
     profile: defaultProfile
 };
@@ -1900,8 +1800,8 @@ var pSamiraYamirkaMaceira = {
     name: 'Samira',
     nickname: '',
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Samira Yamirka Maceira',
     profile: defaultProfile
 };
@@ -1909,273 +1809,184 @@ var pNadiaMaceira = {
     name: 'Nadia',
     nickname: 'Pucha',
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
+
     comments: 'Nadia Maceira(laboratorista)',
     profile: defaultProfile
 };
 var pNonamePucha = {
-    name: '????',
     nickname: 'Pucha',
     gender: WOMAN,
-    birth: '',
-    //death: '',
-    comments: '',
-    profile: defaultProfile
 };
+
+var pNonameRamonSpouse = {
+    gender: WOMAN,
+};
+
 var pJorgeMaceira = {
     name: 'Jorge',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
-    comments: 'Jorge Maceira',
-    profile: defaultProfile
+
+
+    comments: 'Jorge Maceira'
 };
 var pGustavoMaceira = {
     name: 'Gustavo',
     nickname: 'Gustavito',
     gender: MAN,
-    birth: '',
-    //death: '',
-    comments: 'Gustavo Maceira',
-    profile: defaultProfile
+
+
+    comments: 'Gustavo Maceira'
 };
 var pJoseMaceiraBenitez = {
     name: 'Jose',
     nickname: 'Pepe',
     gender: MAN,
-    birth: '',
-    //death: '',
-    comments: 'Jose Maceira Benitez',
-    profile: defaultProfile
+
+
+    comments: 'Jose Maceira Benitez'
 };
 var pNorma = {
     name: 'Norma',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
-    comments: 'Norma',
-    profile: defaultProfile
+
+
+    comments: 'Norma'
 };
 var pRodolfoValentinoMaceira = {
     name: 'Rodolfo',
     nickname: 'Valentin',
     gender: MAN,
-    birth: '',
-    //death: '',
-    comments: 'Rodolfo Valentino Maceira',
-    profile: defaultProfile
+
+
+    comments: 'Rodolfo Valentino Maceira'
 };
 var pValentina = {
     name: 'Valentina',
-    //nickname: '',
+
     gender: WOMAN,
-    birth: '',
-    //death: '',
-    comments: 'Valentina ',
-    profile: defaultProfile
+
+
+    comments: 'Valentina '
 };
 var pValiaMaceira = {
     name: 'Valia',
-    //nickname: '',
     gender: WOMAN,
-    birth: '',
-    //death: '',
-    comments: '(medico)',
-    profile: defaultProfile
+    comments: '(medico)'
 };
-var pRodolfoValentinoMaceira = {
+var pRodolfoValentinoMaceira2 = {
     name: 'Rodolfo',
     nickname: 'Valentincito',
     gender: MAN,
-    birth: '',
-    //death: '',
-    comments: '',
-    profile: defaultProfile
+
+
 };
 var pBertaMaceiraBenitez = {
     name: 'Berta',
-    //nickname: '',
     gender: WOMAN,
-    birth: '',
-    //death: '',
-    comments: 'Berta Maceira Benitez',
-    profile: defaultProfile
+    comments: 'Berta Maceira Benitez'
 };
 var pNonameVicente = {
-    name: '???',
-    //nickname: '',
     gender: MAN,
-    birth: '',
-    //death: '',
-    comments: '? Vicente',
-    profile: defaultProfile
+    comments: '? Vicente'
 };
 var pRaulVicenteMaceira = {
     name: 'Raul',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
-    comments: 'Raul Vicente Maceira',
-    profile: defaultProfile
+
+
+    comments: 'Raul Vicente Maceira'
 };
 var pNonameUSA = {
     name: '???',
-    //nickname: '',
+
     gender: MAN,
-    birth: '',
-    //death: '',
-    comments: '(estadounidense en USA)',
-    profile: defaultProfile
+
+
+    comments: '(estadounidense en USA)'
 };
 var pLuisaMaceiraBenitez = {
     name: 'Luisa',
-    //nickname: '',
     gender: WOMAN,
-    birth: '',
-    //death: '',
-    comments: 'Luisa Maceira Benitez',
-    profile: defaultProfile
+    comments: 'Luisa Maceira Benitez'
 };
 var pGloriaMaceiraBenitez = {
     name: 'Gloria',
-    //nickname: '',
     gender: WOMAN,
-    birth: '',
-    //death: '',
-    comments: 'Gloria Maceira Benitez',
-    profile: defaultProfile
+    comments: 'Gloria Maceira Benitez'
 };
 var pMoisesCalzadaBenitez = {
     name: 'Moises',
     nickname: 'Tacuba',
     gender: MAN,
-    birth: '',
-    //death: '',
-    comments: 'Moises Calzada Benitez (combatiente del Ejercito Rebelde, bajo de la sierra como capitan, participo en misiones militares en el exterior)',
-    profile: defaultProfile
+    comments: 'Moises Calzada Benitez (combatiente del Ejercito Rebelde, bajo de la sierra como capitan, participo en misiones militares en el exterior)'
 };
 var pMoisesMarioCalzadaMaceira = {
     name: 'Moises',
-    //nickname: '',
     gender: MAN,
-    birth: '',
-    //death: '',
-    comments: 'Moises Mario Calzada Maceira',
-    profile: defaultProfile
+    comments: 'Moises Mario Calzada Maceira'
 };
 var pEloyMaceiraBenitez = {
     name: 'Eloy',
-    //nickname: '',
     gender: MAN,
-    birth: '',
-    //death: '',
-    comments: 'Eloy Maceira Benitez',
-    profile: defaultProfile
+    comments: 'Eloy Maceira Benitez'
 };
 var pCarmen = {
     name: 'Carmen',
-    //nickname: '',
     gender: WOMAN,
-    birth: '',
-    //death: '',
-    comments: '',
-    profile: defaultProfile
 };
 var pEloyMaceira = {
     name: 'Eloy',
     nickname: 'Eloycito',
     gender: MAN,
-    birth: '',
-    //death: '',
-    comments: 'Eloy Maceira',
-    profile: defaultProfile
+    comments: 'Eloy Maceira'
 };
 var pNoNameMaceira = {
-    name: '????',
-    //nickname: '',
     gender: WOMAN,
-    birth: '',
-    //death: '',
-    comments: 'hija hembra Maceira',
-    profile: defaultProfile
+    comments: 'hija hembra Maceira'
 };
 var pIrela = {
     name: 'Irela',
-    //nickname: '',
     gender: WOMAN,
-    birth: '',
-    //death: '',
-    comments: '',
-    profile: defaultProfile
 };
 var pErnestoMaceira = {
     name: 'Ernesto',
-    //nickname: '',
     gender: MAN,
-    birth: '',
-    //death: '',
-    comments: 'Ernesto Maceira',
-    profile: defaultProfile
+    comments: 'Ernesto Maceira'
 };
 var pTaniaMaceira = {
     name: 'Tania',
-    //nickname: '',
     gender: WOMAN,
-    birth: '',
-    //death: '',
-    comments: 'Tania Maceira',
-    profile: defaultProfile
+    comments: 'Tania Maceira'
 };
 
 //Rama periferica de Jose Maceira
 var pMarioMaceira = {
     name: 'Mario',
-    //nickname: '',
     gender: MAN,
-    birth: '',
-    //death: '',
-    comments: 'Mario Maceira',
-    profile: defaultProfile
+    comments: 'Mario Maceira'
 };
 var pIlianaMaceira = {
     name: 'Iliana',
-    //nickname: '',
     gender: WOMAN,
-    birth: '',
-    //death: '',
-    comments: 'Iliana Maceira',
-    profile: defaultProfile
+    comments: 'Iliana Maceira'
 };
 var pNonameManzano = {
-    name: '????',
-    //nickname: '',
     gender: MAN,
-    birth: '',
-    //death: '',
-    comments: '? Manzano (cardiologo en el hosp provincial, muy blanco, muy rubicundo, muy gordo)',
-    profile: defaultProfile
+    comments: '? Manzano (cardiologo en el hosp provincial, muy blanco, muy rubicundo, muy gordo)'
 };
 var pIlianaManzano = {
     name: 'Iliana',
-    //nickname: '',
     gender: WOMAN,
-    birth: '',
-    //death: '',
-    comments: 'Iliana Manzano (medico)',
-    profile: defaultProfile
+    comments: 'Iliana Manzano (medico)'
 };
 var pErnestoManzano = {
     name: 'Ernesto',
-    //nickname: '',
     gender: MAN,
-    birth: '',
-    //death: '',
-    comments: 'Ernesto Manzano (medico, muy blanco, muy rubicundo, muy gordo) ',
-    profile: defaultProfile
+    comments: 'Ernesto Manzano (medico, muy blanco, muy rubicundo, muy gordo) '
 };
 
 
@@ -2188,351 +1999,59 @@ var pWilfredoLegonWaldarrama = {
     birth: '30 ene ????',
     death: '2003',
     comments: 'Wilfredo Legon Waldarrama ',
-    profile: defaultProfile
 };
 var pEstherRodriguezHurtado = {
     name: 'Esther',
-    //nickname: '',
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
     comments: 'Esther Rodriguez Hurtado',
-    profile: defaultProfile
 };
 var pMercedesdelaCandelariaLegonRodriguez = {
     name: 'Mercedes de la Candelaria',
-    //nickname: '',
     gender: WOMAN,
     birth: '2 feb 1951',
-    //death: '',
+
     comments: 'Mercedes de la Candelaria Legon Rodriguez ',
-    profile: defaultProfile
 };
 var pJorgePerez = {
     name: 'Jorge',
-    //nickname: '',
     gender: MAN,
-    birth: '',
-    //death: '',
+
     comments: 'Jorge Perez (nacido Evasio)',
-    profile: defaultProfile
 };
 var pAnnelisPerezLegon = {
     name: 'Annelis',
-    //nickname: '',
     gender: WOMAN,
-    birth: '',
-    //death: '',
+
     comments: 'Annelis Perez Legon',
-    profile: defaultProfile
 };
 var pRafaelPerezSantana = {
     name: 'Rafael',
-    //nickname: '',
     gender: MAN,
     birth: '26 ene 1946',
-    //death: '',
+
     comments: 'Rafael Perez Santana',
-    profile: defaultProfile
 };
 var pRafaelPerezLegon = {
     name: 'Rafael',
     nickname: 'Rafaelito',
     gender: MAN,
     birth: '13 Jul 1988',
-    //death: '',
     comments: 'Rafael Perez Legon',
-    profile: defaultProfile
 };
 var pDayesiRizoCala = {
     name: 'Dayesi',
-    //nickname: '',
-    gender: MAN,
+    gender: WOMAN,
     birth: '30 ene 1988',
-    //death: '',
     comments: 'Dayesi Rizo Cala',
-    profile: defaultProfile
 };
 var pSelenePerezRizo = {
     name: 'Selene',
-    //nickname: '',
-    gender: MAN,
+    gender: WOMAN,
     birth: '10 nov 2018',
-    //death: '',
-    comments: 'Selene Perez Rizo',
-    profile: defaultProfile
+    comments: 'Selene Perez Rizo'
 };
 
-//RELATIONSHIP DATA
-/*
-var relationship = {
-    people : array, //mandatory, a list of all the people related through this node. 
-                    //The order is important if the edges are going to bend later on the add() call
-    date : date, //null. The date in which the relationship was formalized
-    type: string //type of relationship, one of MARRIAGE, RELATIONSHIP
-}
- */
-var mtBlancaMatosGuisadoMarcelinoMatosRondon = {
-    date: '13/12/2012',
-    type: MARRIAGE
-};
-
-var mtDignaElenaMatosMatosManuelAmadoRamirezFlores = {
-    type: MARRIAGE
-};
-
-var mtBlancaDeLaPurificacionRamirezMatosJorgeLuisSoriaMaceira = {
-    type: MARRIAGE
-};
-var mtAmadoMarcelinoRamirezMatosCaridadMartinAlvarez = {
-    type: MARRIAGE
-};
-var mtMiguelEnriqueRamirezMatosAnaPerezFonseca = {
-    type: MARRIAGE
-};
-var mtYanitsiaRamirezPerezHilderTorres = {
-    type: MARRIAGE
-};
-var mtYaritskeRamirezPerezOrlando = {
-    type: MARRIAGE
-};
-var mtYaritskeRamirezPerezWilfredo = {
-    type: MARRIAGE
-};
-var mtMiguelEnriqueRamirezMatosGisela = {
-    type: MARRIAGE
-};
-var mtAntoniodeMarcosRamirezMatosGladysAveraztruces = {
-    type: MARRIAGE
-};
-var mtAntoniodeMarcosRamirezMatosElbaAguilar = {
-    type: MARRIAGE
-};
-var rlAntoniodeMarcosRamirezMatosMujerNegra = {
-    type: RELATIONSHIP
-};
-var mtDoraMatosMatosTelmoMaciasMatos = {
-    type: MARRIAGE
-};
-var mtTelmoMaciasMatosHijoIlda = {
-    type: MARRIAGE
-};
-var mtMarcelinoMatosMatosLuzDivina = {
-    type: MARRIAGE
-};
-var mtBlancaMariaMatosSamuel = {
-    type: MARRIAGE
-};
-var mtElsaMatosMatosManuelDiaz = {
-    type: MARRIAGE
-};
-var mtElsaDiazMatosHeysel = {
-    type: MARRIAGE
-};
-var mtAbelinaMatosMatosRubenAguileraAcuna = {
-    type: MARRIAGE
-};
-var mtKeniaAguileraMatosGerardoPelaez = {
-    type: MARRIAGE
-};
-var mtKeniaAguileraMatosCarlosNunez = {
-    type: MARRIAGE
-};
-var mtRubenAguileraMatosSandra = {
-    type: MARRIAGE
-};
-var mtLuisEnriqueMatosMatosIrmaMorales = {
-    type: MARRIAGE
-};
-var mtMiguelRamirezNunezPurificacionFloresProenza = {
-    type: MARRIAGE
-};
-var mtErnestinaRamirezFloresNonamePereda = {
-    type: MARRIAGE
-};
-var mtMiguelRamirezFloresEmiliaGonzalezFruto = {
-    type: MARRIAGE
-};
-var mtVictorRamirezFloresOfeliaVargas = {
-    type: MARRIAGE
-};
-var mtPurificacionRamirezVargasSalomeRodriguezPino = {
-    type: MARRIAGE
-};
-var mtCesarRamirezFloresLidiaMilanReytor = {
-    type: MARRIAGE
-};
-var mtObduliaRamirezTomasFerrandiSayasBazan = {
-    type: MARRIAGE
-};
-var mtAlinetPelaezAguileraAdrian = {
-    type: MARRIAGE
-};
-
-var mtMiguelSoriaIluminadaRamos = {
-    type: MARRIAGE
-};
-//MARRIAGEs soria
-
-var mtLuisMiroclesSoriaRamosCarmenMaceiraPerez = {
-    type: MARRIAGE
-};
-
-var mtTaniaSoriaMaceiraBernardinoPenaHernandez = {
-    type: MARRIAGE
-};
-
-var mtMarietaPenaHernandezNonameVidal = {
-    type: MARRIAGE
-};
-
-var mtTaniaSoriaMaceiraJuanGualbertoCoronaPerez = {
-    type: MARRIAGE
-};
-
-var mtTaniadelCarmenCoronaSoriaAriel = {
-    type: MARRIAGE
-};
-
-var mtTamaraSoriaMaceiraCharlesFreeman = {
-    type: MARRIAGE
-};
-
-var mtCarlosLuisFreemanSoriaDalia = {
-    type: MARRIAGE
-};
-
-var mtCarlosLuisFreemanSoriaAlina = {
-    type: MARRIAGE
-};
-
-var mtTamaraSoriaMaceiraFelixArañoWanton = {
-    type: MARRIAGE
-};
-
-var mtJorgeLuisSoriaRamirezYordankaTitoMoreira = {
-    type: MARRIAGE
-};
-
-var mtJorgeLuisSoriaRamirezAnnelisPerezLegon = {
-    type: MARRIAGE
-};
-
-var mtJorgeAmadoSoriaRamirezAmalSaifFonte = {
-    type: MARRIAGE
-};
-
-var mtArietaSoriaFernandezAntonio = {
-    type: MARRIAGE
-};
-
-var mtEstrellaSoriaRamosHeribertoQuevedo = {
-    type: MARRIAGE
-};
-
-var mtCaridadQuevedoSoriaWilliamCambara = {
-    type: MARRIAGE
-};
-
-var mtSoniaQuevedoSoria = {
-    type: MARRIAGE
-};
-
-var mtBelkisQuevedoSoriaNonameVazquez = {
-    type: MARRIAGE
-};
-
-var mtIlianaVazquezQuevedoNonameToranzo = {
-    type: MARRIAGE
-};
-
-var mtBertaQuevedoSoriaNonameDominguez = {
-    type: MARRIAGE
-};
-
-var mtHeribertoQuevedoSoriaClaribel = {
-    type: MARRIAGE
-};
-
-var mtRolandoSoriaRamosFernanda = {
-    type: MARRIAGE
-};
-
-var mtReyterSoriaYolandaPiñeiro = {
-    type: MARRIAGE
-};
-
-var mtMiguelSoriaJustina = {
-    type: MARRIAGE
-};
-
-var mtRafaelSoriaNonameAguilera = {
-    type: MARRIAGE
-};
-
-var mtUrsulaBenitezPerezJoseMaceira = {
-    type: MARRIAGE
-};
-
-var mtSaraMaceiraBenitezRaulVilaCarratala = {
-    type: MARRIAGE
-};
-
-var mtRamonMaceiraBenitezConcepcion = {
-    type: MARRIAGE
-};
-
-var mtRamonMaceiraBenitezNonamePucha = {
-    type: MARRIAGE
-};
-
-var mtJoseMaceiraBenitezNorma = {
-    type: MARRIAGE
-};
-
-var mtRodolfoValentinoMaceiraValentina = {
-    type: MARRIAGE
-};
-
-var mtBertaMaceiraBenitezNonameVicente = {
-    type: MARRIAGE
-};
-
-var mtBertaMaceiraBenitezNonameUSA = {
-    type: MARRIAGE
-};
-
-var mtGloriaMaceiraBenitezMoisesCalzadaBenitez = {
-    type: MARRIAGE
-};
-
-var mtEloyMaceiraBenitezCarmen = {
-    type: MARRIAGE
-};
-
-var mtEloyMaceiraBenitezIrela = {
-    type: MARRIAGE
-};
-
-var mtIlianaMaceiraNonameManzano = {
-    type: MARRIAGE
-};
-
-var mtWilfredoLegonWaldarramaEstherRodriguezHurtado = {
-    type: MARRIAGE
-};
-
-var mtMercedesdelaCandelariaLegonRodriguezJorgePerez = {
-    type: MARRIAGE
-};
-
-var mtMercedesdelaCandelariaLegonRodriguezRafaelPerezSantana = {
-    type: MARRIAGE
-};
-
-var mtRafaelPerezLegonDayesiRizoCala = {
-    type: MARRIAGE
-};
 
 
 //---------------------------------------------------------
@@ -2556,289 +2075,161 @@ var FIFTH_GEN_ROW = FOURTH_GEN_ROW + GEN_SEPARATOR;
 x = 3;
 i = 2;
 x -= i;
-graph.addPerson(personCoor(FIRST_GEN_ROW, x += i, pBlancaMatosGuisado));
-graph.addPerson(personCoor(FIRST_GEN_ROW, x += i, pMarcelinoMatosRondon));
-graph.addPerson(personCoor(FIRST_GEN_ROW, x += i, pAbelina));
-graph.addPerson(personCoor(FIRST_GEN_ROW, x += i, pCorsina));
-graph.addPerson(personCoor(FIRST_GEN_ROW, x += i, pMiguelRamirezNunez));
-graph.addPerson(personCoor(FIRST_GEN_ROW, x += i, pPurificacionFloresProenza));
-graph.addPerson(personCoor(FIRST_GEN_ROW, x += i, pFela));
-graph.addPerson(personCoor(FIRST_GEN_ROW, x += i, pLuzMatosRondon));
-graph.addPerson(personCoor(FIRST_GEN_ROW, x += i, pMiguelSoria));
-graph.addPerson(personCoor(FIRST_GEN_ROW, x += i, pIluminadaRamos));
-graph.addPerson(personCoor(FIRST_GEN_ROW, x += i, pZenaidaSoriaRamos));
-graph.addPerson(personCoor(FIRST_GEN_ROW, x += i, pEstrellaSoriaRamos));
-graph.addPerson(personCoor(FIRST_GEN_ROW, x += i, pHeribertoQuevedo));
-graph.addPerson(personCoor(FIRST_GEN_ROW, x += i, pRolandoSoriaRamos));
-graph.addPerson(personCoor(FIRST_GEN_ROW, x += i, pFernanda));
-graph.addPerson(personCoor(FIRST_GEN_ROW, x += i, pJustina));
-graph.addPerson(personCoor(FIRST_GEN_ROW, x += i, pUrsulaBenitezPerez));
-graph.addPerson(personCoor(FIRST_GEN_ROW, x += i, pJoseMaceira));
-graph.addPerson(personCoor(FIRST_GEN_ROW, x += i, pMoisesMarioCalzadaMaceira));
+graph.addPeople(FIRST_GEN_ROW, x += i, 
+    pBlancaMatosGuisado, pMarcelinoMatosRondon, pAbelina, 
+    pCorsina, pMiguelRamirezNunez, pPurificacionFloresProenza, 
+    pFela, pLuzMatosRondon, pJustina, pMiguelSoria, 
+    pIluminadaRamos, pZenaidaSoriaRamos, pEstrellaSoriaRamos, 
+    pHeribertoQuevedo, pRolandoSoriaRamos, pFernanda, 
+     pUrsulaBenitezPerez, pJoseMaceira, 
+    pMoisesMarioCalzadaMaceira);
 
 x = 1;
 i = 2;
 x -= i;
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pDoraMatosMatos));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pMarcelinoMatosMatos));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pLuzDivina));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pElsaMatosMatos));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pManuelDiaz));
-x += i * 1.5;
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pAbelinaMatosMatos));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pRubenAguileraAcuna));
-x += i * 3.5;
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pLuisEnriqueMatosMatos));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pIrmaMorales));
-x += i * 8;
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pDignaElenaMatosMatos));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pManuelAmadoRamirezFlores));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pTelmoMaciasMatos));
-x += i * 4.5;
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pCucaAlvarez));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pLuciaAlvarez));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pMiguelRamirezFlores));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pEmiliaGonzalezFruto));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pVictorRamirezFlores));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pOfeliaVargas));
-x += i * 3;
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pCesarRamirezFlores));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pLidiaMilanReytor));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pEgidioRamirezFlores));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pNoeliaRamirezFlores));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pErnestinaRamirezFlores));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pNonamePereda));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pLuisMiroclesSoriaRamos));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pCarmenMaceiraPerez));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pCaridadQuevedoSoria));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pWilliamCambara));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pSoniaQuevedoSoria));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pBelkisQuevedoSoria));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pNonameVazquez));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pBertaQuevedoSoria));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pNonameDominguez));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pHeribertoQuevedoSoria));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pClaribel));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pReyterSoria));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pYolandaPineiro));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pTeresaSoria));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pLuisSoria));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pRafaelSoria));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pNonameAguilera));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pRobertoSoria));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pLourdesSoria));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pCarmenMaceiraPerez));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pSaraMaceiraBenitez));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pRaulVilaCarratala));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pRamonMaceiraBenitez));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pConcepcion));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pNonamePucha));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pJoseMaceiraBenitez));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pNorma));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pBertaMaceiraBenitez));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pNonameVicente));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pNonameUSA));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pLuisaMaceiraBenitez));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pGloriaMaceiraBenitez));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pMoisesCalzadaBenitez));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pEloyMaceiraBenitez));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pCarmen));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pIrela));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pMarioMaceira));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pWilfredoLegonWaldarrama));
-graph.addPerson(personCoor(SECOND_GEN_ROW, x += i, pEstherRodriguezHurtado));
+graph.addPeople(SECOND_GEN_ROW, x += i, 
+    pDoraMatosMatos, pMarcelinoMatosMatos, 
+    pLuzDivina, pElsaMatosMatos, 
+    pManuelDiaz, pAbelinaMatosMatos, 
+    pRubenAguileraAcuna, pLuisEnriqueMatosMatos, 
+    pIrmaMorales, pDignaElenaMatosMatos, 
+    pManuelAmadoRamirezFlores, pTelmoMaciasMatos, 
+    pCucaAlvarez, pLuciaAlvarez, 
+    pMiguelRamirezFlores, pEmiliaGonzalezFruto, 
+    pVictorRamirezFlores, pOfeliaVargas, 
+    pCesarRamirezFlores, pLidiaMilanReytor, 
+    pEgidioRamirezFlores, pNoeliaRamirezFlores, 
+    pErnestinaRamirezFlores, pNonamePereda, 
+    pLuisMiroclesSoriaRamos, pCarmenMaceiraPerez, 
+    pCaridadQuevedoSoria, pWilliamCambara, 
+    pSoniaQuevedoSoria, pBelkisQuevedoSoria, 
+    pNonameVazquez, pBertaQuevedoSoria, 
+    pNonameDominguez, pHeribertoQuevedoSoria, 
+    pClaribel, pReyterSoria, pNonameReyterSpouse,
+    pYolandaPineiro, pTeresaSoria, 
+    pLuisSoria, pRafaelSoria, 
+    pNonameAguilera, pRobertoSoria, 
+    pLourdesSoria, pSaraMaceiraBenitez, 
+    pRaulVilaCarratala, pRamonMaceiraBenitez, 
+    pNonameRamonSpouse,
+    pConcepcion, pNonamePucha, 
+    pJoseMaceiraBenitez, pNorma, 
+    pBertaMaceiraBenitez, pNonameVicente, 
+    pNonameUSA, pLuisaMaceiraBenitez, 
+    pGloriaMaceiraBenitez, pMoisesCalzadaBenitez, 
+    pEloyMaceiraBenitez, pCarmen, 
+    pIrela, pMarioMaceira, 
+    pWilfredoLegonWaldarrama, pEstherRodriguezHurtado);
 
 x = 0;
 i = 2;
 x -= i;
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pTelmoMaciasMatosHijo));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pIlda));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pBlancaMariaMatos));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pSamuel));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pElsaDiazMatos));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pHeysel));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pKeniaAguileraMatos));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pGerardoPelaez));
-x += i * 1;
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pCarlosNunez));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pRubenAguileraMatos));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pSandra));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pIrmaMatosMorales));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pSoniaMatosMorales));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pLuisEnriqueMatosMorales));
-x += i * 0.5;
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pMiguelEnriqueRamirezMatos));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pAnaPerezFonseca));
-x += i * 3;
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pGisela));
-x += i * 0.5;
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pBlancaDeLaPurificacionRamirezMatos));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pJorgeLuisSoriaMaceira));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pAntoniodeMarcosRamirezMatos));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pGladysAveraztruces));
-x += i * 0.5;
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pElbaAguilar));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pMujerNegra));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pAmadoMarcelinoRamirezMatos));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pCaridadMartinAlvarez));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pPilarMartinAlvarez));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pMauricioRamirezGonzalez));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pXiomaraRamirezGonzalez));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pMiriamRamirezGonzalez));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pPurificacionRamirezVargas));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pSalomeRodriguezPino));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pRaulMartin));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pCesarRamirezMilan));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pEstrellaRamirezMilan));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pObduliaRamirezMilan));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pTomasFerrandiSayasBazan));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pFelixRamirezMilan));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pTaniaSoriaMaceira));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pBernardinoPenaHernandez));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pJuanGualbertoCoronaPerez));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pTamaraSoriaMaceira));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pCharlesFreeman));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pFelixArañoWanton));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pWilliamCambaraQuevedo));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pAlexander));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pJorgeLuis));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pOniel));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pAlina));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pGabrielVazquezQuevedo));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pAlexanderVazquezQuevedo));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pIlianaVazquezQuevedo));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pNonameToranzo));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pRafaelDominguezQuevedo));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pEnrique));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pNoname));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pJorgeQuevedo));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pVivianQuevedo));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pReyterSoria));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pRobinSoria));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pRoldanSoriaPineiro));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pReynierSoriaPineiro));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pJorgeLuisSoriaAguilera));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pIsabelMaceira));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pNonamePanchitoMaceira));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pJorgeMaceira));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pGustavoMaceira));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pRodolfoValentinoMaceira));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pValentina));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pRaulVicenteMaceira));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pEloyMaceira));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pNoNameMaceira));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pErnestoMaceira));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pTaniaMaceira));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pIlianaMaceira));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pNonameManzano));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pMercedesdelaCandelariaLegonRodriguez));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pJorgePerez));
-graph.addPerson(personCoor(THIRD_GEN_ROW, x += i, pRafaelPerezSantana));
+graph.addPeople(THIRD_GEN_ROW, x += i, 
+    pTelmoMaciasMatosHijo, pIlda, pBlancaMariaMatos, 
+    pSamuel, pElsaDiazMatos, pHeysel, 
+    pKeniaAguileraMatos, pGerardoPelaez, pCarlosNunez, 
+    pRubenAguileraMatos, pSandra, pIrmaMatosMorales, 
+    pSoniaMatosMorales, pLuisEnriqueMatosMorales, pMiguelEnriqueRamirezMatos, 
+    pAnaPerezFonseca, pGisela, pBlancaDeLaPurificacionRamirezMatos, 
+    pJorgeLuisSoriaMaceira, pAntoniodeMarcosRamirezMatos, pGladysAveraztruces, 
+    pElbaAguilar, pMujerNegra, pAmadoMarcelinoRamirezMatos, 
+    pCaridadMartinAlvarez, pPilarMartinAlvarez, pMauricioRamirezGonzalez, 
+    pXiomaraRamirezGonzalez, pMiriamRamirezGonzalez, pPurificacionRamirezVargas, 
+    pSalomeRodriguezPino, pRaulMartin, pCesarRamirezMilan, 
+    pEstrellaRamirezMilan, pObduliaRamirezMilan, pTomasFerrandiSayasBazan, 
+    pFelixRamirezMilan, pTaniaSoriaMaceira, pBernardinoPenaHernandez, 
+    pJuanGualbertoCoronaPerez, pTamaraSoriaMaceira, pCharlesFreeman, 
+    pFelixArañoWanton, pWilliamCambaraQuevedo, pAlexander, 
+    pJorgeLuis, pOniel, pAlina, 
+    pGabrielVazquezQuevedo, pAlexanderVazquezQuevedo, pIlianaVazquezQuevedo, 
+    pNonameToranzo, pRafaelDominguezQuevedo, pEnrique, 
+    pNonamePuchuchu, pJorgeQuevedo, pVivianQuevedo,
+    pReyterReyticoSoria, pRobinSoria, pRoldanSoriaPineiro, 
+    pReynierSoriaPineiro, pJorgeLuisSoriaAguilera, pIsabelMaceira, 
+    pNonamePanchitoMaceira, pJorgeMaceira, pGustavoMaceira, 
+    pRodolfoValentinoMaceira, pValentina, pRaulVicenteMaceira, 
+    pEloyMaceira, pNoNameMaceira, pErnestoMaceira, 
+    pTaniaMaceira, pIlianaMaceira, pNonameManzano, 
+    pMercedesdelaCandelariaLegonRodriguez, pJorgePerez, pRafaelPerezSantana);
 
 x = 1;
 i = 2;
 x -= i;
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pTelmoMacias));
-x += i * 0.5;
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pAntonio));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pJacqueline));
-x += i * 2.5;
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pAlinetPelaezAguilera));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pAdrian));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pCarlosNunezAguilera));
-x += i * 0.5;
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pRubenAguilera));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pHijaRubenNoname));
-x += i * 3;
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pYanitsiaRamirezPerez));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pHilderTorres));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pYaritskeRamirezPerez));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pOrlando));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pWilfredo));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pGiselaHija));
-x += i * 1;
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pJorgeAmadoSoriaRamirez));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pAmalSaifFonte));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pJorgeLuisSoriaRamirez));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pAndyMarcosRamirezAveraztruces));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pAntoniodeMarcosRamirezAveraztruces));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pMonicaMariaRamirez));
-x += 3;
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pCarlosEnriqueRamirezMartin));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pRaulRamirezMartin));
-x += 8;
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pImirsiRodriguezRamirez));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pRonaldRodriguezRamirez));
-x += 6;
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pSandraFerrandiRamirez));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pDaniaFerrandiRamirez));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pMarietaPenaHernandez));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pNonameVidal));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pTaniadelCarmenCoronaSoria));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pAriel));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pCarlosLuisFreemanSoria));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pDalia));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pAlina));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pYordankaTitoMoreira));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pAnnelisPerezLegon));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pJorgeAmadoSoriaRamirez));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pArietaSoriaFernandez));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pAntonio));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pAdrianSoriaCanela));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pJorgeMiguelSoriaCasero));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pValkisToranzoVazquez));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pBelkisToranzoVazquez));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pSamiraYamirkaMaceira));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pNadiaMaceira));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pValiaMaceira));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pRodolfoValentinoMaceira));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pIlianaManzano));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pErnestoManzano));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pAnnelisPerezLegon));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pRafaelPerezLegon));
-graph.addPerson(personCoor(FOURTH_GEN_ROW, x += i, pDayesiRizoCala));
+graph.addPeople(FOURTH_GEN_ROW, x += i, 
+    pTelmoMacias, pAntonio, pJacqueline, 
+    pAlinetPelaezAguilera, pAdrian, pCarlosNunezAguilera, 
+    pRubenAguilera, pHijaRubenNoname, pYanitsiaRamirezPerez, 
+    pHilderTorres, pYaritskeRamirezPerez, pOrlando, 
+    pWilfredo, pGiselaHija, pJorgeAmadoSoriaRamirez,
+    pAmalSaifFonte, pJorgeLuisSoriaRamirez, pAndyMarcosRamirezAveraztruces,
+    pAntoniodeMarcosRamirezAveraztruces, pMonicaMariaRamirez, pCarlosEnriqueRamirezMartin,
+    pRaulRamirezMartin, pImirsiRodriguezRamirez, pRonaldRodriguezRamirez,
+    pSandraFerrandiRamirez, pDaniaFerrandiRamirez, pMarietaPenaHernandez,
+    pNonameVidal, pTaniadelCarmenCoronaSoria, pAriel,
+    pCarlosLuisFreemanSoria, pDalia, pAlina,
+    pYordankaTitoMoreira, pAnnelisPerezLegon, pJorgeAmadoSoriaRamirez,
+    pArietaSoriaFernandez, pAntonio, pAdrianSoriaCanela,
+    pJorgeMiguelSoriaCasero, pValkisToranzoVazquez, pBelkisToranzoVazquez,
+    pSamiraYamirkaMaceira, pNadiaMaceira, pValiaMaceira,
+    pRodolfoValentinoMaceira2, pIlianaManzano, pErnestoManzano,
+    pRafaelPerezLegon, pDayesiRizoCala);
 
 x = 1;
 i = 2;
 x -= i;
-x += 29;
-graph.addPerson(personCoor(FIFTH_GEN_ROW, x += i, pJavierAlejandroTorresRamirez));
-graph.addPerson(personCoor(FIFTH_GEN_ROW, x += i, pMiguelAlejandroTorresRamirez));
-graph.addPerson(personCoor(FIFTH_GEN_ROW, x += i, pRoxana));
-graph.addPerson(personCoor(FIFTH_GEN_ROW, x += i, pRolandito));
-graph.addPerson(personCoor(FIFTH_GEN_ROW, x += i, pKarlaNunez));
-x += 41;
-graph.addPerson(personCoor(FIFTH_GEN_ROW, x += i, pIsabela));
-graph.addPerson(personCoor(FIFTH_GEN_ROW, x += i, pDianetVidalPena));
-graph.addPerson(personCoor(FIFTH_GEN_ROW, x += i, pSaulo));
-graph.addPerson(personCoor(FIFTH_GEN_ROW, x += i, pBerenice));
-graph.addPerson(personCoor(FIFTH_GEN_ROW, x += i, pEleonora));
-graph.addPerson(personCoor(FIFTH_GEN_ROW, x += i, pCarlosFreeman));
-graph.addPerson(personCoor(FIFTH_GEN_ROW, x += i, pJorgeCarlos));
-graph.addPerson(personCoor(FIFTH_GEN_ROW, x += i, pCarlosAlejandroFreeman));
-graph.addPerson(personCoor(FIFTH_GEN_ROW, x += i, pCarmenHelenestherSoriaPerez));
-graph.addPerson(personCoor(FIFTH_GEN_ROW, x += i, pJorgeLuisSoriaPerez));
-graph.addPerson(personCoor(FIFTH_GEN_ROW, x += i, pDavidJeremiasNoNameSoria));
-graph.addPerson(personCoor(FIFTH_GEN_ROW, x += i, pDanieldeJesusNonameSoria));
-graph.addPerson(personCoor(FIFTH_GEN_ROW, x += i, pJosueNonameSoria));
-graph.addPerson(personCoor(FIFTH_GEN_ROW, x += i, pIsmaelAdrianSoria));
-graph.addPerson(personCoor(FIFTH_GEN_ROW, x += i, pAbrahamAhmedSoria));
-graph.addPerson(personCoor(FIFTH_GEN_ROW, x += i, pRaylenisSoria));
-graph.addPerson(personCoor(FIFTH_GEN_ROW, x += i, pSelenePerezRizo));
+graph.addPeople(FIFTH_GEN_ROW, x += i, 
+    pJavierAlejandroTorresRamirez, pMiguelAlejandroTorresRamirez, 
+    pRoxana, pRolandito, 
+    pKarlaNunez, pIsabela, 
+    pDianetVidalPena, pSaulo, 
+    pBerenice, pEleonora, 
+    pCarlosFreeman, pJorgeCarlos, 
+    pCarlosAlejandroFreeman, pCarmenHelenestherSoriaPerez, 
+    pJorgeLuisSoriaPerez, pDavidJeremiasNoNameSoria, 
+    pDanieldeJesusNonameSoria, pJosueNonameSoria, 
+    pIsmaelAdrianSoria, pAbrahamAhmedSoria, 
+    pRaylenisSoria, pSelenePerezRizo);
 
-
+//RELATIONSHIP DATA
+/*
+var relationship = {
+    date : date, //null. The date in which the relationship was formalized
+    type: string //type of relationship, one of MARRIAGE, RELATIONSHIP
+}
+ */
 //relationship nodes
+
 graph.rel(pDaniaFerrandiRamirez, pIsabela);
+graph.rel(pJorgeLuisSoriaMaceira, pJorgeMiguelSoriaCasero);
+graph.rel(pJorgeLuisSoriaMaceira, pAdrianSoriaCanela);
+graph.rel(pJorgeLuisSoriaMaceira, pArietaSoriaFernandez);
+
+graph.rel(pJorgeMiguelSoriaCasero, pRaylenisSoria);
+graph.rel(pAlina,pJorgeCarlos);
 graph.rel(pCucaAlvarez, pPilarMartinAlvarez, [
     [pCucaAlvarez.row + 3, pCucaAlvarez.col],
     [pPilarMartinAlvarez.row - 2, pPilarMartinAlvarez.col]
 ]);
+
 graph.rel(pCucaAlvarez, pCaridadMartinAlvarez, [
     [pCucaAlvarez.row + 3, pCucaAlvarez.col],
     [pCaridadMartinAlvarez.row - 2, pCaridadMartinAlvarez.col]
 ]);
+graph.rel(pAdrianSoriaCanela, pIsmaelAdrianSoria, [
+    [pAdrianSoriaCanela.row - 2, pAdrianSoriaCanela.col],
+    [pIsmaelAdrianSoria.row - 2, pIsmaelAdrianSoria.col]
+]);
+
+graph.rel(pAdrianSoriaCanela, pAbrahamAhmedSoria, [
+    [pAbrahamAhmedSoria.row - 2, pAbrahamAhmedSoria.col],
+    [pAbrahamAhmedSoria.row - 2, pAbrahamAhmedSoria.col]
+]);
+
 graph.add(pBlancaMatosGuisado.row, pMarcelinoMatosRondon.col - 1,
-    mtBlancaMatosGuisadoMarcelinoMatosRondon, [pBlancaMatosGuisado, pMarcelinoMatosRondon, [pDignaElenaMatosMatos, [pBlancaMatosGuisado.row + 3, pMarcelinoMatosRondon.col - 1],
+    {
+        date: '13/12/2012',
+        type: MARRIAGE
+    }, [pBlancaMatosGuisado, pMarcelinoMatosRondon, [pDignaElenaMatosMatos, [pBlancaMatosGuisado.row + 3, pMarcelinoMatosRondon.col - 1],
             [pDignaElenaMatosMatos.row - 2, pDignaElenaMatosMatos.col]
         ],
         [pDoraMatosMatos, [pBlancaMatosGuisado.row + 3, pMarcelinoMatosRondon.col - 1],
@@ -2858,10 +2249,10 @@ graph.add(pBlancaMatosGuisado.row, pMarcelinoMatosRondon.col - 1,
         ]
     ]
 );
-graph.add(pMiguelRamirezNunez, pPurificacionFloresProenza.col - 1,
-    mtMiguelRamirezNunezPurificacionFloresProenza, [pMiguelRamirezNunez, pPurificacionFloresProenza, pManuelAmadoRamirezFlores, pErnestinaRamirezFlores, pMiguelRamirezFlores, pVictorRamirezFlores, pCesarRamirezFlores, pEgidioRamirezFlores, pNoeliaRamirezFlores]);
-graph.add(pLuisEnriqueMatosMatos.row, pIrmaMorales.col - 1,
-    mtLuisEnriqueMatosMatosIrmaMorales, [pLuisEnriqueMatosMatos, pIrmaMorales, [pIrmaMatosMorales, [pLuisEnriqueMatosMatos.row + 3, pIrmaMorales.col - 1],
+graph.addMt(pMiguelRamirezNunez, pPurificacionFloresProenza.col - 1,
+     [pMiguelRamirezNunez, pPurificacionFloresProenza, pManuelAmadoRamirezFlores, pErnestinaRamirezFlores, pMiguelRamirezFlores, pVictorRamirezFlores, pCesarRamirezFlores, pEgidioRamirezFlores, pNoeliaRamirezFlores]);
+graph.addMt(pLuisEnriqueMatosMatos.row, pIrmaMorales.col - 1,
+     [pLuisEnriqueMatosMatos, pIrmaMorales, [pIrmaMatosMorales, [pLuisEnriqueMatosMatos.row + 3, pIrmaMorales.col - 1],
             [pIrmaMatosMorales.row - 2, pIrmaMatosMorales.col]
         ],
         [pSoniaMatosMorales, [pLuisEnriqueMatosMatos.row + 3, pIrmaMorales.col - 1],
@@ -2872,8 +2263,8 @@ graph.add(pLuisEnriqueMatosMatos.row, pIrmaMorales.col - 1,
         ]
     ]
 );
-graph.add(pDignaElenaMatosMatos.row, pManuelAmadoRamirezFlores.col - 1,
-    mtDignaElenaMatosMatosManuelAmadoRamirezFlores, [pDignaElenaMatosMatos, pManuelAmadoRamirezFlores, [pBlancaDeLaPurificacionRamirezMatos, [pDignaElenaMatosMatos.row + 3, pManuelAmadoRamirezFlores.col - 1],
+graph.addMt(pDignaElenaMatosMatos.row, pManuelAmadoRamirezFlores.col - 1,
+     [pDignaElenaMatosMatos, pManuelAmadoRamirezFlores, [pBlancaDeLaPurificacionRamirezMatos, [pDignaElenaMatosMatos.row + 3, pManuelAmadoRamirezFlores.col - 1],
             [pBlancaDeLaPurificacionRamirezMatos.row - 2, pBlancaDeLaPurificacionRamirezMatos.col]
         ],
         [pAmadoMarcelinoRamirezMatos, [pDignaElenaMatosMatos.row + 3, pManuelAmadoRamirezFlores.col - 1],
@@ -2887,13 +2278,13 @@ graph.add(pDignaElenaMatosMatos.row, pManuelAmadoRamirezFlores.col - 1,
         ]
     ]
 );
-graph.add(pDoraMatosMatos, pTelmoMaciasMatos.col - 1, mtDoraMatosMatosTelmoMaciasMatos, [pDoraMatosMatos, pTelmoMaciasMatos, pTelmoMaciasMatosHijo]);
-graph.add(pMarcelinoMatosMatos.row, pLuzDivina.col - 1,
-    mtMarcelinoMatosMatosLuzDivina, [pMarcelinoMatosMatos, pLuzDivina, pBlancaMariaMatos]
+graph.addMt(pDoraMatosMatos, pTelmoMaciasMatos.col - 1, [pDoraMatosMatos, pTelmoMaciasMatos, pTelmoMaciasMatosHijo]);
+graph.addMt(pMarcelinoMatosMatos.row, pLuzDivina.col - 1,
+    [pMarcelinoMatosMatos, pLuzDivina, pBlancaMariaMatos]
 );
-graph.add(pElsaMatosMatos.row, pManuelDiaz.col - 1, mtElsaMatosMatosManuelDiaz, [pElsaMatosMatos, pManuelDiaz, pElsaDiazMatos]);
-graph.add(pAbelinaMatosMatos.row, pRubenAguileraAcuna.col - 1,
-    mtAbelinaMatosMatosRubenAguileraAcuna, [pAbelinaMatosMatos, pRubenAguileraAcuna, [pKeniaAguileraMatos, [pAbelinaMatosMatos.row + 3, pRubenAguileraAcuna.col - 1],
+graph.addMt(pElsaMatosMatos.row, pManuelDiaz.col - 1,  [pElsaMatosMatos, pManuelDiaz, pElsaDiazMatos]);
+graph.addMt(pAbelinaMatosMatos.row, pRubenAguileraAcuna.col - 1,
+     [pAbelinaMatosMatos, pRubenAguileraAcuna, [pKeniaAguileraMatos, [pAbelinaMatosMatos.row + 3, pRubenAguileraAcuna.col - 1],
             [pKeniaAguileraMatos.row - 2, pKeniaAguileraMatos.col]
         ],
         [pRubenAguileraMatos, [pAbelinaMatosMatos.row + 3, pRubenAguileraAcuna.col - 1],
@@ -2901,14 +2292,15 @@ graph.add(pAbelinaMatosMatos.row, pRubenAguileraAcuna.col - 1,
         ]
     ]
 );
-graph.add(pErnestinaRamirezFlores.row, pNonamePereda.col - 1,
-    mtErnestinaRamirezFloresNonamePereda, [
+
+graph.addMt(pErnestinaRamirezFlores.row, pNonamePereda.col - 1,
+     [
         pErnestinaRamirezFlores,
         pNonamePereda
     ]
 );
-graph.add(pMiguelRamirezFlores.row, pEmiliaGonzalezFruto.col - 1,
-    mtMiguelRamirezFloresEmiliaGonzalezFruto, [pMiguelRamirezFlores, pEmiliaGonzalezFruto, [pMauricioRamirezGonzalez, [pMiguelRamirezFlores.row + 3, pEmiliaGonzalezFruto.col - 1],
+graph.addMt(pMiguelRamirezFlores.row, pEmiliaGonzalezFruto.col - 1,
+     [pMiguelRamirezFlores, pEmiliaGonzalezFruto, [pMauricioRamirezGonzalez, [pMiguelRamirezFlores.row + 3, pEmiliaGonzalezFruto.col - 1],
             [pMauricioRamirezGonzalez.row - 2, pMauricioRamirezGonzalez.col]
         ],
         [pXiomaraRamirezGonzalez, [pMiguelRamirezFlores.row + 3, pEmiliaGonzalezFruto.col - 1],
@@ -2919,11 +2311,12 @@ graph.add(pMiguelRamirezFlores.row, pEmiliaGonzalezFruto.col - 1,
         ]
     ]
 );
-graph.add(pVictorRamirezFlores.row, pOfeliaVargas.col - 1,
-    mtVictorRamirezFloresOfeliaVargas, [pVictorRamirezFlores, pOfeliaVargas, pPurificacionRamirezVargas]
+
+graph.addMt(pVictorRamirezFlores.row, pOfeliaVargas.col - 1,
+    [pVictorRamirezFlores, pOfeliaVargas, pPurificacionRamirezVargas]
 );
-graph.add(pCesarRamirezFlores.row, pLidiaMilanReytor.col - 1,
-    mtCesarRamirezFloresLidiaMilanReytor, [pCesarRamirezFlores, pLidiaMilanReytor, [pCesarRamirezMilan, [pCesarRamirezFlores.row + 3, pLidiaMilanReytor.col - 1],
+graph.addMt(pCesarRamirezFlores.row, pLidiaMilanReytor.col - 1,
+    [pCesarRamirezFlores, pLidiaMilanReytor, [pCesarRamirezMilan, [pCesarRamirezFlores.row + 3, pLidiaMilanReytor.col - 1],
             [pCesarRamirezMilan.row - 2, pCesarRamirezMilan.col]
         ],
         [pEstrellaRamirezMilan, [pCesarRamirezFlores.row + 3, pLidiaMilanReytor.col - 1],
@@ -2937,11 +2330,11 @@ graph.add(pCesarRamirezFlores.row, pLidiaMilanReytor.col - 1,
         ]
     ]
 );
-graph.add(pTelmoMaciasMatosHijo.row, pIlda.col - 1,
-    mtTelmoMaciasMatosHijoIlda, [pTelmoMaciasMatosHijo, pIlda, pTelmoMacias]
+graph.addMt(pTelmoMaciasMatosHijo.row, pIlda.col - 1,
+     [pTelmoMaciasMatosHijo, pIlda, pTelmoMacias]
 );
-graph.add(pBlancaMariaMatos.row, pSamuel.col - 1,
-    mtBlancaMariaMatosSamuel, [pBlancaMariaMatos, pSamuel, [pAntonio, [pBlancaMariaMatos.row + 3, pSamuel.col - 1],
+graph.addMt(pBlancaMariaMatos.row, pSamuel.col - 1,
+     [pBlancaMariaMatos, pSamuel, [pAntonio, [pBlancaMariaMatos.row + 3, pSamuel.col - 1],
             [pAntonio.row - 2, pAntonio.col]
         ],
         [pJacqueline, [pBlancaMariaMatos.row + 3, pSamuel.col - 1],
@@ -2949,8 +2342,8 @@ graph.add(pBlancaMariaMatos.row, pSamuel.col - 1,
         ]
     ]
 );
-graph.add(pBlancaDeLaPurificacionRamirezMatos.row, pJorgeLuisSoriaMaceira.col - 1,
-    mtBlancaDeLaPurificacionRamirezMatosJorgeLuisSoriaMaceira, [
+graph.addMt(pBlancaDeLaPurificacionRamirezMatos.row, pJorgeLuisSoriaMaceira.col - 1,
+    [
         pBlancaDeLaPurificacionRamirezMatos,
         pJorgeLuisSoriaMaceira, [pJorgeAmadoSoriaRamirez, [pBlancaDeLaPurificacionRamirezMatos.row + 3, pJorgeLuisSoriaMaceira.col - 1],
             [pJorgeAmadoSoriaRamirez.row - 2, pJorgeAmadoSoriaRamirez.col]
@@ -2960,8 +2353,8 @@ graph.add(pBlancaDeLaPurificacionRamirezMatos.row, pJorgeLuisSoriaMaceira.col - 
         ]
     ]
 );
-graph.add(pAmadoMarcelinoRamirezMatos.row, pCaridadMartinAlvarez.col - 1,
-    mtAmadoMarcelinoRamirezMatosCaridadMartinAlvarez, [pAmadoMarcelinoRamirezMatos, pCaridadMartinAlvarez, [pCarlosEnriqueRamirezMartin, [pAmadoMarcelinoRamirezMatos.row + 3, pCaridadMartinAlvarez.col - 1],
+graph.addMt(pAmadoMarcelinoRamirezMatos.row, pCaridadMartinAlvarez.col - 1,
+    [pAmadoMarcelinoRamirezMatos, pCaridadMartinAlvarez, [pCarlosEnriqueRamirezMartin, [pAmadoMarcelinoRamirezMatos.row + 3, pCaridadMartinAlvarez.col - 1],
             [pCarlosEnriqueRamirezMartin.row - 2, pCarlosEnriqueRamirezMartin.col]
         ],
         [pRaulRamirezMartin, [pAmadoMarcelinoRamirezMatos.row + 3, pCaridadMartinAlvarez.col - 1],
@@ -2969,9 +2362,9 @@ graph.add(pAmadoMarcelinoRamirezMatos.row, pCaridadMartinAlvarez.col - 1,
         ]
     ]
 );
-graph.add(pElsaDiazMatos.row, pHeysel.col - 1, mtElsaDiazMatosHeysel, [pElsaDiazMatos, pHeysel]);
-graph.add(pMiguelEnriqueRamirezMatos.row - 1, pGisela.col - 1,
-    mtMiguelEnriqueRamirezMatosGisela, [
+graph.addMt(pElsaDiazMatos.row, pHeysel.col - 1, [pElsaDiazMatos, pHeysel]);
+graph.addMt(pMiguelEnriqueRamirezMatos.row - 1, pGisela.col - 1,
+    [
         [pMiguelEnriqueRamirezMatos, [
             pMiguelEnriqueRamirezMatos.row - 1,
             pMiguelEnriqueRamirezMatos.col
@@ -2988,8 +2381,8 @@ graph.add(pMiguelEnriqueRamirezMatos.row - 1, pGisela.col - 1,
         ]
     ]
 );
-graph.add(pMiguelEnriqueRamirezMatos.row, pAnaPerezFonseca.col - 1,
-    mtMiguelEnriqueRamirezMatosAnaPerezFonseca, [pMiguelEnriqueRamirezMatos, pAnaPerezFonseca, [pYaritskeRamirezPerez, [pMiguelEnriqueRamirezMatos.row + 3, pAnaPerezFonseca.col - 1],
+graph.addMt(pMiguelEnriqueRamirezMatos.row, pAnaPerezFonseca.col - 1,
+    [pMiguelEnriqueRamirezMatos, pAnaPerezFonseca, [pYaritskeRamirezPerez, [pMiguelEnriqueRamirezMatos.row + 3, pAnaPerezFonseca.col - 1],
             [pYaritskeRamirezPerez.row - 2, pYaritskeRamirezPerez.col]
         ],
         [pYanitsiaRamirezPerez, [pMiguelEnriqueRamirezMatos.row + 3, pAnaPerezFonseca.col - 1],
@@ -2997,8 +2390,8 @@ graph.add(pMiguelEnriqueRamirezMatos.row, pAnaPerezFonseca.col - 1,
         ]
     ]
 );
-graph.add(pAntoniodeMarcosRamirezMatos.row, pGladysAveraztruces.col - 1,
-    mtAntoniodeMarcosRamirezMatosGladysAveraztruces, [pAntoniodeMarcosRamirezMatos, pGladysAveraztruces, [pAndyMarcosRamirezAveraztruces, [pAntoniodeMarcosRamirezMatos.row + 3, pGladysAveraztruces.col - 1],
+graph.addMt(pAntoniodeMarcosRamirezMatos.row, pGladysAveraztruces.col - 1,
+    [pAntoniodeMarcosRamirezMatos, pGladysAveraztruces, [pAndyMarcosRamirezAveraztruces, [pAntoniodeMarcosRamirezMatos.row + 3, pGladysAveraztruces.col - 1],
             [pAndyMarcosRamirezAveraztruces.row - 2, pAndyMarcosRamirezAveraztruces.col]
         ],
         [pAntoniodeMarcosRamirezAveraztruces, [pAntoniodeMarcosRamirezMatos.row + 3, pGladysAveraztruces.col - 1],
@@ -3007,67 +2400,380 @@ graph.add(pAntoniodeMarcosRamirezMatos.row, pGladysAveraztruces.col - 1,
     ]
 );
 graph.add(pAntoniodeMarcosRamirezMatos.row - 1, pMujerNegra.col - 1,
-    rlAntoniodeMarcosRamirezMatosMujerNegra, [
+    {type:RELATIONSHIP}, [
         [pAntoniodeMarcosRamirezMatos, [pAntoniodeMarcosRamirezMatos.row - 1, pAntoniodeMarcosRamirezMatos.col]],
         [pMujerNegra, [pMujerNegra.row - 1, pMujerNegra.col]]
     ]
 );
-graph.add(pAntoniodeMarcosRamirezMatos.row - 0.75, pElbaAguilar.col - 1,
-    mtAntoniodeMarcosRamirezMatosElbaAguilar, [
+
+graph.addMt(pAntoniodeMarcosRamirezMatos.row - 0.75, pElbaAguilar.col - 1,
+    [
         [pAntoniodeMarcosRamirezMatos, [pAntoniodeMarcosRamirezMatos.row - 0.75, pAntoniodeMarcosRamirezMatos.col]],
         [pElbaAguilar, [pElbaAguilar.row - 0.75, pElbaAguilar.col]], pMonicaMariaRamirez
     ]);
-graph.add(pKeniaAguileraMatos.row, pGerardoPelaez.col - 1,
-    mtKeniaAguileraMatosGerardoPelaez, [pKeniaAguileraMatos, pGerardoPelaez, pAlinetPelaezAguilera]);
-graph.add(pKeniaAguileraMatos.row - 1, pCarlosNunez.col - 1,
-    mtKeniaAguileraMatosCarlosNunez, [
+graph.addMt(pKeniaAguileraMatos.row, pGerardoPelaez.col - 1,
+    [pKeniaAguileraMatos, pGerardoPelaez, pAlinetPelaezAguilera]);
+graph.addMt(pKeniaAguileraMatos.row - 1, pCarlosNunez.col - 1,
+    [
         [pKeniaAguileraMatos, [pKeniaAguileraMatos.row - 1, pKeniaAguileraMatos.col]],
         [pCarlosNunez, [pCarlosNunez.row - 1, pCarlosNunez.col]], pCarlosNunezAguilera
     ]);
-graph.add(pRubenAguileraMatos.row, pSandra.col - 1, mtRubenAguileraMatosSandra, [pRubenAguileraMatos, pSandra, [pRubenAguilera, [pRubenAguileraMatos.row + 3, pSandra.col - 1],
+graph.addMt(pRubenAguileraMatos.row, pSandra.col - 1, [pRubenAguileraMatos, pSandra, [pRubenAguilera, [pRubenAguileraMatos.row + 3, pSandra.col - 1],
         [pRubenAguilera.row - 2, pRubenAguilera.col]
     ],
     [pHijaRubenNoname, [pRubenAguileraMatos.row + 3, pSandra.col - 1],
         [pHijaRubenNoname.row - 2, pHijaRubenNoname.col]
     ]
 ]);
-graph.add(pPurificacionRamirezVargas.row, pSalomeRodriguezPino.col - 1, mtPurificacionRamirezVargasSalomeRodriguezPino, [pPurificacionRamirezVargas, pSalomeRodriguezPino, [pImirsiRodriguezRamirez, [pPurificacionRamirezVargas.row + 3, pSalomeRodriguezPino.col - 1],
+graph.addMt(pPurificacionRamirezVargas.row, pSalomeRodriguezPino.col - 1, [pPurificacionRamirezVargas, pSalomeRodriguezPino, [pImirsiRodriguezRamirez, [pPurificacionRamirezVargas.row + 3, pSalomeRodriguezPino.col - 1],
         [pImirsiRodriguezRamirez.row - 2, pImirsiRodriguezRamirez.col]
     ],
     [pRonaldRodriguezRamirez, [pPurificacionRamirezVargas.row + 3, pSalomeRodriguezPino.col - 1],
         [pRonaldRodriguezRamirez.row - 2, pRonaldRodriguezRamirez.col]
     ]
 ]);
-graph.add(pObduliaRamirezMilan.row, pTomasFerrandiSayasBazan.col - 1, mtObduliaRamirezTomasFerrandiSayasBazan, [pObduliaRamirezMilan, pTomasFerrandiSayasBazan, [pSandraFerrandiRamirez, [pObduliaRamirezMilan.row + 3, pTomasFerrandiSayasBazan.col - 1],
+graph.addMt(pObduliaRamirezMilan.row, pTomasFerrandiSayasBazan.col - 1, [pObduliaRamirezMilan, pTomasFerrandiSayasBazan, [pSandraFerrandiRamirez, [pObduliaRamirezMilan.row + 3, pTomasFerrandiSayasBazan.col - 1],
         [pSandraFerrandiRamirez.row - 2, pSandraFerrandiRamirez.col]
     ],
     [pDaniaFerrandiRamirez, [pObduliaRamirezMilan.row + 3, pTomasFerrandiSayasBazan.col - 1],
         [pDaniaFerrandiRamirez.row - 2, pDaniaFerrandiRamirez.col]
     ]
 ]);
-graph.add(pAlinetPelaezAguilera.row, pAdrian.col - 1, mtAlinetPelaezAguileraAdrian, [pAlinetPelaezAguilera, pAdrian]);
-graph.add(pYanitsiaRamirezPerez.row, pHilderTorres.col - 1, mtYanitsiaRamirezPerezHilderTorres, [pYanitsiaRamirezPerez, pHilderTorres, [pJavierAlejandroTorresRamirez, [pYanitsiaRamirezPerez.row + 3, pHilderTorres.col - 1],
+graph.addMt(pAlinetPelaezAguilera.row, pAdrian.col - 1, [pAlinetPelaezAguilera, pAdrian]);
+graph.addMt(pYanitsiaRamirezPerez.row, pHilderTorres.col - 1, [pYanitsiaRamirezPerez, pHilderTorres, [pJavierAlejandroTorresRamirez, [pYanitsiaRamirezPerez.row + 3, pHilderTorres.col - 1],
         [pJavierAlejandroTorresRamirez.row - 2, pJavierAlejandroTorresRamirez.col]
     ],
     [pMiguelAlejandroTorresRamirez, [pYanitsiaRamirezPerez.row + 3, pHilderTorres.col - 1],
         [pMiguelAlejandroTorresRamirez.row - 2, pMiguelAlejandroTorresRamirez.col]
     ]
 ]);
-graph.add(pYaritskeRamirezPerez.row, pOrlando.col - 1, mtYaritskeRamirezPerezOrlando, [pYaritskeRamirezPerez, pOrlando, [pRoxana, [pYaritskeRamirezPerez.row + 3, pOrlando.col - 1],
+graph.addMt(pYaritskeRamirezPerez.row, pOrlando.col - 1, [pYaritskeRamirezPerez, pOrlando, [pRoxana, [pYaritskeRamirezPerez.row + 3, pOrlando.col - 1],
         [pRoxana.row - 2, pRoxana.col]
     ],
     [pRolandito, [pYaritskeRamirezPerez.row + 3, pOrlando.col - 1],
         [pRolandito.row - 2, pRolandito.col]
     ]
 ]);
-graph.add(pYaritskeRamirezPerez.row - 1, pWilfredo.col - 1, mtYaritskeRamirezPerezWilfredo, [
+
+graph.addMt(pYaritskeRamirezPerez.row - 1, pWilfredo.col - 1, [
     [pYaritskeRamirezPerez, [pYaritskeRamirezPerez.row - 1, pYaritskeRamirezPerez.col]],
     [pWilfredo, [pWilfredo.row - 1, pWilfredo.col]]
 ]);
+
+graph.addMt(pRamonMaceiraBenitez.row - 1, pConcepcion.col - 1, [
+    [pRamonMaceiraBenitez, [pRamonMaceiraBenitez.row - 1, pRamonMaceiraBenitez.col]],
+    [pConcepcion, [pConcepcion.row - 1, pConcepcion.col]],
+    [pIsabelMaceira, [pIsabelMaceira.row - 1, pIsabelMaceira.col]]
+]);
+
+graph.addMt(pRamonMaceiraBenitez.row - 1, pNonamePucha.col - 1, [
+    [pRamonMaceiraBenitez, [pRamonMaceiraBenitez.row - 1, pRamonMaceiraBenitez.col]],
+    [pNonamePucha, [pNonamePucha.row - 1, pNonamePucha.col]],
+    [pJorgeMaceira, [pJorgeMaceira.row - 1, pJorgeMaceira.col]],
+    [pGustavoMaceira, [pGustavoMaceira.row - 1, pGustavoMaceira.col]]
+]);
+
+
+graph.addMt(pRamonMaceiraBenitez.row - 1, pNonameRamonSpouse.col - 1, [
+    [pRamonMaceiraBenitez, [pRamonMaceiraBenitez.row - 1, pRamonMaceiraBenitez.col]],
+    [pNonameRamonSpouse, [pNonameRamonSpouse.row - 1, pNonameRamonSpouse.col]],
+]);
+
+graph.addMt(pJoseMaceiraBenitez.row - 1, pNorma.col - 1, [
+    [pJoseMaceiraBenitez, [pJoseMaceiraBenitez.row - 1, pJoseMaceiraBenitez.col]],
+    [pNorma, [pNorma.row - 1, pNorma.col]],
+    [pRodolfoValentinoMaceira, [pRodolfoValentinoMaceira.row - 1, pRodolfoValentinoMaceira.col]]
+]);
+
+graph.addMt(pRodolfoValentinoMaceira.row - 1, pValentina.col - 1, [
+    [pRodolfoValentinoMaceira, [pRodolfoValentinoMaceira.row - 1, pRodolfoValentinoMaceira.col]],
+    [pValentina, [pValentina.row - 1, pValentina.col]],
+    [pValiaMaceira, [pValiaMaceira.row - 1, pValiaMaceira.col]],
+    [pRodolfoValentinoMaceira2, [pRodolfoValentinoMaceira2.row - 1, pRodolfoValentinoMaceira2.col]]
+]);
+
+graph.addMt(pBertaMaceiraBenitez.row - 1, pNonameVicente.col - 1,  [
+    [pBertaMaceiraBenitez, [pBertaMaceiraBenitez.row - 1, pBertaMaceiraBenitez.col]],
+    [pNonameVicente, [pNonameVicente.row - 1, pNonameVicente.col]],
+    [pRaulVicenteMaceira, [pRaulVicenteMaceira.row - 1, pRaulVicenteMaceira.col]]
+]);
+
+graph.addMt(pBertaMaceiraBenitez.row - 1, pNonameUSA.col - 1, [
+    [pBertaMaceiraBenitez, [pBertaMaceiraBenitez.row - 1, pBertaMaceiraBenitez.col]],
+    [pNonameUSA, [pNonameUSA.row - 1, pNonameUSA.col]]
+]);
+
+graph.addMt(pGloriaMaceiraBenitez.row - 1, pMoisesCalzadaBenitez.col - 1, [
+    [pGloriaMaceiraBenitez, [pGloriaMaceiraBenitez.row - 1, pGloriaMaceiraBenitez.col]],
+    [pMoisesCalzadaBenitez, [pMoisesCalzadaBenitez.row - 1, pMoisesCalzadaBenitez.col]],
+    [pMoisesMarioCalzadaMaceira, [pMoisesMarioCalzadaMaceira.row - 1, pMoisesMarioCalzadaMaceira.col]]
+]);
+
+graph.addMt(pSaraMaceiraBenitez.row - 1, pRaulVilaCarratala.col - 1, [
+    [pSaraMaceiraBenitez, [pSaraMaceiraBenitez.row - 1, pSaraMaceiraBenitez.col]],
+    [pRaulVilaCarratala, [pRaulVilaCarratala.row - 1, pRaulVilaCarratala.col]]
+]);
+
+
+
+graph.addMt(pEloyMaceiraBenitez.row - 1, pCarmen.col - 1, [
+    [pEloyMaceiraBenitez, [pEloyMaceiraBenitez.row - 1, pEloyMaceiraBenitez.col]],
+    [pCarmen, [pCarmen.row - 1, pCarmen.col]],
+    [pEloyMaceira, [pEloyMaceira.row - 1, pEloyMaceira.col]],
+    [pNoNameMaceira, [pNoNameMaceira.row - 1, pNoNameMaceira.col]]
+]); 
+
+graph.addMt(pEloyMaceiraBenitez.row - 1, pIrela.col - 1, [
+    [pEloyMaceiraBenitez, [pEloyMaceiraBenitez.row - 1, pEloyMaceiraBenitez.col]],
+    [pIrela, [pIrela.row - 1, pIrela.col]],
+    [pErnestoMaceira, [pErnestoMaceira.row - 1, pErnestoMaceira.col]],
+    [pTaniaMaceira, [pTaniaMaceira.row - 1, pTaniaMaceira.col]]
+]); 
+
+graph.addMt(pTaniaSoriaMaceira.row - 1, pJuanGualbertoCoronaPerez.col - 1, [
+    [pTaniaSoriaMaceira, [pTaniaSoriaMaceira.row - 1, pTaniaSoriaMaceira.col]],
+    [pJuanGualbertoCoronaPerez, [pJuanGualbertoCoronaPerez.row - 1, pJuanGualbertoCoronaPerez.col]],
+    [pTaniadelCarmenCoronaSoria, [pTaniadelCarmenCoronaSoria.row - 1, pTaniadelCarmenCoronaSoria.col]]
+]);
+
+graph.addMt(pTaniadelCarmenCoronaSoria.row - 1, pAriel.col - 1, [
+    [pTaniadelCarmenCoronaSoria, [pTaniadelCarmenCoronaSoria.row - 1, pTaniadelCarmenCoronaSoria.col]],
+    [pAriel, [pAriel.row - 1, pAriel.col]],
+    [pSaulo, [pSaulo.row - 1, pSaulo.col]],
+    [pBerenice, [pBerenice.row - 1, pBerenice.col]],
+    [pEleonora, [pEleonora.row - 1, pEleonora.col]]
+]);
+
+graph.addMt(pTamaraSoriaMaceira.row - 1, pCharlesFreeman.col - 1, [
+    [pTamaraSoriaMaceira, [pTamaraSoriaMaceira.row - 1, pTamaraSoriaMaceira.col]],
+    [pCharlesFreeman, [pCharlesFreeman.row - 1, pCharlesFreeman.col]],
+    [pCarlosLuisFreemanSoria, [pCarlosLuisFreemanSoria.row - 1, pCarlosLuisFreemanSoria.col]]
+]);
+
+graph.addMt(pCarlosLuisFreemanSoria.row - 1, pDalia.col - 1, [
+    [pCarlosLuisFreemanSoria, [pCarlosLuisFreemanSoria.row - 1, pCarlosLuisFreemanSoria.col]],
+    [pDalia, [pDalia.row - 1, pDalia.col]],
+    [pCarlosAlejandroFreeman, [pCarlosAlejandroFreeman.row - 1, pCarlosAlejandroFreeman.col]]
+]);
+
+graph.addMt(pCarlosLuisFreemanSoria.row - 1, pAlina.col - 1, [
+    [pCarlosLuisFreemanSoria, [pCarlosLuisFreemanSoria.row - 1, pCarlosLuisFreemanSoria.col]],
+    [pAlina, [pAlina.row - 1, pAlina.col]],
+    [pCarlosFreeman, [pCarlosFreeman.row - 1, pCarlosFreeman.col]]
+]);
+
+graph.addMt(pTamaraSoriaMaceira.row - 1, pFelixArañoWanton.col - 1, [
+    [pTamaraSoriaMaceira, [pTamaraSoriaMaceira.row - 1, pTamaraSoriaMaceira.col]],
+    [pFelixArañoWanton, [pFelixArañoWanton.row - 1, pFelixArañoWanton.col]],
+]);
+
+
+graph.addMt(pLuisMiroclesSoriaRamos.row - 1, pCarmenMaceiraPerez.col - 1, [
+    [pLuisMiroclesSoriaRamos, [pLuisMiroclesSoriaRamos.row - 1, pLuisMiroclesSoriaRamos.col]],
+    [pCarmenMaceiraPerez, [pCarmenMaceiraPerez.row - 1, pCarmenMaceiraPerez.col]],
+    [pTaniaSoriaMaceira, [pTaniaSoriaMaceira.row - 1, pTaniaSoriaMaceira.col]],
+    [pTamaraSoriaMaceira, [pTamaraSoriaMaceira.row - 1, pTamaraSoriaMaceira.col]],
+    [pJorgeLuisSoriaMaceira, [pJorgeLuisSoriaMaceira.row - 1, pJorgeLuisSoriaMaceira.col]],
+]); 
+
+graph.addMt(pTaniaSoriaMaceira.row - 1, pBernardinoPenaHernandez.col - 1, [
+    [pTaniaSoriaMaceira, [pTaniaSoriaMaceira.row - 1, pTaniaSoriaMaceira.col]],
+    [pBernardinoPenaHernandez, [pBernardinoPenaHernandez.row - 1, pBernardinoPenaHernandez.col]],
+    [pMarietaPenaHernandez, [pMarietaPenaHernandez.row - 1, pMarietaPenaHernandez.col]]
+]); 
+
+graph.addMt(pTaniaSoriaMaceira.row - 1, pBernardinoPenaHernandez.col - 1, [
+    [pTaniaSoriaMaceira, [pTaniaSoriaMaceira.row - 1, pTaniaSoriaMaceira.col]],
+    [pBernardinoPenaHernandez, [pBernardinoPenaHernandez.row - 1, pBernardinoPenaHernandez.col]],
+    [pMarietaPenaHernandez, [pMarietaPenaHernandez.row - 1, pMarietaPenaHernandez.col]]
+]); 
+
+graph.addMt(pIlianaMaceira.row - 1, pNonameManzano.col - 1, [
+    [pIlianaMaceira, [pIlianaMaceira.row - 1, pIlianaMaceira.col]],
+    [pNonameManzano, [pNonameManzano.row - 1, pNonameManzano.col]],
+    [pIlianaManzano, [pIlianaManzano.row - 1, pIlianaManzano.col]],
+    [pErnestoManzano, [pErnestoManzano.row - 1, pErnestoManzano.col]]
+]); 
+
+graph.addMt(pIsabelMaceira.row - 1, pNonamePanchitoMaceira.col - 1, [
+    [pIsabelMaceira, [pIsabelMaceira.row - 1, pIsabelMaceira.col]],
+    [pNonamePanchitoMaceira, [pNonamePanchitoMaceira.row - 1, pNonamePanchitoMaceira.col]],
+    [pSamiraYamirkaMaceira, [pSamiraYamirkaMaceira.row - 1, pSamiraYamirkaMaceira.col]],
+    [pNadiaMaceira, [pNadiaMaceira.row - 1, pNadiaMaceira.col]]
+]); 
+
+graph.addMt(pReyterSoria.row - 1, pNonameReyterSpouse.col - 1, [
+    [pReyterSoria, [pReyterSoria.row - 1, pReyterSoria.col]],
+    [pNonameReyterSpouse, [pNonameReyterSpouse.row - 1, pNonameReyterSpouse.col]],
+    [pReyterReyticoSoria, [pReyterReyticoSoria.row - 1, pReyterReyticoSoria.col]],
+    [pRobinSoria, [pRobinSoria.row - 1, pRobinSoria.col]]
+]); 
+
+graph.addMt(pReyterSoria.row - 1, pYolandaPineiro.col - 1, [
+    [pReyterSoria, [pReyterSoria.row - 1, pReyterSoria.col]],
+    [pYolandaPineiro, [pYolandaPineiro.row - 1, pYolandaPineiro.col]],
+    [pRoldanSoriaPineiro, [pRoldanSoriaPineiro.row - 1, pRoldanSoriaPineiro.col]],
+    [pReynierSoriaPineiro, [pReynierSoriaPineiro.row - 1, pReynierSoriaPineiro.col]]
+]); 
+
+graph.addMt(pRolandoSoriaRamos.row - 1, pFernanda.col - 1, [
+    [pRolandoSoriaRamos, [pRolandoSoriaRamos.row - 1, pRolandoSoriaRamos.col]],
+    [pFernanda, [pFernanda.row - 1, pFernanda.col]],
+    [pReyterSoria, [pReyterSoria.row - 1, pReyterSoria.col]],
+    [pTeresaSoria, [pTeresaSoria.row - 1, pTeresaSoria.col]]
+]); 
+
+graph.addMt(pMarietaPenaHernandez.row - 1, pFernanda.col - 1, [
+    [pMarietaPenaHernandez, [pMarietaPenaHernandez.row - 1, pMarietaPenaHernandez.col]],
+    [pNonameVidal, [pNonameVidal.row - 1, pNonameVidal.col]],
+    [pDianetVidalPena, [pDianetVidalPena.row - 1, pDianetVidalPena.col]]
+]); 
+
+graph.addMt(pJorgeLuisSoriaRamirez.row - 1, pYordankaTitoMoreira.col - 1, [
+    [pJorgeLuisSoriaRamirez, [pJorgeLuisSoriaRamirez.row - 1, pJorgeLuisSoriaRamirez.col]],
+    [pYordankaTitoMoreira, [pYordankaTitoMoreira.row - 1, pYordankaTitoMoreira.col]]
+]); 
+
+graph.addMt(pJorgeLuisSoriaRamirez.row - 1, pAnnelisPerezLegon.col - 1, [
+    [pJorgeLuisSoriaRamirez, [pJorgeLuisSoriaRamirez.row - 1, pJorgeLuisSoriaRamirez.col]],
+    [pYordankaTitoMoreira, [pYordankaTitoMoreira.row - 1, pYordankaTitoMoreira.col]]
+]); 
+
+graph.addMt(pJorgeLuisSoriaRamirez.row - 1, pAnnelisPerezLegon.col - 1, [
+    [pJorgeLuisSoriaRamirez, [pJorgeLuisSoriaRamirez.row - 1, pJorgeLuisSoriaRamirez.col]],
+    [pAnnelisPerezLegon, [pAnnelisPerezLegon.row - 1, pAnnelisPerezLegon.col]],
+    [pCarmenHelenestherSoriaPerez, [pCarmenHelenestherSoriaPerez.row - 1, pCarmenHelenestherSoriaPerez.col]],
+    [pJorgeLuisSoriaPerez, [pJorgeLuisSoriaPerez.row - 1, pJorgeLuisSoriaPerez.col]]
+]); 
+
+graph.addMt(pArietaSoriaFernandez.row - 1, pAntonio.col - 1, [
+    [pArietaSoriaFernandez, [pArietaSoriaFernandez.row - 1, pArietaSoriaFernandez.col]],
+    [pAntonio, [pAntonio.row - 1, pAntonio.col]],
+    [pDavidJeremiasNoNameSoria, [pDavidJeremiasNoNameSoria.row - 1, pDavidJeremiasNoNameSoria.col]],
+    [pDanieldeJesusNonameSoria, [pDanieldeJesusNonameSoria.row - 1, pDanieldeJesusNonameSoria.col]],
+    [pJosueNonameSoria, [pJosueNonameSoria.row - 1, pJosueNonameSoria.col]]
+]); 
+
+graph.addMt(pIlianaVazquezQuevedo.row - 1, pNonameToranzo.col - 1,  [
+    [pIlianaVazquezQuevedo, [pIlianaVazquezQuevedo.row - 1, pIlianaVazquezQuevedo.col]],
+    [pNonameToranzo, [pNonameToranzo.row - 1, pNonameToranzo.col]],
+    [pValkisToranzoVazquez, [pValkisToranzoVazquez.row - 1, pValkisToranzoVazquez.col]],
+    [pBelkisToranzoVazquez, [pBelkisToranzoVazquez.row - 1, pBelkisToranzoVazquez.col]]
+]); 
+
+graph.addMt(pBertaQuevedoSoria.row - 1, pNonameDominguez.col - 1, [
+    [pBertaQuevedoSoria, [pBertaQuevedoSoria.row - 1, pBertaQuevedoSoria.col]],
+    [pNonameDominguez, [pNonameDominguez.row - 1, pNonameDominguez.col]],
+    [pRafaelDominguezQuevedo, [pRafaelDominguezQuevedo.row - 1, pRafaelDominguezQuevedo.col]],
+    [pEnrique, [pEnrique.row - 1, pEnrique.col]]
+]);
+
+graph.addMt(pBelkisQuevedoSoria.row - 1, pNonameVazquez.col - 1, [
+    [pBelkisQuevedoSoria, [pBelkisQuevedoSoria.row - 1, pBelkisQuevedoSoria.col]],
+    [pNonameVazquez, [pNonameVazquez.row - 1, pNonameVazquez.col]],
+    [pGabrielVazquezQuevedo, [pGabrielVazquezQuevedo.row - 1, pGabrielVazquezQuevedo.col]],
+    [pIlianaVazquezQuevedo, [pIlianaVazquezQuevedo.row - 1, pIlianaVazquezQuevedo.col]],
+    [pAlexanderVazquezQuevedo, [pAlexanderVazquezQuevedo.row - 1, pAlexanderVazquezQuevedo.col]]
+]);
+
+graph.addMt(pHeribertoQuevedoSoria.row - 1, pClaribel.col - 1, [
+    [pHeribertoQuevedoSoria, [pHeribertoQuevedoSoria.row - 1, pHeribertoQuevedoSoria.col]],
+    [pClaribel, [pClaribel.row - 1, pClaribel.col]],
+    [pNonamePuchuchu, [pNonamePuchuchu.row - 1, pNonamePuchuchu.col]],
+    [pJorgeQuevedo, [pJorgeQuevedo.row - 1, pJorgeQuevedo.col]],
+    [pVivianQuevedo, [pVivianQuevedo.row - 1, pVivianQuevedo.col]]
+]);
+
+graph.addMt(pRafaelSoria.row - 1, pNonameAguilera.col - 1, [
+    [pRafaelSoria, [pRafaelSoria.row - 1, pRafaelSoria.col]],
+    [pNonameAguilera, [pNonameAguilera.row - 1, pNonameAguilera.col]],
+    [pJorgeLuisSoriaAguilera, [pJorgeLuisSoriaAguilera.row - 1, pJorgeLuisSoriaAguilera.col]]
+]);
+
+
+graph.addMt(pCaridadQuevedoSoria.row - 1, pWilliamCambara.col - 1, [
+    [pCaridadQuevedoSoria, [pCaridadQuevedoSoria.row - 1, pCaridadQuevedoSoria.col]],
+    [pWilliamCambara, [pWilliamCambara.row - 1, pWilliamCambara.col]],
+    [pWilliamCambaraQuevedo, [pWilliamCambaraQuevedo.row - 1, pWilliamCambaraQuevedo.col]],
+    [pAlexander, [pAlexander.row - 1, pAlexander.col]],
+    [pJorgeLuis, [pJorgeLuis.row - 1, pJorgeLuis.col]],
+    [pOniel, [pOniel.row - 1, pOniel.col]],
+    [pAlina, [pAlina.row - 1, pAlina.col]]
+]);
+
+graph.addMt(pMiguelSoria.row, pJustina.col - 1, [
+    [pMiguelSoria, [pMiguelSoria.row, pMiguelSoria.col]],
+    [pJustina, [pJustina.row - 1, pJustina.col]],
+    [pLuisSoria, [pLuisSoria.row - 1, pLuisSoria.col]],
+    [pRafaelSoria, [pRafaelSoria.row - 1, pRafaelSoria.col]],
+    [pRobertoSoria, [pRobertoSoria.row - 1, pRobertoSoria.col]],
+    [pLourdesSoria, [pLourdesSoria.row - 1, pLourdesSoria.col]]
+]);
+
+graph.addMt(pMiguelSoria.row - 1, pIluminadaRamos.col - 1, [
+    [pMiguelSoria, [pMiguelSoria.row - 1, pMiguelSoria.col]],
+    [pIluminadaRamos, [pIluminadaRamos.row - 1, pIluminadaRamos.col]],
+    [pLuisMiroclesSoriaRamos, [pLuisMiroclesSoriaRamos.row - 1, pLuisMiroclesSoriaRamos.col]],
+    [pZenaidaSoriaRamos, [pZenaidaSoriaRamos.row - 1, pZenaidaSoriaRamos.col]],
+    [pEstrellaSoriaRamos, [pEstrellaSoriaRamos.row - 1, pEstrellaSoriaRamos.col]],
+    [pRolandoSoriaRamos, [pRolandoSoriaRamos.row - 1, pRolandoSoriaRamos.col]]
+]);
+
+graph.addMt(pEstrellaSoriaRamos.row - 1, pHeribertoQuevedo.col - 1, [
+    [pEstrellaSoriaRamos, [pEstrellaSoriaRamos.row - 1, pEstrellaSoriaRamos.col]],
+    [pHeribertoQuevedo, [pHeribertoQuevedo.row - 1, pHeribertoQuevedo.col]],
+    [pCaridadQuevedoSoria, [pCaridadQuevedoSoria.row - 1, pCaridadQuevedoSoria.col]],
+    [pSoniaQuevedoSoria, [pSoniaQuevedoSoria.row - 1, pSoniaQuevedoSoria.col]],
+    [pBelkisQuevedoSoria, [pBelkisQuevedoSoria.row - 1, pBelkisQuevedoSoria.col]],
+    [pBertaQuevedoSoria, [pBertaQuevedoSoria.row - 1, pBertaQuevedoSoria.col]],
+    [pHeribertoQuevedoSoria, [pHeribertoQuevedoSoria.row - 1, pHeribertoQuevedoSoria.col]]
+]);
+
+graph.addMt(pRafaelPerezLegon.row - 1, pDayesiRizoCala.col - 1, [
+    [pRafaelPerezLegon, [pRafaelPerezLegon.row - 1, pRafaelPerezLegon.col]],
+    [pDayesiRizoCala, [pDayesiRizoCala.row - 1, pDayesiRizoCala.col]],
+    [pSelenePerezRizo, [pSelenePerezRizo.row - 1, pSelenePerezRizo.col]]
+]);
+
+graph.addMt(pMercedesdelaCandelariaLegonRodriguez.row - 1, pRafaelPerezSantana.col - 1, [
+    [pMercedesdelaCandelariaLegonRodriguez, [pMercedesdelaCandelariaLegonRodriguez.row - 1, pMercedesdelaCandelariaLegonRodriguez.col]],
+    [pRafaelPerezSantana, [pRafaelPerezSantana.row - 1, pRafaelPerezSantana.col]],
+    [pRafaelPerezLegon, [pRafaelPerezLegon.row - 1, pRafaelPerezLegon.col]]
+]);
+
+graph.addMt(pWilfredoLegonWaldarrama.row - 1, pEstherRodriguezHurtado.col - 1, [
+    [pWilfredoLegonWaldarrama, [pWilfredoLegonWaldarrama.row - 1, pWilfredoLegonWaldarrama.col]],
+    [pEstherRodriguezHurtado, [pEstherRodriguezHurtado.row - 1, pEstherRodriguezHurtado.col]],
+    [pMercedesdelaCandelariaLegonRodriguez, [pMercedesdelaCandelariaLegonRodriguez.row - 1, pMercedesdelaCandelariaLegonRodriguez.col]]
+]);
+
+
+graph.addMt(pMercedesdelaCandelariaLegonRodriguez.row - 1, pJorgePerez.col - 1, [
+    [pMercedesdelaCandelariaLegonRodriguez, [pMercedesdelaCandelariaLegonRodriguez.row - 1, pMercedesdelaCandelariaLegonRodriguez.col]],
+    [pJorgePerez, [pJorgePerez.row - 1, pJorgePerez.col]],
+    [pAnnelisPerezLegon, [pAnnelisPerezLegon.row - 1, pAnnelisPerezLegon.col]]
+]);
+
+graph.addMt(pUrsulaBenitezPerez.row - 1, pJoseMaceira.col - 1, [
+    [pUrsulaBenitezPerez, [pUrsulaBenitezPerez.row - 1, pUrsulaBenitezPerez.col]],
+    [pJoseMaceira, [pJoseMaceira.row - 1, pJoseMaceira.col]],
+    [pCarmenMaceiraPerez, [pCarmenMaceiraPerez.row - 1, pCarmenMaceiraPerez.col]],
+    [pSaraMaceiraBenitez, [pSaraMaceiraBenitez.row - 1, pSaraMaceiraBenitez.col]],
+    [pJoseMaceiraBenitez, [pJoseMaceiraBenitez.row - 1, pJoseMaceiraBenitez.col]],
+    [pBertaMaceiraBenitez, [pBertaMaceiraBenitez.row - 1, pBertaMaceiraBenitez.col]],
+    [pLuisaMaceiraBenitez, [pLuisaMaceiraBenitez.row - 1, pLuisaMaceiraBenitez.col]],
+    [pGloriaMaceiraBenitez, [pGloriaMaceiraBenitez.row - 1, pGloriaMaceiraBenitez.col]],
+    [pEloyMaceiraBenitez, [pEloyMaceiraBenitez.row - 1, pEloyMaceiraBenitez.col]]
+]); 
+
 //graph.more(12,35,mtElsaDiazMatosHeysel);
 //graph.more(rlAntoniodeMarcosRamirezMatosMujerNegra);
-
 //graph.more(pCarlosFreeman);
+//graph.more(pRobertoSoria);
+//graph.more(pLourdesSoria);
+//graph.more(pTeresaSoria);
+//graph.more(mtRamonMaceiraBenitezNoname);
+
 //---------------------------------------------------------
 //END DRAWING
 //---------------------------------------------------------

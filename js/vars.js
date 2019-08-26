@@ -89,6 +89,7 @@ class Graph {
     }
 
     relNode(row, col, relationship, peopleArray) {
+       // console.log(peopleArray);
         var relNode = this.relationshipNode(row, col, peopleArray.map((ele) => ele instanceof Array ? ele[0] : ele),
             relationship.date, relationship.type);
         relationship.id = relNode.data.id;
@@ -180,20 +181,52 @@ class Graph {
         return result;
     }
 
-    addPerson(node,peopleArray) {
-     //   console.log("node "+ node);
-        this.add(node.row,node.col,node,peopleArray);
+    addPerson(gen, col, person) {
+        person.row = gen;
+        person.col = col;
+        if (typeof person.name === 'undefined'){
+            person.name = '???';
+        }
+        if (typeof person.profile === 'undefined'){
+            person.profile = defaultProfile;
+        }
+        if (typeof person.nickname === 'undefined'){
+            person.nickname = '';
+        }
+        if (typeof person.birth === 'undefined'){
+            person.birth = '';
+        }
+        if (typeof person.death === 'undefined'){
+            person.death = '';
+        }
+        if (typeof person.comments === 'undefined'){
+            person.comments = '';
+        }
+        this.add(person.row,person.col,person,null);
+    }
+
+    addPeople(gen,col,...people){
+        people.forEach(p => this.addPerson(gen,col +=i,p));
+    }
+
+    /*
+        To add marriages with no date or additional commentary. It's the absolute majority of the cases in relationships 
+    */
+    addMt(row,col,peopleArray){
+        this.add(row,col,{type:MARRIAGE},peopleArray);
     }
 
     add(row, col, node, peopleArray) {
         if ('name' in node) {
             this.elements.push(this.personNode(row, col, node));
-        } else
+        } else{
+//console.log("node - " + JSON.stringify(node));
             this.elements.push(...this.relNode(row, col, node, peopleArray));
+        }
     }
 
     more(row, col, node, invNodes) {
-        console.log(node);
+        //console.log(node);
         this.elements.push(...this.moreNode(row, col, node, invNodes));
     }
 
