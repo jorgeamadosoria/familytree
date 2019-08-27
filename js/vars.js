@@ -207,6 +207,7 @@ class Graph {
 
     addPeople(gen,col,...people){
         people.forEach(p => this.addPerson(gen,col +=i,p));
+        return col;
     }
 
     /*
@@ -299,7 +300,8 @@ class Graph {
                     style: {
                         'width': 40,
                         'height': 40,
-                        'label': ''
+                        'label': '',
+                        'background-image':'https://i.ibb.co/5srBJCJ/image.png'
                     }
                 }, {
                     selector: 'node.more',
