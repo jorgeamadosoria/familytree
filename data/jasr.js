@@ -1,11 +1,6 @@
 //---------------------------------------------------------
 //BEGIN DATA
 //---------------------------------------------------------
-function personCoor(GEN, col, person) {
-    person.row = GEN;
-    person.col = col;
-    return person;
-}
 
 //PEOPLE DATA
 //object template
@@ -144,25 +139,24 @@ var pJorgeAmadoSoriaRamirez = {
 };
 
 var pAmalSaifFonte = {
-    name: 'Jorge Amado',
-
-    gender: MAN,
-    birth: '14 dic 1984',
-
-    comments: 'Jorge Amado Soria Ramirez',
-    profile: defaultProfile
-};
-
-var pJorgeLuisSoriaRamirez = {
     name: 'Amal',
-    nickname: '',
+
     gender: WOMAN,
-    birth: '09/08/1990',
+    birth: '9 ago 1990',
 
     comments: 'Amal Saif Fonte',
     profile: defaultProfile
 };
 
+var pJorgeLuisSoriaRamirez = {
+    name: 'Jorge Luis',
+    nickname: '',
+    gender: MAN,
+    birth: '11 may 1984',
+
+    comments: 'Jorge Luis Soria Ramirez',
+    profile: defaultProfile
+};
 var pAmadoMarcelinoRamirezMatos = {
     name: 'Amado Marcelino',
     //nickname: 'Popi',
@@ -1027,8 +1021,7 @@ var pNoeliaRamirezFlores = {
     gender: WOMAN,
 
 
-    comments: 'Noelia Ramirez Flores',
-    profile: defaultProfile
+    comments: 'Noelia Ramirez Flores'
 };
 
 //============================
@@ -1979,70 +1972,12 @@ var pErnestoManzano = {
     comments: 'Ernesto Manzano (medico, muy blanco, muy rubicundo, muy gordo) '
 };
 
-
-
-//Annelis 
-var pWilfredoLegonWaldarrama = {
-    name: 'Wilfredo',
-    nickname: 'Papa Chino',
-    gender: MAN,
-    birth: '30 ene ????',
-    death: '2003',
-    comments: 'Wilfredo Legon Waldarrama ',
-};
-var pEstherRodriguezHurtado = {
-    name: 'Esther',
-    gender: WOMAN,
-
-    comments: 'Esther Rodriguez Hurtado',
-};
-var pMercedesdelaCandelariaLegonRodriguez = {
-    name: 'Mercedes de la Candelaria',
-    gender: WOMAN,
-    birth: '2 feb 1951',
-
-    comments: 'Mercedes de la Candelaria Legon Rodriguez ',
-};
-var pJorgePerez = {
-    name: 'Jorge',
-    gender: MAN,
-
-    comments: 'Jorge Perez (nacido Evasio)',
-};
 var pAnnelisPerezLegon = {
     name: 'Annelis',
     gender: WOMAN,
 
     comments: 'Annelis Perez Legon',
 };
-var pRafaelPerezSantana = {
-    name: 'Rafael',
-    gender: MAN,
-    birth: '26 ene 1946',
-
-    comments: 'Rafael Perez Santana',
-};
-var pRafaelPerezLegon = {
-    name: 'Rafael',
-    nickname: 'Rafaelito',
-    gender: MAN,
-    birth: '13 Jul 1988',
-    comments: 'Rafael Perez Legon',
-};
-var pDayesiRizoCala = {
-    name: 'Dayesi',
-    gender: WOMAN,
-    birth: '30 ene 1988',
-    comments: 'Dayesi Rizo Cala',
-};
-var pSelenePerezRizo = {
-    name: 'Selene',
-    gender: WOMAN,
-    birth: '10 nov 2018',
-    comments: 'Selene Perez Rizo'
-};
-
-
 
 //---------------------------------------------------------
 //END DATA
@@ -2109,8 +2044,7 @@ x = graph.addPeople(SECOND_GEN_ROW, x += i,
     pNonameUSA, pLuisaMaceiraBenitez,
     pGloriaMaceiraBenitez, pMoisesCalzadaBenitez,
     pEloyMaceiraBenitez, pCarmen,
-    pIrela, pMarioMaceira,
-    pWilfredoLegonWaldarrama, pEstherRodriguezHurtado);
+    pIrela, pMarioMaceira);
 
 x = 0;
 i = 2;
@@ -2140,8 +2074,8 @@ x = graph.addPeople(THIRD_GEN_ROW, x += i,
     pNonamePanchitoMaceira, pJorgeMaceira, pGustavoMaceira,
     pRodolfoValentinoMaceira, pValentina, pRaulVicenteMaceira,
     pEloyMaceira, pNoNameMaceira, pErnestoMaceira,
-    pTaniaMaceira, pIlianaMaceira, pNonameManzano,
-    pMercedesdelaCandelariaLegonRodriguez, pJorgePerez, pRafaelPerezSantana);
+    pTaniaMaceira, pIlianaMaceira, pNonameManzano
+     );
 
 x = 1;
 i = 2;
@@ -2162,8 +2096,8 @@ x = graph.addPeople(FOURTH_GEN_ROW, x += i,
     pArietaSoriaFernandez, pAntonio, pAdrianSoriaCanela,
     pJorgeMiguelSoriaCasero, pValkisToranzoVazquez, pBelkisToranzoVazquez,
     pSamiraYamirkaMaceira, pNadiaMaceira, pValiaMaceira,
-    pRodolfoValentinoMaceira2, pIlianaManzano, pErnestoManzano,
-    pRafaelPerezLegon, pDayesiRizoCala);
+    pRodolfoValentinoMaceira2, pIlianaManzano, pErnestoManzano
+     );
 
 x = 1;
 i = 2;
@@ -2179,7 +2113,7 @@ x = graph.addPeople(FIFTH_GEN_ROW, x += i,
     pJorgeLuisSoriaPerez, pDavidJeremiasRodriguezSoria,
     pDanieldeJesusRodriguezSoria, pJosueRodriguezSoria,
     pIsmaelAdrianSoria, pAbrahamAhmedSoria,
-    pRaylenisSoria, pSelenePerezRizo);
+    pRaylenisSoria);
 
 //RELATIONSHIP DATA
 /*
@@ -2554,11 +2488,6 @@ graph.addMt(pJorgeLuisSoriaRamirez.row - 1, pYordankaTitoMoreira.col - 1, [
 
 graph.addMt(pJorgeLuisSoriaRamirez.row - 1, pAnnelisPerezLegon.col - 1, [
     pJorgeLuisSoriaRamirez,
-    pYordankaTitoMoreira
-]);
-
-graph.addMt(pJorgeLuisSoriaRamirez.row - 1, pAnnelisPerezLegon.col - 1, [
-    pJorgeLuisSoriaRamirez,
     pAnnelisPerezLegon, 
     pCarmenHelenestherSoriaPerez,
     pJorgeLuisSoriaPerez
@@ -2627,31 +2556,6 @@ graph.addMt(pEstrellaSoriaRamos.row - 1, pHeribertoQuevedo.col - 1, [
     pBelkisQuevedoSoria, 
     pBertaQuevedoSoria, 
     pHeribertoQuevedoSoria
-]);
-
-graph.addMt(pRafaelPerezLegon.row - 1, pDayesiRizoCala.col - 1, [
-    pRafaelPerezLegon, 
-    pDayesiRizoCala, 
-    pSelenePerezRizo
-]);
-
-graph.addMt(pMercedesdelaCandelariaLegonRodriguez.row - 1, pRafaelPerezSantana.col - 1, [
-    pMercedesdelaCandelariaLegonRodriguez, 
-    pRafaelPerezSantana, 
-    pRafaelPerezLegon
-]);
-
-graph.addMt(pWilfredoLegonWaldarrama.row - 1, pEstherRodriguezHurtado.col - 1, [
-    pWilfredoLegonWaldarrama, 
-    pEstherRodriguezHurtado, 
-    pMercedesdelaCandelariaLegonRodriguez
-]);
-
-
-graph.addMt(pMercedesdelaCandelariaLegonRodriguez.row - 1, pJorgePerez.col - 1, [
-    pMercedesdelaCandelariaLegonRodriguez,
-    pJorgePerez, 
-    pAnnelisPerezLegon
 ]);
 
 graph.addMt(pUrsulaBenitezPerez.row - 1, pJoseMaceira.col - 1, [
