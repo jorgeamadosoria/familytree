@@ -14,6 +14,10 @@ var DEBUG = false;
 var AUTOLOCK = true;
 //id counter for person nodes
 var idPerson = 1;
+//default marriage node
+var defMtNode = {
+    type: MARRIAGE
+};
 //default tree to load if none is specified
 DEFAULT_TREE = 'jasr';
 
@@ -84,12 +88,11 @@ class Graph {
     relId(people) {
         //   console.log('rel id' + JSON.stringify(people));
         //   console.log('rel ' + people.map(ele => ele.id).reduce((acc, person) => acc += '-' + person));
-       
+
         return 'rel-' + people.map(ele => ele.id).reduce((acc, person) => acc += '-' + person);
     }
 
     relNode(row, col, relationship, peopleArray) {
-       // console.log(peopleArray);
         var relNode = this.relationshipNode(row, col, peopleArray.map((ele) => ele instanceof Array ? ele[0] : ele),
             relationship.date, relationship.type);
         relationship.id = relNode.data.id;
@@ -184,56 +187,109 @@ class Graph {
     addPerson(gen, col, person) {
         person.row = gen;
         person.col = col;
-        if (typeof person.name === 'undefined'){
+        if (typeof person.name === 'undefined') {
             person.name = '???';
         }
-        if (typeof person.profile === 'undefined'){
+        if (typeof person.profile === 'undefined') {
             person.profile = defaultProfile;
         }
-        if (typeof person.nickname === 'undefined'){
+        if (typeof person.nickname === 'undefined') {
             person.nickname = '';
         }
-        if (typeof person.birth === 'undefined'){
+        if (typeof person.birth === 'undefined') {
             person.birth = '';
         }
-        if (typeof person.death === 'undefined'){
+        if (typeof person.death === 'undefined') {
             person.death = '';
         }
-        if (typeof person.comments === 'undefined'){
+        if (typeof person.comments === 'undefined') {
             person.comments = '';
         }
-        this.add(person.row,person.col,person,null);
+        this.add(person.row, person.col, person, null);
     }
 
-    addPeople(gen,col,...people){
-        people.forEach(p => this.addPerson(gen,col +=i,p));
+    addPeople(gen, col, ...people) {
+        people.forEach(p => this.addPerson(gen, col += i, p));
         return col;
     }
 
+    addMt(row, col, peopleArray) {
+        this.add(row, col, {
+            type: MARRIAGE
+        }, peopleArray);
+    }
+
+    children(col, peopleArray) {
+        var firstNode = peopleArray[0];
+        var secondNode = peopleArray[1];
+        peopleArray = peopleArray.slice(2).map(e => [e,
+            [e.row - 2, peopleArray[1].col - col],
+            [e.row - 2, e.col]
+        ]);
+        peopleArray.unshift(secondNode);
+        peopleArray.unshift(firstNode);
+        return peopleArray;
+    }
+    rels(col,height, ...peopleArray) {
+        var firstNode = peopleArray[0];
+        peopleArray.slice(1).forEach((e, i) =>
+            this.elements.push(...this.edge(firstNode, e,
+                [
+                    [firstNode.row, firstNode.col-col],
+                    [e.row - height, firstNode.col-col],
+                    [e.row - height, e.col]
+                ]
+            ))
+        );
+        console.log(peopleArray);
+    }
+
     /*
-        To add marriages with no date or additional commentary. It's the absolute majority of the cases in relationships 
+        addCustomFirstMt(mtNode, ...peopleArray) {
+            peopleArray = this.children(peopleArray);
+            this.add(peopleArray[0].row, peopleArray[1].col - 1,
+                mtNode, peopleArray);
+        }
     */
-    addMt(row,col,peopleArray){
-        this.add(row,col,{type:MARRIAGE},peopleArray);
+    addCustomMt(mtNode, height, col, ...peopleArray) {
+        peopleArray = this.children(col, peopleArray);
+        peopleArray[0] = [peopleArray[0],
+            [peopleArray[0].row + height, peopleArray[1].col - col],
+            [peopleArray[0].row + height, peopleArray[0].col]
+        ];
+        peopleArray[1] = [peopleArray[1],
+            [peopleArray[1].row + height, peopleArray[1].col - col],
+            [peopleArray[1].row + height, peopleArray[1].col]
+        ];
+
+        this.add( 
+
+        peopleArray[0][0].row + height, peopleArray[1][0].col - col,{
+            type: MARRIAGE
+        }, peopleArray);
+    }
+
+    addOtherMt(mtNode, height, ...peopleArray) {
+        this.addCustomMt(mtNode, height, 1, ...peopleArray);
     }
 
     add(row, col, node, peopleArray) {
         if ('name' in node) {
             this.elements.push(this.personNode(row, col, node));
-        } else{
-//console.log("node - " + JSON.stringify(node));
+        } else {
             this.elements.push(...this.relNode(row, col, node, peopleArray));
         }
     }
 
+    stdMore(node) {
+        this.more(node.row + 1, node.col, node);
+    }
     more(row, col, node, invNodes) {
         //console.log(node);
         this.elements.push(...this.moreNode(row, col, node, invNodes));
     }
 
-    rel(node1, node2, invNodes) {
-        this.elements.push(...this.edge(node1, node2, invNodes));
-    }
+
 
     init() {
         this.cy = cytoscape({
@@ -301,7 +357,7 @@ class Graph {
                         'width': 40,
                         'height': 40,
                         'label': '',
-                        'background-image':'https://i.ibb.co/5srBJCJ/image.png'
+                        'background-image': 'https://i.ibb.co/5srBJCJ/image.png'
                     }
                 }, {
                     selector: 'node.more',
@@ -330,16 +386,16 @@ class Graph {
                 col: 5
             }
         });
-    //    this.cy.autolock(AUTOLOCK);
+        //    this.cy.autolock(AUTOLOCK);
 
         //detail model function
         var modalFn = function (evt) {
             var node = evt.target;
 
 
-            
-        //    console.log(node);
-            node.label = "(" + node.position.x + "," + node.position.y + ") " + (node.data().person?node.data().person.name:'');
+
+            //    console.log(node);
+            node.label = "(" + node.position.x + "," + node.position.y + ") " + (node.data().person ? node.data().person.name : '');
 
             //clear modal and hide all elements. they will be shown if data exists on each one
             $("div#person.modal #birth").text('');
@@ -359,7 +415,7 @@ class Graph {
             $("div#person.modal #name").text(node.data().person.name);
 
             if (node.data().person.treeRef)
-                $("div#person.modal #tree-content").show().find("#tree").attr("href","home.html?tree=" + node.data().person.treeRef);
+                $("div#person.modal #tree-content").show().find("#tree").attr("href", "home.html?tree=" + node.data().person.treeRef);
 
             if (node.data().person.nickname)
                 $("div#person.modal #nickname-content").show().find("#nickname").text(node.data().person.nickname);
@@ -417,15 +473,15 @@ class Graph {
             var tippyA = makeTippy(node, node.data().relationship.tip);
             tippyA.show();
         });
-/*
-        this.cy.on('mouseup', 'node.marriage,node.relationship,node.more', function (evt) {
-            console.log('triggered');
-            var node = evt.target;
-            console.log(node);
-            node.label = "(" + node.position.x + "," + node.position.y + ") " + (node.data().person?node.data().person.name:'');
-        });
-*/
-        $('#tree-select').change((evt)=>navigationFn(evt.target.value));
+        /*
+                this.cy.on('mouseup', 'node.marriage,node.relationship,node.more', function (evt) {
+                    console.log('triggered');
+                    var node = evt.target;
+                    console.log(node);
+                    node.label = "(" + node.position.x + "," + node.position.y + ") " + (node.data().person?node.data().person.name:'');
+                });
+        */
+        $('#tree-select').change((evt) => navigationFn(evt.target.value));
 
         //--------------------------------------------
         return this.cy;

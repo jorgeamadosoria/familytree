@@ -121,39 +121,36 @@ var graph = new Graph('jasr', "#graph");
 
 
 //people nodes
-var GEN_SEPARATOR = 3;
+var GEN_SEPARATOR = 5;
 var FIRST_GEN_ROW = 0;
 var SECOND_GEN_ROW = FIRST_GEN_ROW + GEN_SEPARATOR;
 var THIRD_GEN_ROW = SECOND_GEN_ROW + GEN_SEPARATOR;
 var FOURTH_GEN_ROW = THIRD_GEN_ROW + GEN_SEPARATOR;
 var FIFTH_GEN_ROW = FOURTH_GEN_ROW + GEN_SEPARATOR;
-x = 1;
-i = 1;
+i = 2;
+x = 0;
 
 x = graph.addPeople(FIRST_GEN_ROW, x += i,
     pWilfredoLegonWaldarrama, pEstherRodriguezHurtado);
 
-x = 2.5;
-i = 1;
+x = 3;
 x -= i;
 x = graph.addPeople(SECOND_GEN_ROW, x += i,
     pMercedesdelaCandelariaLegonRodriguez, pJorgePerez, pRafaelPerezSantana);
 
 x = 2;
-i = 1;
 x -= i;
 x = graph.addPeople(THIRD_GEN_ROW, x += i,
-    pJorgeLuisSoriaRamirez,pAnnelisPerezLegon, 
+    pJorgeLuisSoriaRamirez, pAnnelisPerezLegon,
     pRafaelPerezLegon, pDayesiRizoCala);
 
 x = 2;
-i = 1;
 x -= i;
 x = graph.addPeople(FOURTH_GEN_ROW, x += i,
- pCarmenHelenestherSoriaPerez,pJorgeLuisSoriaPerez);
- x = graph.addPeople(FOURTH_GEN_ROW, x += i*0.5,
+    pCarmenHelenestherSoriaPerez, pJorgeLuisSoriaPerez);
+x = graph.addPeople(FOURTH_GEN_ROW, x += i * 0.5,
     pSelenePerezRizo);
-   
+
 //RELATIONSHIP DATA 
 /*
 var relationship = {
@@ -163,50 +160,11 @@ var relationship = {
  */
 //relationship nodes
 
-graph.addMt(pWilfredoLegonWaldarrama.row, pEstherRodriguezHurtado.col - 0.5, [
-    pWilfredoLegonWaldarrama, 
-    pEstherRodriguezHurtado, 
-    pMercedesdelaCandelariaLegonRodriguez
-]);
-
-
-graph.addMt(pMercedesdelaCandelariaLegonRodriguez.row, pJorgePerez.col - 0.5, [
-    pMercedesdelaCandelariaLegonRodriguez,
-    pJorgePerez,
-    pAnnelisPerezLegon
-]);
-
-graph.addMt(pMercedesdelaCandelariaLegonRodriguez.row - 1, pRafaelPerezSantana.col -0.5, [
-    [pMercedesdelaCandelariaLegonRodriguez,
-        [pMercedesdelaCandelariaLegonRodriguez.row-1,pMercedesdelaCandelariaLegonRodriguez.col+0.25], 
-        [pMercedesdelaCandelariaLegonRodriguez.row,pMercedesdelaCandelariaLegonRodriguez.col+0.25]
-    ],
-    
-    [pRafaelPerezSantana,[pRafaelPerezSantana.row-1,pRafaelPerezSantana.col]], 
-    pRafaelPerezLegon
-]);
-
-
-graph.addMt(pRafaelPerezLegon.row, pDayesiRizoCala.col - 0.5, [
-    pRafaelPerezLegon, 
-    pDayesiRizoCala, 
-    pSelenePerezRizo
-]);
-
-
-graph.addMt(pJorgeLuisSoriaRamirez.row, pAnnelisPerezLegon.col -0.5, [
-    pJorgeLuisSoriaRamirez,
-    pAnnelisPerezLegon, 
-    [pCarmenHelenestherSoriaPerez,
-        [pCarmenHelenestherSoriaPerez.row-1.5,pCarmenHelenestherSoriaPerez.col+0.5],
-        [pCarmenHelenestherSoriaPerez.row-1.5,pCarmenHelenestherSoriaPerez.col]
-    ],
-    [pJorgeLuisSoriaPerez,
-        [pJorgeLuisSoriaPerez.row-1.5,pJorgeLuisSoriaPerez.col-0.5],
-        [pJorgeLuisSoriaPerez.row-1.5,pJorgeLuisSoriaPerez.col]
-    ]
-]);
-
+graph.addOtherMt(defMtNode, 1, pWilfredoLegonWaldarrama, pEstherRodriguezHurtado, pMercedesdelaCandelariaLegonRodriguez);
+graph.addOtherMt(defMtNode, 1, pMercedesdelaCandelariaLegonRodriguez, pJorgePerez, pAnnelisPerezLegon);
+graph.addOtherMt(defMtNode, 0.75, pMercedesdelaCandelariaLegonRodriguez, pRafaelPerezSantana, pRafaelPerezLegon);
+graph.addOtherMt(defMtNode, 1, pRafaelPerezLegon, pDayesiRizoCala, pSelenePerezRizo);
+graph.addOtherMt(defMtNode, 1, pJorgeLuisSoriaRamirez, pAnnelisPerezLegon, pCarmenHelenestherSoriaPerez, pJorgeLuisSoriaPerez);
 
 //---------------------------------------------------------
 //END DRAWING

@@ -1028,26 +1028,6 @@ var pNoeliaRamirezFlores = {
 //Soria tree
 //============================
 
-var pMiguelSoria = {
-    name: 'Miguel',
-
-    gender: MAN,
-
-
-    comments: 'miguel soria (huerfano a los 7 annos)',
-    profile: defaultProfile
-};
-
-var pIluminadaRamos = {
-    name: 'Iluminada',
-
-    gender: WOMAN,
-
-
-    comments: 'Iluminada ramos (murio de pasmo, termino guajiro para el paro cardiaco respiratorio. Sobre los 40 annos de edad)',
-    profile: defaultProfile
-};
-
 var pLuisMiroclesSoriaRamos = {
     name: 'Luis Mirocles',
 
@@ -1129,42 +1109,6 @@ var pTaniadelCarmenCoronaSoria = {
     comments: 'Tania del Carmen "Tanin" Corona Soria',
     profile: defaultProfile
 };
-var pAriel = {
-    name: 'Ariel',
-
-    gender: MAN,
-
-
-    comments: 'Ariel ?',
-    profile: defaultProfile
-};
-var pSaulo = {
-    name: 'Saulo',
-
-    gender: MAN,
-
-
-    comments: 'Saulo',
-    profile: defaultProfile
-};
-var pBerenice = {
-    name: 'Berenice',
-
-    gender: WOMAN,
-
-
-    comments: 'Berenice',
-    profile: defaultProfile
-};
-var pEleonora = {
-    name: 'Eleonora',
-
-    gender: WOMAN,
-
-
-    comments: 'Eleonora',
-    profile: defaultProfile
-};
 var pTamaraSoriaMaceira = {
     name: 'Tamara',
 
@@ -1173,59 +1117,6 @@ var pTamaraSoriaMaceira = {
 
     comments: 'Tamara Soria Maceira'
 };
-var pCharlesFreeman = {
-    name: 'Charles',
-
-    gender: MAN,
-
-
-    comments: 'Charles Freeman (cubano descendiente de estadounidenses)'
-};
-var pCarlosLuisFreemanSoria = {
-    name: 'Carlos Luis',
-    nickname: 'Carlitos',
-    gender: MAN,
-    comments: 'Carlos Luis Freeman Soria'
-};
-var pDalia = {
-    name: 'Dalia',
-    gender: WOMAN,
-};
-var pCarlosFreeman = {
-    name: 'Carlos',
-    nickname: 'Carlitin',
-    gender: MAN,
-    comments: 'Carlos Freeman ?'
-};
-var pAlina = {
-    name: 'Alina',
-    gender: WOMAN,
-};
-var pJorgeCarlos = {
-    name: 'Jorge Carlos',
-    gender: MAN,
-    comments: 'Jorge Carlos ? ?, hijo de Alina'
-};
-var pCarlosAlejandroFreeman = {
-    name: 'Carlos Alejandro',
-    gender: MAN,
-    comments: 'Carlos Alejandro Freeman'
-};
-var pFelixArañoWanton = {
-    name: 'Felix',
-
-    gender: MAN,
-
-
-    comments: 'Felix Araño Wanton (fue Presidente del Poder Popular de la ciudad, recibio numerosas medallas y reconocimiento)'
-};
-var pYordankaTitoMoreira = {
-    name: 'Yordanka',
-    gender: WOMAN,
-    birth: '19 nov 1976',
-    comments: 'Yordanka Tito Moreira'
-};
-/*	hijo desconocido',*/
 var pAnnelisPerezLegon = {
     name: 'Annelis',
     nickname: 'Nelin',
