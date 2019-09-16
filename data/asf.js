@@ -229,7 +229,7 @@ var mtHijoConyuge = {
 //BEGIN DRAWING
 //---------------------------------------------------------
 //change the row,col numbers to position the nodes
-var graph = new Graph('amal','#graph');
+var graph = new Graph('graph','#graph');
 //people nodes
 graph.add(1, 2.5, pAbueloMaterno);
 graph.add(1, 3.5, pAbuelaMaterna);

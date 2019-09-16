@@ -22,7 +22,8 @@ var pBlancaDeLaPurificacionRamirezMatos = {
     name: 'Blanca',
     gender: WOMAN,
     birth: '2 mayo 1950',
-    comments: 'Blanca de la purificacion ramirez matos'
+    comments: 'Blanca de la purificacion ramirez matos',
+    treeRef: 'bprm'
 };
 
 var pJorgeLuisSoriaMaceira = {
@@ -232,7 +233,8 @@ var pAnnelisPerezLegon = {
     nickname: 'Nelin',
     gender: WOMAN,
     birth: '26 junio 1972',
-    comments: 'Annelis "Nelin" Perez Legon'
+    comments: 'Annelis "Nelin" Perez Legon',
+    treeRef:'apl'
 };
 var pCarmenHelenestherSoriaPerez = {
     name: 'Carmen Helenesther',
@@ -264,7 +266,7 @@ var pAmalSaifFonte = {
     birth: '9 ago 1990',
 
     comments: 'Amal Saif Fonte',
-    profile: defaultProfile
+    treeRef:'asf'
 };
 var pArietaSoriaFernandez = {
     name: 'Arieta',
@@ -346,7 +348,7 @@ var pRaylenisSoria = {
 var pZenaidaSoriaRamos = {
     name: 'Zenaida',
 
-    gender: MAN,
+    gender: WOMAN,
 
 
     comments: 'Zenaida Soria Ramos	',
@@ -634,7 +636,7 @@ var pTeresaSoria = {
 var pJustina = {
     name: 'Justina',
     gender: WOMAN,
-    comments: 'Justina ?'
+    comments: 'Justina comenzó su relación con Miguel a los 14 años, cosa por demas normal para la epoca.'
 };
 var pLuisSoria = {
     name: 'Luis',
@@ -648,10 +650,6 @@ var pRafaelSoria = {
 
 
     comments: 'Rafael Soria (murio de peritonitis en el hospital)'
-};
-var pNonameAguilera = {
-    gender: MAN,
-    comments: '? Aguilera'
 };
 var pJorgeLuisSoriaAguilera = {
     name: 'Jorge Luis',
@@ -734,7 +732,7 @@ var pConcepcion = {
     profile: defaultProfile
 };
 var pIsabelMaceira = {
-    name: 'Isabela',
+    name: 'Isabel',
     nickname: 'Isabelita',
     gender: WOMAN,
 
@@ -742,6 +740,12 @@ var pIsabelMaceira = {
     comments: 'Isabel "Isabelita" Maceira',
     profile: defaultProfile
 };
+
+var pDameyis = {
+    name: 'Dameyis',
+    gender: WOMAN
+};
+
 var pNonamePanchitoMaceira = {
     name: 'Panchito',
     //nickname: 'Panchito',
@@ -948,7 +952,7 @@ var pErnestoManzano = {
 //BEGIN DRAWING
 //---------------------------------------------------------
 //change the row,col numbers to position the nodes
-var graph = new Graph('jasr', "#graph");
+var graph = new Graph('graph', "#graph");
 
 
 //people nodes
@@ -984,18 +988,19 @@ x = graph.addPeople(SECOND_GEN_ROW, x += i,
 x = graph.addPeople(SECOND_GEN_ROW, x += i,
     pIrela,
     pRamonMaceiraBenitez, pConcepcion);
-x = graph.addPeople(SECOND_GEN_ROW, x += i * 1.5,
-    pNonamePucha, pNonameRamonSpouse
+x = graph.addPeople(SECOND_GEN_ROW, x += i * 2,
+    pNonamePucha
 );
-x = graph.addPeople(SECOND_GEN_ROW, x += i * 9.5,
+x = graph.addPeople(SECOND_GEN_ROW, x += i * 9,
     pCarmenMaceiraPerez, pLuisMiroclesSoriaRamos);
 x = graph.addPeople(SECOND_GEN_ROW, x += i * 13.5,
     pEstrellaSoriaRamos, pHeribertoQuevedo);
 x = graph.addPeople(SECOND_GEN_ROW, x += i * 6.5,
     pRolandoSoriaRamos, pFernanda,
-    pZenaidaSoriaRamos,
+    pZenaidaSoriaRamos);
+    x = graph.addPeople(SECOND_GEN_ROW, x += i*1.5,
     pLuisSoria,
-    pRafaelSoria, pNonameAguilera,
+    pRafaelSoria, 
     pRobertoSoria, pLourdesSoria
 
 
@@ -1015,11 +1020,10 @@ x = graph.addPeople(THIRD_GEN_ROW, x += i * 2,
     pMoisesMarioCalzadaMaceira);
 x = graph.addPeople(THIRD_GEN_ROW, x += i * 1.5,
     pEloyMaceira, pNoNameMaceira,
-    pErnestoMaceira, pTaniaMaceira);
-x = graph.addPeople(THIRD_GEN_ROW, x += i * 0.5,
-    pIsabelMaceira, pNonamePanchitoMaceira,
+    pErnestoMaceira, pTaniaMaceira,
+    pIsabelMaceira, pNonamePanchitoMaceira, pDameyis,
     pJorgeMaceira, pGustavoMaceira);
-x = graph.addPeople(THIRD_GEN_ROW, x += i * 7.5,
+x = graph.addPeople(THIRD_GEN_ROW, x += i * 7,
     pJorgeLuisSoriaMaceira, pBlancaDeLaPurificacionRamirezMatos);
 x = graph.addPeople(THIRD_GEN_ROW, x += i * 1.5,
     pTaniaSoriaMaceira, pBernardinoPenaHernandez);
@@ -1059,9 +1063,9 @@ x = graph.addPeople(FOURTH_GEN_ROW, x += i,
 x = graph.addPeople(FOURTH_GEN_ROW, x += i * 1.5,
     pValiaMaceira,
     pRodolfoValentinoMaceira2);
-x = graph.addPeople(FOURTH_GEN_ROW, x += i * 10,
+x = graph.addPeople(FOURTH_GEN_ROW, x += i * 10.5,
     pSamiraYamirkaMaceira, pNadiaMaceira);
-x = graph.addPeople(FOURTH_GEN_ROW, x += i * 3.5,
+x = graph.addPeople(FOURTH_GEN_ROW, x += i * 3,
 
     pArietaSoriaFernandez);
 x = graph.addPeople(FOURTH_GEN_ROW, x += i * 1.5, pAdrianSoriaCanela);
@@ -1101,8 +1105,8 @@ x = graph.addPeople(FIFTH_GEN_ROW, x += i,
 x = graph.addPeople(FIFTH_GEN_ROW, x += i * 2.5,
     pDianetVidalPena, pSaulo,
     pBerenice, pEleonora,
-    pCarlosAlejandroFreeman,
     pCarlosFreeman,
+    pCarlosAlejandroFreeman,
     pJorgeCarlos);
 x = graph.addPeople(FIFTH_GEN_ROW, x += i * 2,
     pValkisToranzoVazquez, pBelkisToranzoVazquez
@@ -1116,6 +1120,7 @@ var relationship = {
 }
  */
 //relationship nodes
+//offsetCol from node origin, offSetRow from node origin, node origin, nodes destination
 graph.rels(10, 2, pJoseMaceira, pMarioMaceira);
 graph.rels(0, 2, pMarioMaceira, pIlianaMaceira);
 graph.rels(0, 2, pJorgeMiguelSoriaCasero, pRaylenisSoria);
@@ -1123,46 +1128,47 @@ graph.rels(0, 2, pAlina, pJorgeCarlos);
 graph.rels(0, 2, pAdrianSoriaCanela, pIsmaelAdrianSoria, pAbrahamAhmedSoria);
 graph.rels(0, 2, pArietaSoriaFernandez, pDavidJeremiasRodriguezSoria, pDanieldeJesusRodriguezSoria, pJosueRodriguezSoria);
 graph.rels(7, 2, pJorgeLuisSoriaMaceira, pJorgeMiguelSoriaCasero, pAdrianSoriaCanela, pArietaSoriaFernandez);
+graph.rels(0, 2, pRafaelSoria, pJorgeLuisSoriaAguilera);
 
-graph.addOtherMt(defMtNode, 1, pJoseMaceira, pUrsulaBenitezPerez, pCarmenMaceiraPerez, pSaraMaceiraBenitez, pJoseMaceiraBenitez, pBertaMaceiraBenitez, pLuisaMaceiraBenitez, pGloriaMaceiraBenitez, pEloyMaceiraBenitez, pRamonMaceiraBenitez);
-graph.addOtherMt(defMtNode, 1, pMiguelSoria, pIluminadaRamos, pLuisMiroclesSoriaRamos, pZenaidaSoriaRamos, pEstrellaSoriaRamos, pRolandoSoriaRamos);
-graph.addOtherMt(defMtNode, 0.75, pMiguelSoria, pJustina, pLuisSoria, pRafaelSoria, pRobertoSoria, pLourdesSoria);
-graph.addOtherMt(defMtNode, 1, pSaraMaceiraBenitez, pRaulVilaCarratala);
-graph.addOtherMt(defMtNode, 1, pJorgeLuisSoriaMaceira, pBlancaDeLaPurificacionRamirezMatos, pJorgeAmadoSoriaRamirez, pJorgeLuisSoriaRamirez);
-graph.addOtherMt(defMtNode, 1, pRamonMaceiraBenitez, pConcepcion, pIsabelMaceira);
-graph.addOtherMt(defMtNode, 0.75, pRamonMaceiraBenitez, pNonamePucha, pJorgeMaceira, pGustavoMaceira);
-graph.addOtherMt(defMtNode, 0.5, pRamonMaceiraBenitez, pNonameRamonSpouse);
-graph.addOtherMt(defMtNode, 1, pJoseMaceiraBenitez, pNorma, pRodolfoValentinoMaceira);
-graph.addOtherMt(defMtNode, 1, pRodolfoValentinoMaceira, pValentina, pValiaMaceira, pRodolfoValentinoMaceira2);
-graph.addOtherMt(defMtNode, 1, pBertaMaceiraBenitez, pNonameVicente, pRaulVicenteMaceira);
-graph.addOtherMt(defMtNode, 0.75, pBertaMaceiraBenitez, pNonameUSA);
-graph.addOtherMt(defMtNode, 1, pGloriaMaceiraBenitez, pMoisesCalzadaBenitez, pMoisesMarioCalzadaMaceira);
-graph.addOtherMt(defMtNode, 1, pEloyMaceiraBenitez, pCarmen, pEloyMaceira, pNoNameMaceira);
-graph.addOtherMt(defMtNode, 0.75, pEloyMaceiraBenitez, pIrela, pErnestoMaceira, pTaniaMaceira);
-graph.addOtherMt(defMtNode, 1, pTaniaSoriaMaceira, pBernardinoPenaHernandez, pMarietaPenaHernandez);
-graph.addOtherMt(defMtNode, 0.75, pTaniaSoriaMaceira, pJuanGualbertoCoronaPerez, pTaniadelCarmenCoronaSoria);
-graph.addOtherMt(defMtNode, 1, pTaniadelCarmenCoronaSoria, pAriel, pSaulo, pBerenice, pEleonora);
-graph.addOtherMt(defMtNode, 1, pTamaraSoriaMaceira, pCharlesFreeman, pCarlosLuisFreemanSoria);
-graph.addOtherMt(defMtNode, 0.75, pTamaraSoriaMaceira, pFelixArañoWanton);
-graph.addOtherMt(defMtNode, 1, pCarlosLuisFreemanSoria, pDalia, pCarlosAlejandroFreeman);
-graph.addCustomMt(defMtNode, 0.75, 2, pCarlosLuisFreemanSoria, pAlina, pCarlosFreeman);
-graph.addOtherMt(defMtNode, 1, pCarmenMaceiraPerez, pLuisMiroclesSoriaRamos, pTaniaSoriaMaceira, pTamaraSoriaMaceira, pJorgeLuisSoriaMaceira);
-graph.addOtherMt(defMtNode, 1, pIlianaMaceira, pNonameManzano, pIlianaManzano, pErnestoManzano);
-graph.addOtherMt(defMtNode, 1, pIsabelMaceira, pNonamePanchitoMaceira, pSamiraYamirkaMaceira, pNadiaMaceira);
-graph.addOtherMt(defMtNode, 1, pReyterSoria, pNonameReyterSpouse, pReyterReyticoSoria, pRobinSoria);
-graph.addOtherMt(defMtNode, 0.75, pReyterSoria, pYolandaPineiro, pRoldanSoriaPineiro, pReynierSoriaPineiro);
-graph.addOtherMt(defMtNode, 1, pRolandoSoriaRamos, pFernanda, pReyterSoria, pTeresaSoria);
-graph.addOtherMt(defMtNode, 1, pMarietaPenaHernandez, pNonameVidal, pDianetVidalPena);
-graph.addOtherMt(defMtNode, 1, pJorgeLuisSoriaRamirez, pYordankaTitoMoreira);
-graph.addOtherMt(defMtNode, 0.75, pJorgeLuisSoriaRamirez, pAnnelisPerezLegon, pCarmenHelenestherSoriaPerez, pJorgeLuisSoriaPerez);
-graph.addOtherMt(defMtNode, 1, pJorgeAmadoSoriaRamirez, pAmalSaifFonte);
-graph.addOtherMt(defMtNode, 1, pIlianaVazquezQuevedo, pNonameToranzo, pValkisToranzoVazquez, pBelkisToranzoVazquez);
-graph.addOtherMt(defMtNode, 1, pBertaQuevedoSoria, pNonameDominguez, pRafaelDominguezQuevedo, pEnrique);
-graph.addOtherMt(defMtNode, 1, pBelkisQuevedoSoria, pNonameVazquez, pGabrielVazquezQuevedo, pIlianaVazquezQuevedo, pAlexanderVazquezQuevedo);
-graph.addOtherMt(defMtNode, 1, pHeribertoQuevedoSoria, pClaribel, pNonamePuchuchu, pJorgeQuevedo, pVivianQuevedo);
-graph.addOtherMt(defMtNode, 1, pRafaelSoria, pNonameAguilera, pJorgeLuisSoriaAguilera);
-graph.addOtherMt(defMtNode, 1, pCaridadQuevedoSoria, pWilliamCambara, pWilliamCambaraQuevedo, pAlexander, pJorgeLuis, pOniel, pAlinaNoName);
-graph.addOtherMt(defMtNode, 1, pEstrellaSoriaRamos, pHeribertoQuevedo, pCaridadQuevedoSoria, pSoniaQuevedoSoria, pBelkisQuevedoSoria, pBertaQuevedoSoria, pHeribertoQuevedoSoria);
+graph.addRel(defMtNode, 1, pJoseMaceira, pUrsulaBenitezPerez, pCarmenMaceiraPerez, pSaraMaceiraBenitez, pJoseMaceiraBenitez, pBertaMaceiraBenitez, pLuisaMaceiraBenitez, pGloriaMaceiraBenitez, pEloyMaceiraBenitez, 
+    pRamonMaceiraBenitez);
+graph.addRel(defMtNode, 1, pMiguelSoria, pIluminadaRamos, pLuisMiroclesSoriaRamos, pZenaidaSoriaRamos, pEstrellaSoriaRamos, pRolandoSoriaRamos);
+graph.addRel(defRelNode, 0.75, pMiguelSoria, pJustina, pLuisSoria, pRafaelSoria, pRobertoSoria, pLourdesSoria);
+graph.addRel(defMtNode, 1, pSaraMaceiraBenitez, pRaulVilaCarratala);
+graph.addRel(defMtNode, 1, pJorgeLuisSoriaMaceira, pBlancaDeLaPurificacionRamirezMatos, pJorgeAmadoSoriaRamirez, pJorgeLuisSoriaRamirez);
+graph.addRel(defMtNode, 1, pRamonMaceiraBenitez, pConcepcion, pIsabelMaceira, pNonamePanchitoMaceira);
+graph.addRel(defMtNode, 0.75, pRamonMaceiraBenitez, pNonamePucha, pJorgeMaceira, pGustavoMaceira);
+graph.addRel(defMtNode, 1, pJoseMaceiraBenitez, pNorma, pRodolfoValentinoMaceira);
+graph.addRel(defMtNode, 1, pRodolfoValentinoMaceira, pValentina, pValiaMaceira, pRodolfoValentinoMaceira2);
+graph.addRel(defMtNode, 1, pBertaMaceiraBenitez, pNonameVicente, pRaulVicenteMaceira);
+graph.addRel(defMtNode, 0.75, pBertaMaceiraBenitez, pNonameUSA);
+graph.addRel(defMtNode, 1, pGloriaMaceiraBenitez, pMoisesCalzadaBenitez, pMoisesMarioCalzadaMaceira);
+graph.addRel(defMtNode, 1, pEloyMaceiraBenitez, pCarmen, pEloyMaceira, pNoNameMaceira);
+graph.addRel(defMtNode, 0.75, pEloyMaceiraBenitez, pIrela, pErnestoMaceira, pTaniaMaceira);
+graph.addRel(defMtNode, 1, pTaniaSoriaMaceira, pBernardinoPenaHernandez, pMarietaPenaHernandez);
+graph.addRel(defMtNode, 0.75, pTaniaSoriaMaceira, pJuanGualbertoCoronaPerez, pTaniadelCarmenCoronaSoria);
+graph.addRel(defMtNode, 1, pTaniadelCarmenCoronaSoria, pAriel, pSaulo, pBerenice, pEleonora);
+graph.addRel(defMtNode, 1, pTamaraSoriaMaceira, pCharlesFreeman, pCarlosLuisFreemanSoria);
+graph.addRel(defMtNode, 0.75, pTamaraSoriaMaceira, pFelixArañoWanton);
+graph.addRel(defMtNode, 1, pCarlosLuisFreemanSoria, pDalia, pCarlosFreeman);
+graph.addCustom(defMtNode, 0.75, 2, pCarlosLuisFreemanSoria, pAlina, pCarlosAlejandroFreeman);
+graph.addRel(defMtNode, 1, pCarmenMaceiraPerez, pLuisMiroclesSoriaRamos, pTaniaSoriaMaceira, pTamaraSoriaMaceira, pJorgeLuisSoriaMaceira);
+graph.addRel(defMtNode, 1, pIlianaMaceira, pNonameManzano, pIlianaManzano, pErnestoManzano);
+graph.addRel(defMtNode, 1, pNonamePanchitoMaceira, pDameyis, pSamiraYamirkaMaceira, pNadiaMaceira);
+graph.addRel(defMtNode, 1, pReyterSoria, pNonameReyterSpouse, pReyterReyticoSoria, pRobinSoria);
+graph.addRel(defMtNode, 0.75, pReyterSoria, pYolandaPineiro, pRoldanSoriaPineiro, pReynierSoriaPineiro);
+graph.addRel(defMtNode, 1, pRolandoSoriaRamos, pFernanda, pReyterSoria, pTeresaSoria);
+graph.addRel(defMtNode, 1, pMarietaPenaHernandez, pNonameVidal, pDianetVidalPena);
+graph.addRel(defMtNode, 1, pJorgeLuisSoriaRamirez, pYordankaTitoMoreira);
+graph.addRel(defMtNode, 0.75, pJorgeLuisSoriaRamirez, pAnnelisPerezLegon, pCarmenHelenestherSoriaPerez, pJorgeLuisSoriaPerez);
+graph.addRel(defMtNode, 1, pJorgeAmadoSoriaRamirez, pAmalSaifFonte);
+graph.addRel(defMtNode, 1, pIlianaVazquezQuevedo, pNonameToranzo, pValkisToranzoVazquez, pBelkisToranzoVazquez);
+graph.addRel(defMtNode, 1, pBertaQuevedoSoria, pNonameDominguez, pRafaelDominguezQuevedo, pEnrique);
+graph.addRel(defMtNode, 1, pBelkisQuevedoSoria, pNonameVazquez, pGabrielVazquezQuevedo, pIlianaVazquezQuevedo, pAlexanderVazquezQuevedo);
+graph.addRel(defMtNode, 1, pHeribertoQuevedoSoria, pClaribel, pNonamePuchuchu, pJorgeQuevedo, pVivianQuevedo);
+
+graph.addRel(defMtNode, 1, pCaridadQuevedoSoria, pWilliamCambara, pWilliamCambaraQuevedo, pAlexander, pJorgeLuis, pOniel, pAlinaNoName);
+graph.addRel(defMtNode, 1, pEstrellaSoriaRamos, pHeribertoQuevedo, pCaridadQuevedoSoria, pSoniaQuevedoSoria, pBelkisQuevedoSoria, pBertaQuevedoSoria, pHeribertoQuevedoSoria);
 
 
 
@@ -1170,6 +1176,8 @@ graph.stdMore(pCarlosFreeman);
 graph.stdMore(pRobertoSoria);
 graph.stdMore(pLourdesSoria);
 graph.stdMore(pTeresaSoria);
+graph.stdMore(pRaulVicenteMaceira);
+
 
 //---------------------------------------------------------
 //END DRAWING

@@ -34,9 +34,37 @@ var pAbelina = {
     gender: WOMAN,
 
 
-    comments: 'Hermana de abuela blanca',
+    comments: 'Hermana de Blanca Matos Guisado',
     profile: defaultProfile
 };
+
+var pPrisciliano = {
+    name: 'Prisciliano',
+
+    gender: MAN,
+
+
+    comments: 'Hermano de Blanca Matos Guisado',
+    profile: defaultProfile
+};
+
+var pCelso = {
+    name: 'Celso',
+
+    gender: MAN,
+
+
+    comments: 'Hermano de Blanca Matos Guisado',
+    profile: defaultProfile
+};
+var pNano = {
+    gender: MAN,
+    nickname:'Nano',
+    comments: 'Hermano de Blanca Matos Guisado',
+    profile: defaultProfile
+};
+
+
 
 var pCorsina = {
     name: 'Corsina',
@@ -44,7 +72,7 @@ var pCorsina = {
     gender: WOMAN,
 
 
-    comments: 'Hermana de abuela blanca',
+    comments: 'Hermana de Blanca Matos Guisado',
     profile: defaultProfile
 };
 
@@ -114,7 +142,7 @@ var pJorgeLuisSoriaMaceira = {
     birth: '20 junio 1953',
 
     comments: 'Jorge Luis Soria Maceira (fecha equivocada de carnet de identidad 19 enero 1954)',
-    profile: defaultProfile
+    treeRef: 'jlsm'
 };
 
 var pJorgeAmadoSoriaRamirez = {
@@ -176,15 +204,6 @@ var pPilarMartinAlvarez = {
     profile: defaultProfile
 };
 
-var pRaulMartin = {
-    name: 'Raul',
-
-    gender: MAN,
-
-
-    comments: 'Raul Martin',
-    profile: defaultProfile
-};
 var pCucaAlvarez = {
     name: 'Cuca',
 
@@ -290,13 +309,13 @@ var pYaritskeRamirezPerez = {
     profile: defaultProfile
 };
 
-var pOrlando = {
-    name: 'Orlando',
+var pRolando = {
+    name: 'Rolando',
 
     gender: MAN,
 
 
-    comments: 'Orlando ? ?',
+    comments: 'Rolando ? ?',
     profile: defaultProfile
 };
 
@@ -412,12 +431,12 @@ var pMonicaMariaRamirez = {
 
 
 var pDoraMatosMatos = {
-    name: 'Dora',
+    name: 'Dora Filipina',
 
     gender: WOMAN,
 
 
-    comments: 'Dora Matos Matos',
+    comments: 'Dora Filipina Matos Matos',
     profile: defaultProfile
 };
 
@@ -510,22 +529,22 @@ var pAntonio = {
     comments: 'Antonio',
     profile: defaultProfile
 };
-var pJacqueline = {
-    name: 'Jacqueline',
+var pYamile = {
+    name: 'Yamilé',
 
     gender: WOMAN,
 
 
-    comments: 'Jacqueline( ? )',
+    comments: 'Yamilé ( ? )',
     profile: defaultProfile
 };
 var pElsaMatosMatos = {
-    name: 'Elsa',
+    name: 'Elsa Filomena',
 
     gender: WOMAN,
 
 
-    comments: 'Elsa Matos Matos',
+    comments: 'Elsa Filomena Matos Matos',
     profile: defaultProfile
 };
 var pManuelDiaz = {
@@ -558,12 +577,12 @@ var pHeysel = {
 };
 
 var pAbelinaMatosMatos = {
-    name: 'Abelina',
+    name: 'Abelina Esther',
     nickname: "Niní",
     gender: WOMAN,
 
 
-    comments: 'Abelina Matos Matos',
+    comments: 'Abelina Esther Matos Matos',
     profile: defaultProfile
 };
 
@@ -588,7 +607,6 @@ var pGerardoPelaez = {
 
 var pAlinetPelaezAguilera = {
     name: 'Alinet',
-
     gender: WOMAN,
     birth: '2 oct 1973',
 
@@ -649,20 +667,19 @@ var pRubenAguileraMatos = {
 var pSandra = {
     name: 'Sandra',
 
-    gender: WOMAN,
+    gender: WOMAN
 
 
-    comments: '',
-    profile: defaultProfile
+    
 };
 
-var pHijaRubenNoname = {
-    name: '???',
+var pJilian = {
+    name: 'Jilian',
 
     gender: WOMAN,
 
 
-    comments: 'hembra hija de Ruben, prima mia, que fue a la secundaria',
+    comments: 'prima mia, que fue a la secundaria',
     profile: defaultProfile
 };
 
@@ -690,8 +707,7 @@ var pIrmaMorales = {
     gender: WOMAN,
 
 
-    comments: 'Irma Morales',
-    profile: defaultProfile
+    comments: 'Irma Morales'
 };
 
 var pIrmaMatosMorales = {
@@ -701,7 +717,7 @@ var pIrmaMatosMorales = {
 
 
     comments: 'Irma Matos Morales',
-    profile: defaultProfile
+    more:true
 };
 
 var pSoniaMatosMorales = {
@@ -710,8 +726,7 @@ var pSoniaMatosMorales = {
     gender: WOMAN,
 
 
-    comments: 'Sonia Matos Morales',
-    profile: defaultProfile
+    comments: 'Sonia Matos Morales'
 };
 
 var pLuisEnriqueMatosMorales = {
@@ -721,7 +736,7 @@ var pLuisEnriqueMatosMorales = {
 
 
     comments: 'Luis Enrique Matos Morales',
-    profile: defaultProfile
+    more:true
 };
 
 var pMiguelRamirez = {
@@ -811,8 +826,8 @@ var pMauricioRamirezGonzalez = {
     gender: MAN,
 
 
-    comments: 'Mauricio Ramirez Gonzalez',
-    profile: defaultProfile
+    comments: 'Mauricio Ramirez Gonzalez, tuvo 4 hijos, uno con una alemana',
+    more:true
 };
 
 var pXiomaraRamirezGonzalez = {
@@ -949,7 +964,7 @@ var pSandraFerrandiRamirez = {
 
 
     comments: 'Sandra Ferrandi Ramirez',
-    profile: defaultProfile
+    more:true
 };
 
 var pDaniaFerrandiRamirez = {
@@ -962,6 +977,14 @@ var pDaniaFerrandiRamirez = {
     profile: defaultProfile
 };
 
+var pYasmindaDuvergelMolina = {
+    name: 'Yasminda',
+
+    gender: WOMAN,
+
+
+    comments: 'Yasminda Duvergel Molina'
+};
 
 var pIsabela = {
     name: 'Isabela',
@@ -969,8 +992,7 @@ var pIsabela = {
     gender: WOMAN,
 
 
-    comments: 'Isabela',
-    profile: defaultProfile
+    comments: 'Isabela'
 };
 
 var pFelixRamirezMilan = {
@@ -1001,7 +1023,7 @@ var pNoeliaRamirezFlores = {
 
     comments: 'Noelia Ramirez Flores'
 };
-
+       
 var pYordankaTitoMoreira = {
     name: 'Yordanka',
     gender: WOMAN,
@@ -1014,7 +1036,8 @@ var pAnnelisPerezLegon = {
     nickname: 'Nelin',
     gender: WOMAN,
     birth: '26 junio 1972',
-    comments: 'Annelis "Nelin" Perez Legon'
+    comments: 'Annelis "Nelin" Perez Legon',
+    treeRef:'apl'
 };
 
 var pCarmenHelenestherSoriaPerez = {
@@ -1032,6 +1055,36 @@ var pJorgeLuisSoriaPerez = {
     comments: 'Jorge Luis Soria Perez'
 };
 
+var pLioberNoNameMatos = {
+    name: 'Liober',
+    gender: MAN,
+    comments: 'hijo mayor, no es del mismo matrimonio que los otros dos'
+}
+
+var pLiannaLiensMatos = {
+    name: 'Lianna Liens Matos',
+    gender: WOMAN
+};
+
+var pLeandroLiensMatos = {
+    name: 'Leandro Liens Matos',
+    gender: MAN
+};
+
+var pCarina = {
+    name: 'Carina',
+    gender: WOMAN
+};
+
+var pHeyselHijo = {
+    name: 'Heysel',
+    gender: MAN
+};
+
+var pKarel = {
+    name: 'Karel',
+    gender: MAN
+};
 
 //---------------------------------------------------------
 //END DATA
@@ -1041,7 +1094,7 @@ var pJorgeLuisSoriaPerez = {
 //BEGIN DRAWING
 //---------------------------------------------------------
 //change the row,col numbers to position the nodes
-var graph = new Graph('jasr', "#graph");
+var graph = new Graph('graph', "#graph");
 
 
 //people nodes
@@ -1055,9 +1108,10 @@ x = 11.5;
 i = 2;
 x -= i;
 x = graph.addPeople(FIRST_GEN_ROW, x += i,
-    pBlancaMatosGuisado, pMarcelinoMatosRondon, pAbelina,
-    pCorsina, pFela, pLuzMatosRondon);
-x = graph.addPeople(FIRST_GEN_ROW, x += i * 29,
+    pAbelina,
+    pCorsina, pPrisciliano,pCelso,pNano,
+    pBlancaMatosGuisado, pMarcelinoMatosRondon, pFela, pLuzMatosRondon);
+x = graph.addPeople(FIRST_GEN_ROW, x += i * 25.75,
     pMiguelRamirezNunez, pPurificacionFloresProenza
 );
 
@@ -1065,18 +1119,19 @@ x = 1;
 x -= i;
 x = graph.addPeople(SECOND_GEN_ROW, x += i,
     pDoraMatosMatos, pTelmoMaciasMatos, pMarcelinoMatosMatos,
-    pLuzDivina, pElsaMatosMatos,
+    pLuzDivina);
+    x = graph.addPeople(SECOND_GEN_ROW, x += i*0.5, pElsaMatosMatos,
     pManuelDiaz);
-x = graph.addPeople(SECOND_GEN_ROW, x += i * 2, pAbelinaMatosMatos,
+x = graph.addPeople(SECOND_GEN_ROW, x += i * 2.25, pAbelinaMatosMatos,
     pRubenAguileraAcuna);
-x = graph.addPeople(SECOND_GEN_ROW, x += i * 3, pLuisEnriqueMatosMatos,
+x = graph.addPeople(SECOND_GEN_ROW, x += i * 3.25, pLuisEnriqueMatosMatos,
     pIrmaMorales);
 x = graph.addPeople(SECOND_GEN_ROW, x += i * 8.5, pDignaElenaMatosMatos,
     pManuelAmadoRamirezFlores);
-x = graph.addPeople(SECOND_GEN_ROW, x += i * 5.5, pCucaAlvarez, pLuciaAlvarez,
+x = graph.addPeople(SECOND_GEN_ROW, x += i * 6, pCucaAlvarez, pLuciaAlvarez,
     pMiguelRamirezFlores, pEmiliaGonzalezFruto,
     pVictorRamirezFlores, pOfeliaVargas);
-x = graph.addPeople(SECOND_GEN_ROW, x += i * 3, pCesarRamirezFlores, pLidiaMilanReytor,
+x = graph.addPeople(SECOND_GEN_ROW, x += i * 2, pCesarRamirezFlores, pLidiaMilanReytor,
     pEgidioRamirezFlores, pNoeliaRamirezFlores,
     pErnestinaRamirezFlores, pNonamePereda
 );
@@ -1085,21 +1140,26 @@ x = 2;
 x -= i;
 x = graph.addPeople(THIRD_GEN_ROW, x += i,
     pTelmoMaciasMatosHijo, pIlda, pBlancaMariaMatos,
-    pSamuel, pElsaDiazMatos, pHeysel,
+    pSamuel);
+    x = graph.addPeople(THIRD_GEN_ROW, x += i*0.5, 
+        pElsaDiazMatos, pHeysel,
     pKeniaAguileraMatos, pGerardoPelaez);
-x = graph.addPeople(THIRD_GEN_ROW, x += i, pCarlosNunez,
+x = graph.addPeople(THIRD_GEN_ROW, x += i, pCarlosNunez);
+x = graph.addPeople(THIRD_GEN_ROW, x += i*0.5,
     pRubenAguileraMatos, pSandra, pIrmaMatosMorales,
-    pSoniaMatosMorales, pLuisEnriqueMatosMorales, pMiguelEnriqueRamirezMatos,
+    pSoniaMatosMorales, pLuisEnriqueMatosMorales);
+    x = graph.addPeople(THIRD_GEN_ROW, x += i*0.5,pMiguelEnriqueRamirezMatos,
     pAnaPerezFonseca);
 x = graph.addPeople(THIRD_GEN_ROW, x += i * 3, pGisela);
-x = graph.addPeople(THIRD_GEN_ROW, x += i * 0.5, pBlancaDeLaPurificacionRamirezMatos,
+x = graph.addPeople(THIRD_GEN_ROW, x += i * 0.5, 
+    pBlancaDeLaPurificacionRamirezMatos,
     pJorgeLuisSoriaMaceira);
 x = graph.addPeople(THIRD_GEN_ROW, x += i * 2, pAntoniodeMarcosRamirezMatos, pGladysAveraztruces);
 x = graph.addPeople(THIRD_GEN_ROW, x += i * 0.5,
     pElbaAguilar, pAmadoMarcelinoRamirezMatos,
     pCaridadMartinAlvarez, pPilarMartinAlvarez, pMauricioRamirezGonzalez,
     pXiomaraRamirezGonzalez, pMiriamRamirezGonzalez, pPurificacionRamirezVargas,
-    pSalomeRodriguezPino, pRaulMartin, pCesarRamirezMilan,
+    pSalomeRodriguezPino, pCesarRamirezMilan,
     pEstrellaRamirezMilan, pObduliaRamirezMilan, pTomasFerrandiSayasBazan,
     pFelixRamirezMilan
 );
@@ -1108,13 +1168,11 @@ x = 3;
 x -= i;
 x = graph.addPeople(FOURTH_GEN_ROW, x += i,
     pTelmoMacias);
-x = graph.addPeople(FOURTH_GEN_ROW, x += i * 0.5, pAntonio, pJacqueline);
-x = graph.addPeople(FOURTH_GEN_ROW, x += i * 2.5,
-    pAlinetPelaezAguilera, pAdrian, pCarlosNunezAguilera);
-x = graph.addPeople(FOURTH_GEN_ROW, x += i * 0.5,
-    pRubenAguilera, pHijaRubenNoname);
-x = graph.addPeople(FOURTH_GEN_ROW, x += i * 2.5, pYanitsiaRamirezPerez,
-    pHilderTorres, pYaritskeRamirezPerez, pOrlando,
+x = graph.addPeople(FOURTH_GEN_ROW, x += i * 0.5, pAntonio, pYamile,pCarina,pHeyselHijo,pKarel,
+    pAlinetPelaezAguilera, pAdrian, pCarlosNunezAguilera,pYasmindaDuvergelMolina,
+    pRubenAguilera, pJilian,pLioberNoNameMatos,pLiannaLiensMatos,pLeandroLiensMatos,
+  pYanitsiaRamirezPerez,
+    pHilderTorres, pYaritskeRamirezPerez, pRolando,
     pWilfredo, pGiselaHija,
     pJorgeLuisSoriaRamirez, pYordankaTitoMoreira, pAnnelisPerezLegon,
     pJorgeAmadoSoriaRamirez, pAmalSaifFonte, pAndyMarcosRamirezAveraztruces,
@@ -1123,16 +1181,16 @@ x = graph.addPeople(FOURTH_GEN_ROW, x += i * 0.5, pCarlosEnriqueRamirezMartin,
     pRaulRamirezMartin);
 x = graph.addPeople(FOURTH_GEN_ROW, x += i * 4,
     pImirsiRodriguezRamirez, pRonaldRodriguezRamirez);
-x = graph.addPeople(FOURTH_GEN_ROW, x += i * 3,
+x = graph.addPeople(FOURTH_GEN_ROW, x += i * 2,
     pSandraFerrandiRamirez, pDaniaFerrandiRamirez
 
 );
 
 x = 19;
 x -= i;
-x = graph.addPeople(FIFTH_GEN_ROW, x += i,
+x = graph.addPeople(FIFTH_GEN_ROW, x += i*2,
     pKarlaNunez);
-x = graph.addPeople(FIFTH_GEN_ROW, x += i * 5,
+x = graph.addPeople(FIFTH_GEN_ROW, x += i * 5.5,
     pJavierAlejandroTorresRamirez, pMiguelAlejandroTorresRamirez,
     pRoxana, pRolandito);
 
@@ -1140,7 +1198,7 @@ x = graph.addPeople(FIFTH_GEN_ROW, x += i * 5,
 x = graph.addPeople(FIFTH_GEN_ROW, x += i * 3,
     pCarmenHelenestherSoriaPerez,
     pJorgeLuisSoriaPerez);
-x = graph.addPeople(FIFTH_GEN_ROW, x += i * 17.5, pIsabela);
+x = graph.addPeople(FIFTH_GEN_ROW, x += i * 16.5, pIsabela);
 
 //RELATIONSHIP DATA
 /*
@@ -1153,93 +1211,92 @@ var relationship = {
 //relationship nodes
 
 graph.rels(0,2,pDaniaFerrandiRamirez, pIsabela);
-graph.rels(0,2,pCarlosNunezAguilera, pKarlaNunez);
 graph.rels(0,2,pCucaAlvarez, pPilarMartinAlvarez, pCaridadMartinAlvarez);
 
-graph.addOtherMt({
-        date: '13/12/2012',
-        type: MARRIAGE
-    }, 1, pBlancaMatosGuisado, pMarcelinoMatosRondon,
-    pDignaElenaMatosMatos,
-    pDoraMatosMatos,
-    pMarcelinoMatosMatos,
-    pElsaMatosMatos,
-    pAbelinaMatosMatos,
-    pLuisEnriqueMatosMatos
+graph.addRel({
+    date: '13/12/2012',
+    type: MARRIAGE
+}, 1, pBlancaMatosGuisado, pMarcelinoMatosRondon,
+pDignaElenaMatosMatos,
+pDoraMatosMatos,
+pMarcelinoMatosMatos,
+pElsaMatosMatos,
+pAbelinaMatosMatos,
+pLuisEnriqueMatosMatos
 );
 
 
-graph.addOtherMt(defMtNode, 1, pMiguelRamirezNunez, pPurificacionFloresProenza, pManuelAmadoRamirezFlores, pErnestinaRamirezFlores, pMiguelRamirezFlores, pVictorRamirezFlores, pCesarRamirezFlores, pEgidioRamirezFlores, pNoeliaRamirezFlores);
+graph.addRel(defMtNode,1,pCarlosNunezAguilera, pYasmindaDuvergelMolina, pKarlaNunez);
+graph.addRel(defMtNode, 1, pMiguelRamirezNunez, pPurificacionFloresProenza, pManuelAmadoRamirezFlores, pErnestinaRamirezFlores, pMiguelRamirezFlores, pVictorRamirezFlores, pCesarRamirezFlores, pEgidioRamirezFlores, pNoeliaRamirezFlores);
 
 
-graph.addOtherMt(defMtNode, 1, pLuisEnriqueMatosMatos, pIrmaMorales, pIrmaMatosMorales, pSoniaMatosMorales, pLuisEnriqueMatosMorales);
+graph.addRel(defMtNode, 1, pLuisEnriqueMatosMatos, pIrmaMorales, pIrmaMatosMorales, pSoniaMatosMorales, pLuisEnriqueMatosMorales);
+graph.rels(0,2, pSoniaMatosMorales, pLioberNoNameMatos, pLiannaLiensMatos,pLeandroLiensMatos);
 
-graph.addOtherMt(defMtNode, 1, pDignaElenaMatosMatos, pManuelAmadoRamirezFlores,
+graph.addRel(defMtNode, 1, pDignaElenaMatosMatos, pManuelAmadoRamirezFlores,
     pBlancaDeLaPurificacionRamirezMatos, pAmadoMarcelinoRamirezMatos, pMiguelEnriqueRamirezMatos, pAntoniodeMarcosRamirezMatos
 );
 
-graph.addOtherMt(defMtNode, 1, pDoraMatosMatos, pTelmoMaciasMatos, pTelmoMaciasMatosHijo);
-graph.addOtherMt(defMtNode, 1, pMarcelinoMatosMatos, pLuzDivina, pBlancaMariaMatos);
-graph.addOtherMt(defMtNode, 1, pElsaMatosMatos, pManuelDiaz,
+graph.addRel(defMtNode, 1, pDoraMatosMatos, pTelmoMaciasMatos, pTelmoMaciasMatosHijo);
+graph.addRel(defMtNode, 1, pMarcelinoMatosMatos, pLuzDivina, pBlancaMariaMatos);
+graph.addRel(defMtNode, 1, pElsaMatosMatos, pManuelDiaz,
     pElsaDiazMatos
 );
-graph.addOtherMt(defMtNode, 1, pAbelinaMatosMatos, pRubenAguileraAcuna,
+graph.addRel(defMtNode, 1, pAbelinaMatosMatos, pRubenAguileraAcuna,
     pKeniaAguileraMatos,
     pRubenAguileraMatos
 );
 
-graph.addOtherMt(defMtNode, 1, pErnestinaRamirezFlores,
+graph.addRel(defMtNode, 1, pErnestinaRamirezFlores,
     pNonamePereda
 );
-graph.addOtherMt(defMtNode, 1, pMiguelRamirezFlores, pEmiliaGonzalezFruto,
+graph.addRel(defMtNode, 1, pMiguelRamirezFlores, pEmiliaGonzalezFruto,
     pMauricioRamirezGonzalez,
     pXiomaraRamirezGonzalez,
     pMiriamRamirezGonzalez
 );
 
-graph.addOtherMt(defMtNode, 1, pVictorRamirezFlores, pOfeliaVargas, pPurificacionRamirezVargas);
-graph.addOtherMt(defMtNode, 1, pCesarRamirezFlores, pLidiaMilanReytor,
+graph.addRel(defMtNode, 1, pVictorRamirezFlores, pOfeliaVargas, pPurificacionRamirezVargas);
+graph.addRel(defMtNode, 1, pCesarRamirezFlores, pLidiaMilanReytor,
     pCesarRamirezMilan,
     pEstrellaRamirezMilan,
     pObduliaRamirezMilan,
     pFelixRamirezMilan
 );
-graph.addOtherMt(defMtNode, 1, pTelmoMaciasMatosHijo, pIlda, pTelmoMacias);
-graph.addOtherMt(defMtNode, 1, pBlancaMariaMatos, pSamuel,
+graph.addRel(defMtNode, 1, pTelmoMaciasMatosHijo, pIlda, pTelmoMacias);
+graph.addRel(defMtNode, 1, pBlancaMariaMatos, pSamuel,
     pAntonio,
-    pJacqueline
+    pYamile
 );
-graph.addOtherMt(defMtNode, 1,
+graph.addRel(defMtNode, 1,
     pBlancaDeLaPurificacionRamirezMatos,
     pJorgeLuisSoriaMaceira,
     pJorgeAmadoSoriaRamirez,
     pJorgeLuisSoriaRamirez
 );
 
-graph.addOtherMt(defMtNode, 1, pJorgeAmadoSoriaRamirez,    pAmalSaifFonte);
-graph.addOtherMt(defMtNode, 1, pAmadoMarcelinoRamirezMatos, pCaridadMartinAlvarez,    pCarlosEnriqueRamirezMartin,    pRaulRamirezMartin);
+graph.addRel(defMtNode, 1, pJorgeAmadoSoriaRamirez,    pAmalSaifFonte);
+graph.addRel(defMtNode, 1, pAmadoMarcelinoRamirezMatos, pCaridadMartinAlvarez,    pCarlosEnriqueRamirezMartin,    pRaulRamirezMartin);
 
-graph.addOtherMt(defMtNode, 1, pElsaDiazMatos, pHeysel);
+//NO FUNCIONA AUN
+var mar = {type:MARRIAGE,more:true};
+graph.addRel(defMtNode, 1, pElsaDiazMatos, pHeysel,pCarina,pHeyselHijo,pKarel);
+graph.addRel(defMtNode, 1, pMiguelEnriqueRamirezMatos, pAnaPerezFonseca,    pYaritskeRamirezPerez,    pYanitsiaRamirezPerez);
+graph.addRel(defMtNode, 0.75, pMiguelEnriqueRamirezMatos, pGisela, pGiselaHija);
+graph.addRel(defMtNode, 1, pAntoniodeMarcosRamirezMatos, pGladysAveraztruces, pAndyMarcosRamirezAveraztruces, pAntoniodeMarcosRamirezAveraztruces);
+graph.addRel(defMtNode, 0.75, pAntoniodeMarcosRamirezMatos, pElbaAguilar, pMonicaMariaRamirez);
+graph.addRel(defMtNode, 1, pKeniaAguileraMatos, pGerardoPelaez, pAlinetPelaezAguilera);
+graph.addRel(defMtNode, 0.75, pKeniaAguileraMatos, pCarlosNunez, pCarlosNunezAguilera);
+graph.addRel(defMtNode, 1, pRubenAguileraMatos, pSandra, pRubenAguilera, pJilian);
+graph.addRel(defMtNode, 1, pPurificacionRamirezVargas, pSalomeRodriguezPino, pImirsiRodriguezRamirez, pRonaldRodriguezRamirez);
+graph.addRel(defMtNode, 1, pObduliaRamirezMilan, pTomasFerrandiSayasBazan, pSandraFerrandiRamirez, pDaniaFerrandiRamirez);
+graph.addRel(defMtNode, 1, pAlinetPelaezAguilera, pAdrian);
+graph.addRel(defMtNode, 1, pYanitsiaRamirezPerez, pHilderTorres, pJavierAlejandroTorresRamirez, pMiguelAlejandroTorresRamirez);
+graph.addRel(defMtNode, 1, pYaritskeRamirezPerez, pRolando, pRoxana, pRolandito);
+graph.addRel(defMtNode, 0.75, pYaritskeRamirezPerez, pWilfredo);
+graph.addRel(defMtNode, 1, pJorgeLuisSoriaRamirez, pYordankaTitoMoreira);
+graph.addRel(defMtNode, 0.75, pJorgeLuisSoriaRamirez, pAnnelisPerezLegon, pCarmenHelenestherSoriaPerez, pJorgeLuisSoriaPerez);
 
-graph.addOtherMt(defMtNode, 1, pMiguelEnriqueRamirezMatos, pAnaPerezFonseca,    pYaritskeRamirezPerez,    pYanitsiaRamirezPerez);
-graph.addOtherMt(defMtNode, 0.75, pMiguelEnriqueRamirezMatos, pGisela, pGiselaHija);
-graph.addOtherMt(defMtNode, 1, pAntoniodeMarcosRamirezMatos, pGladysAveraztruces, pAndyMarcosRamirezAveraztruces, pAntoniodeMarcosRamirezAveraztruces);
-graph.addOtherMt(defMtNode, 0.75, pAntoniodeMarcosRamirezMatos, pElbaAguilar, pMonicaMariaRamirez);
-graph.addOtherMt(defMtNode, 1, pKeniaAguileraMatos, pGerardoPelaez, pAlinetPelaezAguilera);
-graph.addOtherMt(defMtNode, 0.75, pKeniaAguileraMatos, pCarlosNunez, pCarlosNunezAguilera);
-graph.addOtherMt(defMtNode, 1, pRubenAguileraMatos, pSandra, pRubenAguilera, pHijaRubenNoname);
-graph.addOtherMt(defMtNode, 1, pPurificacionRamirezVargas, pSalomeRodriguezPino, pImirsiRodriguezRamirez, pRonaldRodriguezRamirez);
-graph.addOtherMt(defMtNode, 1, pObduliaRamirezMilan, pTomasFerrandiSayasBazan, pSandraFerrandiRamirez, pDaniaFerrandiRamirez);
-graph.addOtherMt(defMtNode, 1, pAlinetPelaezAguilera, pAdrian);
-graph.addOtherMt(defMtNode, 1, pYanitsiaRamirezPerez, pHilderTorres, pJavierAlejandroTorresRamirez, pMiguelAlejandroTorresRamirez);
-graph.addOtherMt(defMtNode, 1, pYaritskeRamirezPerez, pOrlando, pRoxana, pRolandito);
-graph.addOtherMt(defMtNode, 0.75, pYaritskeRamirezPerez, pWilfredo);
-graph.addOtherMt(defMtNode, 1, pJorgeLuisSoriaRamirez, pYordankaTitoMoreira);
-graph.addOtherMt(defMtNode, 0.75, pJorgeLuisSoriaRamirez, pAnnelisPerezLegon, pCarmenHelenestherSoriaPerez, pJorgeLuisSoriaPerez);
-
-graph.stdMore(pSoniaMatosMorales);
-graph.stdMore(pLuisEnriqueMatosMorales);
-graph.stdMore(pIrmaMatosMorales);
 
 //---------------------------------------------------------
 //END DRAWING

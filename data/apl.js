@@ -60,6 +60,7 @@ var pAnnelisPerezLegon = {
     gender: WOMAN,
 
     comments: 'Annelis Perez Legon',
+    treeRef:'apl'
 };
 
 var pCarmenHelenestherSoriaPerez = {
@@ -99,12 +100,10 @@ var pSelenePerezRizo = {
 
 var pJorgeLuisSoriaRamirez = {
     name: 'Jorge Luis',
-    nickname: '',
     gender: MAN,
     birth: '11 may 1984',
 
-    comments: 'Jorge Luis Soria Ramirez',
-    profile: defaultProfile
+    comments: 'Jorge Luis Soria Ramirez'
 };
 
 
@@ -117,7 +116,7 @@ var pJorgeLuisSoriaRamirez = {
 //BEGIN DRAWING
 //---------------------------------------------------------
 //change the row,col numbers to position the nodes
-var graph = new Graph('jasr', "#graph");
+var graph = new Graph('graph', "#graph");
 
 
 //people nodes
@@ -160,11 +159,11 @@ var relationship = {
  */
 //relationship nodes
 
-graph.addOtherMt(defMtNode, 1, pWilfredoLegonWaldarrama, pEstherRodriguezHurtado, pMercedesdelaCandelariaLegonRodriguez);
-graph.addOtherMt(defMtNode, 1, pMercedesdelaCandelariaLegonRodriguez, pJorgePerez, pAnnelisPerezLegon);
-graph.addOtherMt(defMtNode, 0.75, pMercedesdelaCandelariaLegonRodriguez, pRafaelPerezSantana, pRafaelPerezLegon);
-graph.addOtherMt(defMtNode, 1, pRafaelPerezLegon, pDayesiRizoCala, pSelenePerezRizo);
-graph.addOtherMt(defMtNode, 1, pJorgeLuisSoriaRamirez, pAnnelisPerezLegon, pCarmenHelenestherSoriaPerez, pJorgeLuisSoriaPerez);
+graph.addRel(defMtNode, 1, pWilfredoLegonWaldarrama, pEstherRodriguezHurtado, pMercedesdelaCandelariaLegonRodriguez);
+graph.addRel(defMtNode, 1, pMercedesdelaCandelariaLegonRodriguez, pJorgePerez, pAnnelisPerezLegon);
+graph.addRel(defMtNode, 0.75, pMercedesdelaCandelariaLegonRodriguez, pRafaelPerezSantana, pRafaelPerezLegon);
+graph.addRel(defMtNode, 1, pRafaelPerezLegon, pDayesiRizoCala, pSelenePerezRizo);
+graph.addRel(defMtNode, 1, pJorgeLuisSoriaRamirez, pAnnelisPerezLegon, pCarmenHelenestherSoriaPerez, pJorgeLuisSoriaPerez);
 
 //---------------------------------------------------------
 //END DRAWING

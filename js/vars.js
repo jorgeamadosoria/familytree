@@ -18,6 +18,10 @@ var idPerson = 1;
 var defMtNode = {
     type: MARRIAGE
 };
+
+var defRelNode = {
+    type: RELATIONSHIP
+};
 //default tree to load if none is specified
 DEFAULT_TREE = 'jasr';
 
@@ -205,18 +209,15 @@ class Graph {
         if (typeof person.comments === 'undefined') {
             person.comments = '';
         }
+        if (typeof person.more === 'undefined') {
+            person.more = false;
+        }
         this.add(person.row, person.col, person, null);
     }
 
     addPeople(gen, col, ...people) {
         people.forEach(p => this.addPerson(gen, col += i, p));
         return col;
-    }
-
-    addMt(row, col, peopleArray) {
-        this.add(row, col, {
-            type: MARRIAGE
-        }, peopleArray);
     }
 
     children(col, peopleArray) {
@@ -230,13 +231,13 @@ class Graph {
         peopleArray.unshift(firstNode);
         return peopleArray;
     }
-    rels(col,height, ...peopleArray) {
+    rels(col, height, ...peopleArray) {
         var firstNode = peopleArray[0];
         peopleArray.slice(1).forEach((e, i) =>
             this.elements.push(...this.edge(firstNode, e,
                 [
-                    [firstNode.row, firstNode.col-col],
-                    [e.row - height, firstNode.col-col],
+                    [firstNode.row, firstNode.col - col],
+                    [e.row - height, firstNode.col - col],
                     [e.row - height, e.col]
                 ]
             ))
@@ -244,14 +245,7 @@ class Graph {
         console.log(peopleArray);
     }
 
-    /*
-        addCustomFirstMt(mtNode, ...peopleArray) {
-            peopleArray = this.children(peopleArray);
-            this.add(peopleArray[0].row, peopleArray[1].col - 1,
-                mtNode, peopleArray);
-        }
-    */
-    addCustomMt(mtNode, height, col, ...peopleArray) {
+    addCustom(node, height, col, ...peopleArray) {
         peopleArray = this.children(col, peopleArray);
         peopleArray[0] = [peopleArray[0],
             [peopleArray[0].row + height, peopleArray[1].col - col],
@@ -261,23 +255,31 @@ class Graph {
             [peopleArray[1].row + height, peopleArray[1].col - col],
             [peopleArray[1].row + height, peopleArray[1].col]
         ];
-
-        this.add( 
-
-        peopleArray[0][0].row + height, peopleArray[1][0].col - col,{
-            type: MARRIAGE
-        }, peopleArray);
+        this.add(
+            peopleArray[0][0].row + height, peopleArray[1][0].col - col, node, peopleArray);
     }
 
-    addOtherMt(mtNode, height, ...peopleArray) {
-        this.addCustomMt(mtNode, height, 1, ...peopleArray);
+    addRel(relNode, height, ...peopleArray) {
+        this.addCustom(relNode, height, 1, ...peopleArray);
     }
 
     add(row, col, node, peopleArray) {
+        var moreSourceNode = null;
         if ('name' in node) {
-            this.elements.push(this.personNode(row, col, node));
+            moreSourceNode = this.personNode(row, col, node);
+            this.elements.push(moreSourceNode);
         } else {
-            this.elements.push(...this.relNode(row, col, node, peopleArray));
+            moreSourceNode = this.relNode(row, col, node, peopleArray);
+            this.elements.push(...moreSourceNode);
+            moreSourceNode = moreSourceNode[0];
+            if (node.more)         
+            console.log("node more: " + JSON.stringify(moreSourceNode));
+        }
+
+        if (node.more){
+            moreSourceNode.row = moreSourceNode.data.row;
+            moreSourceNode.col = moreSourceNode.data.col;
+            this.stdMore(node);
         }
     }
 
