@@ -161,10 +161,16 @@
     <!-- do not change the order of these scripts! Since this is vanillaJS, the order of import matters -->
     <script src="js/vars.js"></script>
     <script>
-        var trees = ['jasr', 'asf','bprm','jlsm','apl'];
+        var trees = [
+            ['Jorge Amado Soria Ramírez','jasr'], 
+            ['Amal Saif Fonte','asf'],
+            ['Blanca de la Purificación Ramírez Matos','bprm'],
+            ['Jorge Luis Soria Maceira','jlsm'],
+            ['Annelis Pérez Legón','apl']
+        ];
         var tree = getUrlParameter('tree');
         $(trees).each((idx, val) => {
-            $('#tree-select').append("<option " + (tree == val?'selected':'')+ " value=" + val + ">" + val + "</option>")
+            $('#tree-select').append("<option " + (tree == val[1]?'selected':'')+ " value=" + val[1] + ">" + val[0] + "</option>")
         });
         
 
