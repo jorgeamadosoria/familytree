@@ -20,206 +20,455 @@ photos:array //nullable. array of urls for person pictures. Can also be an empty
 };  */
 var pObdulioHermelo = {
     name: 'Obdulio Hermelo',
-    nickname: '',
-    gender: MAN,
-    birth: 'Pinar del Rio, Cuba',
-    death: '',
-    comments: 'Comentario sobre la vida y obra',
-    profile: defaultProfile,
-    photos: ["https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4057996.jpg",
-        "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3946332.jpg",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgU__1QICoMo8BIEgMnVVIKVpckPzOz1Yn7wwAWfM9vXUthC_D"
-    ]
+    gender: MAN
 };
 var pVirginiaMoreno = {
     name: 'Virginia Moreno',
-    nickname: '',
     gender: WOMAN,
-    birth: 'Pinar del Rio, Cuba',
-    death: '',
-    comments: 'Comentario sobre la vida y obra de la mujer',
-    profile: defaultProfile,
-    photos: ["https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4057996.jpg",
-        "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3946332.jpg",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgU__1QICoMo8BIEgMnVVIKVpckPzOz1Yn7wwAWfM9vXUthC_D"
-    ]
-};
-var pZenobiaHermeloMoreno = {
-    name: 'Zenobia Hermelo Moreno',
-    nickname: 'Queno',
-    gender: WOMAN,
-    birth: '29/10/1936 Pinar del Rio, Cuba',
-    death: '',
-    comments: 'Comentario sobre la vida y obra de la mujer',
-    profile: defaultProfile,
-    photos: ["https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4057996.jpg",
-        "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3946332.jpg",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgU__1QICoMo8BIEgMnVVIKVpckPzOz1Yn7wwAWfM9vXUthC_D"
-    ]
-};
-
-var pLuisaHermeloMoreno = {
-    name: 'Luisa Hermelo Moreno',
-    nickname: 'Nini',
-    gender: WOMAN,
-    birth: 'Pinar del Rio, Cuba',
-    death: '',
-    comments: 'Comentario sobre la vida y obra de la mujer',
-    profile: defaultProfile,
-    photos: ["https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4057996.jpg",
-        "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3946332.jpg",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgU__1QICoMo8BIEgMnVVIKVpckPzOz1Yn7wwAWfM9vXUthC_D"
-    ]
-};
-var pCandidaHermeloMoreno = {
-    name: 'Candida Hermelo Moreno',
-    nickname: 'Candita',
-    gender: WOMAN,
-    birth: 'Pinar del Rio, Cuba',
-    death: '',
-    comments: 'Comentario sobre la vida y obra de la mujer',
-    profile: defaultProfile,
-    photos: ["https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4057996.jpg",
-        "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3946332.jpg",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgU__1QICoMo8BIEgMnVVIKVpckPzOz1Yn7wwAWfM9vXUthC_D"
-    ]
-};
-var pEmelinaHermeloMoreno = {
-    name: 'Emelina Hermelo Moreno',
-    nickname: '',
-    gender: WOMAN,
-    birth: 'Pinar del Rio, Cuba',
-    death: '',
-    comments: 'Comentario sobre la vida y obra de la mujer',
-    profile: defaultProfile,
-    photos: ["https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4057996.jpg",
-        "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3946332.jpg",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgU__1QICoMo8BIEgMnVVIKVpckPzOz1Yn7wwAWfM9vXUthC_D"
-    ]
-};
-var pMateoHermeloMoreno = {
-    name: 'Mateo Hermelo Moreno',
-    nickname: '',
-    gender: MAN,
-    birth: 'Pinar del Rio, Cuba',
-    death: '',
-    comments: 'Comentario sobre la vida y obra',
-    profile: defaultProfile,
-    photos: ["https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4057996.jpg",
-        "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3946332.jpg",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgU__1QICoMo8BIEgMnVVIKVpckPzOz1Yn7wwAWfM9vXUthC_D"
-    ]
-};
-var pRaulHermeloMoreno = {
-    name: 'Raúl Hermelo Moreno',
-    nickname: 'Pirre',
-    gender: MAN,
-    birth: 'Pinar del Rio, Cuba',
-    death: '',
-    comments: 'Comentario sobre la vida y obra de la mujer',
-    profile: defaultProfile,
-    photos: ["https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4057996.jpg",
-        "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3946332.jpg",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgU__1QICoMo8BIEgMnVVIKVpckPzOz1Yn7wwAWfM9vXUthC_D"
-    ]
-};
-var pFranciscaHermelo = {
-    name: 'Francisca Hermelo Moreno',
-    nickname: '',
-    gender: WOMAN,
-    birth: 'Pinar del Rio, Cuba',
-    death: '',
-    comments: 'Hija solo de Obdulio, medio hermana de mi abuela',
-    profile: defaultProfile,
-    photos: ["https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4057996.jpg",
-        "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3946332.jpg",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgU__1QICoMo8BIEgMnVVIKVpckPzOz1Yn7wwAWfM9vXUthC_D"
-    ]
-};
-var pMarinaHermelo = {
-    name: 'Marina Hermelo Moreno',
-    nickname: '',
-    gender: WOMAN,
-    birth: 'Pinar del Rio, Cuba',
-    death: '',
-    comments: 'Hija solo de Obdulio, medio hermana de mi abuela',
-    profile: defaultProfile,
-    photos: ["https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4057996.jpg",
-        "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3946332.jpg",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgU__1QICoMo8BIEgMnVVIKVpckPzOz1Yn7wwAWfM9vXUthC_D"
-    ]
-};
-var pMaríaBaño = {
-    name: 'María Baño',
-    nickname: '',
-    gender: WOMAN,
-    birth: 'Pinar del Rio, Cuba',
-    death: '',
-    comments: 'Comentario sobre la vida y obra',
-    profile: defaultProfile,
-    photos: ["https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4057996.jpg",
-        "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3946332.jpg",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgU__1QICoMo8BIEgMnVVIKVpckPzOz1Yn7wwAWfM9vXUthC_D"
-    ]
-};
-var pConsepcionFonte = {
-    name: 'Consepción Fonte',
-    nickname: '',
-    gender: MAN,
-    birth: 'Pinar del Rio, Cuba',
-    death: '',
-    comments: 'Comentario sobre la vida y obra',
-    profile: defaultProfile,
-    photos: ["https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4057996.jpg",
-        "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3946332.jpg",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgU__1QICoMo8BIEgMnVVIKVpckPzOz1Yn7wwAWfM9vXUthC_D"
-    ]
-};
-var pEngracioFonteBaño = {
-    name: 'Engracio Fonte Baño',
-    nickname: '',
-    gender: MAN,
-    birth: '22/07/1933 Pinar del Rio, Cuba',
-    death: '',
-    comments: 'Comentario sobre la vida y obra',
-    profile: defaultProfile,
-    photos: ["https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4057996.jpg",
-        "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3946332.jpg",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgU__1QICoMo8BIEgMnVVIKVpckPzOz1Yn7wwAWfM9vXUthC_D"
-    ]
 };
 
 
-
-//RELATIONSHIP DATA
-/*
-var relationship = {
-    people : array, //mandatory, a list of all the people related through this node. 
-                    //The order is important if the edges are going to bend later on the add() call
-    date : date, //null. The date in which the relationship was formalized
-    type: string //type of relationship, one of MARRIAGE, RELATIONSHIP
+var pSenoviaHermeloMoreno = {
+    name: 'Senovia Hermelo Moreno',
+    gender: WOMAN,
+    birth: '29/10/1936'
+};
+var pLuisaNini = {
+    name: 'Luisa',
+    gender: WOMAN,
+    nickname: 'Nini'
+};
+var pCandida = {
+    name: 'Cándida',
+    gender: WOMAN,
+    nickname: 'Candita'
+};
+var pMateo = {
+    gender: MAN,
+    name: 'Mateo'
+};
+var pEmelina = {
+    gender: WOMAN,
+    name: 'Emelina'
+};
+var pRaul = {
+    gender: MAN,
+    name: 'Raúl',
+    nickname: 'Pirre'
+};
+var pFrancisca = {
+    gender: WOMAN,
+    name: 'Francisca'
+};
+var pMarina = {
+    gender: WOMAN,
+    name: 'Marina'
+};
+var pMaria = {
+    gender: WOMAN,
+    name: 'María'
+};
+var pConcepcion = {
+    gender: MAN,
+    name: 'Concepción'
+};
+var pIngracioFonteBano = {
+    gender: MAN,
+    name: 'Ingracio Fonte Baño',
+    birth: '22/7/1933'
 }
- */
-var mtPadreMadre = {
-    date: '13/12/2012',
-    type: MARRIAGE
+var pChicho = {
+    gender: MAN,
+    nickname: 'Chicho'
 };
-var mtAbuelaPaternaAbueloPaterno = {
-    date: '13/12/2012',
-    type: MARRIAGE
+var pFlores = {
+    gender: MAN,
+    nickname: 'Flores'
 };
-var mtAbueloMaternoAbuelaMaterna = {
-    date: '13/12/2012',
-    type: MARRIAGE
+var pLuisa = {
+    gender: WOMAN,
+    name: 'Luisa'
 };
-var rlHijoNovia = {
-    date: '13/12/2012',
-    type: RELATIONSHIP
+var pEmilio = {
+    gender: MAN,
+    name: 'Emilio'
 };
-var mtHijoConyuge = {
-    date: '13/12/2012',
-    type: MARRIAGE
+var pMariana = {
+    gender: WOMAN,
+    name: 'Mariana'
 };
+var pTeodora = {
+    gender: WOMAN,
+    name: 'Teodora'
+};
+var pNieve = {
+    gender: WOMAN,
+    name: 'Nieve'
+};
+var pAbelardo = {
+    gender: MAN,
+    name: 'Abelardo'
+};
+var pGabriel = {
+    gender: MAN,
+    name: 'Gabriel'
+};
+var pJuan = {
+    gender: MAN,
+    name: 'Juan',
+    nickname: 'Juanito'
+};
+var pVictorFonte = {
+    gender: MAN,
+    name: 'Victor Fonte',
+    birth: '25 2 1955'
+};
+var pLuisaLago = {
+    gender: WOMAN,
+    name: 'Luisa Lago'
+};
+var pIdaniaFonte = {
+    gender: WOMAN,
+    name: 'Idania Fonte',
+    nickname: 'Nani',
+    birth: '02/02/1978'
+};
+var pYamisdeyPlata = {
+    gender: MAN,
+    name: 'Yamisdey Plata'
+};
+var pBeatrizPlataFonte = {
+    gender: WOMAN,
+    name: 'Beatriz Plata Fonte',
+    birth: '24/02/2007'
+};
+var pVictorManuelPlataFonte = {
+    gender: MAN,
+    name: 'Victor Manuel Plata Fonte',
+    birth: '22/07/2011'
+};
+var pMariaDeLosAngelesFonteLago = {
+    gender: WOMAN,
+    name: 'Maria de los Angeles Fonte Lago',
+    nickname: 'China'
+};
+var pManuelPereda = {
+    gender: MAN,
+    name: 'Manuel Pereda',
+    nickname: 'Rubio'
+};
+var pMileidysPeredaFonte = {
+    gender: WOMAN,
+    name: 'Mileidys Pereda Fonte',
+    birth: '27/07/2011'
+};
+var pCheila = {
+    gender: WOMAN,
+    name: 'Cheila',
+    birth: '29/07/2012'
+};
+var pMirelisPeredaFonte = {
+    gender: WOMAN,
+    name: 'Mirelis Pereda Fonte',
+    birth: '07/07/1998'
+};
+var pKaterin = {
+    gender: WOMAN,
+    name: 'Katerin'
+};
+var pDanielAlejandro = {
+    gender: MAN,
+    name: 'Daniel Alejandro'
+};
+var pFelicia = {
+    gender: WOMAN,
+    name: 'Felicia'
+};
+var pYakelina = {
+    gender: WOMAN,
+    name: 'Yakelina'
+};
+var pMonica = {
+    gender: WOMAN,
+    name: 'Monica'
+};
+var pHijoDesconocido = {
+    gender: MAN
+};
+var pEldaGarcia = {
+    gender: WOMAN,
+    name: 'Elda Garcia'
+};
+var pYenima = {
+    gender: WOMAN,
+    name: 'Yenima',
+    birth: '07/05/1988'
+};
+var pYeneri = {
+    gender: WOMAN,
+    name: 'Yéneri',
+    birth: '22/07/2007'
+};
+var pYaneri = {
+    gender: WOMAN,
+    name: 'Yaneri'
+};
+var pYosiel = {
+    gender: MAN,
+    name: 'Yosiel'
+};
+var pYaimara = {
+    gender: WOMAN,
+    name: 'Yaimara',
+    birth: '20/05/1991'
+};
+var pAdriel = {
+    gender: MAN,
+    name: 'Adriel'
+};
+var pJonatan = {
+    gender: MAN,
+    name: 'Jonatan'
+};
+var pYadiel = {
+    gender: MAN,
+    name: 'Yadiel'
+};
+var pIsidroFonte = {
+    gender: MAN,
+    name: 'Isidro Fonte',
+    birth: '15/5/1956'
+};
+var pDeilyFonte = {
+    gender: WOMAN,
+    name: 'Deily Fonte',
+    birth: '05/07/1980'
+};
+var pLuisaNoNameFonte = {
+    gender: WOMAN,
+    name: 'Luisa ? ? Fonte'
+};
+var pAnthony = {
+    gender: MAN,
+    name: 'Anthony',
+    birth: '18/09/2018'
+}
+var pAdonisNoNameFonte = {
+    gender: MAN,
+    name: 'Adonis ? ? Fonte'
+};
+var pKevinNoNameFonte = {
+    gender: MAN,
+    name: 'Kevin ? ? Fonte'
+};
+var pMariaEchevarria = {
+    gender: WOMAN,
+    name: 'Maria Echevarría'
+};
+var pMailinFonte = {
+    gender: WOMAN,
+    name: 'Mailín Fonte',
+    birth: '28/02/1988'
+};
+var pEsposoDesconocido = {
+    gender: MAN
+};
+var pYoerlanFonte = {
+    gender: MAN,
+    name: 'Yoerlán Fonte'
+};
+var pOsvaldoOsuna = {
+    gender: MAN,
+    name: 'Osvaldo Osuna'
+};
+var pDialeidisOsunaFonte = {
+    gender: WOMAN,
+    name: 'Dialeidis Osuna Fonte',
+    birth: '22 6 2010'
+};
+var pOsnielGomez = {
+    gender: MAN,
+    name: 'Osniel Gómez'
+};
+var pVanesaGomezFonte = {
+    gender: WOMAN,
+    name: 'Vanesa Gómez Fonte',
+    birth: '18 12 2018'
+};
+var pYoel = {
+    gender: MAN,
+    name: 'Yoel',
+    birth: '8 6 1992'
+};
+var pYeniferMaria = {
+    gender: WOMAN,
+    name: 'Yenifer María',
+    birth: '11/06/2016'
+};
+var pIsidoro = {
+    gender: MAN,
+    name: 'Isidoro',
+    birth: '15/5/1956',
+    death: '17/2/2018',
+    comment: '(Isidro e Isidoro son gemelos)'
+};
+var pArelis = {
+    gender: WOMAN,
+    name: 'Arelis'
+};
+var pYandy = {
+    gender: MAN,
+    name: 'Yandy'
+};
+var pDamian = {
+    gender: MAN,
+    name: 'Damián'
+};
+var pDayani = {
+    gender: WOMAN,
+    name: 'Dayani'
+};
+var pReinier = {
+    gender: MAN,
+    name: 'Reinier'
+};
+var pDiosdadoFonte = {
+    gender: MAN,
+    name: 'Diosdado Fonte',
+    nickname: 'Pelencho',
+    birth: '8/6/????'
+};
+var pGloria = {
+    gender: WOMAN,
+    name: 'Gloria',
+    nickname: 'Glorita'
+};
+var pOsmanyFonte = {
+    gender: MAN,
+    name: 'Osmany Fonte',
+    nickname: 'El pipo'
+};
+var pAlexanderFonteHijoOsmany = {
+    gender: MAN,
+    name: 'Alexander Fonte'
+};
+var pHijoDesconocidoDeOsmany = {
+    gender: MAN
+};
+var pYosvany = {
+    gender: MAN,
+    name: 'Yosvany'
+};
+var pYasmani = {
+    gender: MAN,
+    name: 'Yasmani'
+};
+var pMagalysFonteArmelo = {
+    gender: WOMAN,
+    name: 'Magalys Fonte Armelo',
+    birth: '25/6/1966'
+};
+var pTawfikSaif = {
+    gender: MAN,
+    name: 'Tawfik Saif'
+};
+var pAmalSaifFonte = {
+    gender: WOMAN,
+    name: 'Amal Saif Fonte',
+    birth: '09/08/1990'
+};
+
+var pJorgeAmadoSoriaRamirez = {
+    name: 'Jorge Amado',
+    nickname: 'Amado, Gordo',
+
+    gender: MAN,
+    birth: '14 dic 1984',
+
+    comments: 'Jorge Amado Soria Ramirez'
+};
+var pAlexisRodriguez = {
+
+    name: 'Alexis Rodriguez',
+    gender: MAN
+};
+var pAmaliaRodriguezFonte = {
+    gender: WOMAN,
+    name: 'Amalia Rodriguez Fonte',
+    birth: '18/12/1998'
+};
+var pJoseArmandoGonzalez = {
+    gender: MAN,
+    name: 'José Armando Gonzalez',
+};
+var pNikolGonzalezRodriguez = {
+    gender: WOMAN,
+    name: 'Nikol González Rodríguez'
+};
+var pLazaroMateoTorresDiaz = {
+    gender: MAN,
+    name: 'Lázaro Mateo Torres Díaz',
+    birth: '?/2/1966'
+};
+var pAlexanderFonte = {
+    gender: MAN,
+    name: 'Alexander Fonte',
+    nickname: 'el flaco, papo',
+    birth: '??/11/????'
+};
+var pSaumelFonte = {
+    gender: MAN,
+    name: 'Saumel Fonte',
+    birth: '17/09/1990'
+};
+var pIdalmisRojas = {
+    gender: WOMAN,
+    name: 'Idalmis Rojas'
+};
+var pEstefani = {
+    gender: WOMAN,
+    name: 'Estefani'
+};
+var pMigdalia = {
+    gender: WOMAN,
+    name: 'Migdalia'
+};
+var pDianelisGonzalezRivas = {
+    gender: WOMAN,
+    name: 'Dianelis Gonzalez Rivas'
+};
+var pKleixanderFonteGonzalez = {
+    gender: MAN,
+    name: 'Kleixander Fonte Gonzalez',
+    birth: '09/05/1998'
+};
+var pKleivisLaidalyFonteGonzalez = {
+    gender: WOMAN,
+    name: 'Kleivis Laidaly Fonte Gonzalez',
+    birth: '28/06/1995'
+};
+var pReinaldoFonteArmelo = {
+    gender: MAN,
+    name: 'Reinaldo Fonte Armelo',
+    nickname: 'el negro',
+    birth: '16/10/1979'
+};
+var pYoania = {
+    gender: WOMAN,
+    name: 'Yoania'
+};
+var pDerekFonte = {
+    gender: MAN,
+    name: 'Derek Fonte'
+};
+
+var pMercedesRivas = {
+    gender: WOMAN,
+    name: 'Mercedes Rivas'
+};
+
+
+
 
 //---------------------------------------------------------
 //END DATA
@@ -229,47 +478,156 @@ var mtHijoConyuge = {
 //BEGIN DRAWING
 //---------------------------------------------------------
 //change the row,col numbers to position the nodes
-var graph = new Graph('graph','#graph');
+var graph = new Graph('graph', '#graph');
+
+
 //people nodes
-graph.add(1, 2.5, pAbueloMaterno);
-graph.add(1, 3.5, pAbuelaMaterna);
-graph.add(3, 3, pMadre);
-graph.add(1, 4.5, pAbueloPaterno);
-graph.add(1, 5.5, pAbuelaPaterna);
-graph.add(3, 5, pPadre);
-graph.add(5, 3.75, pHijo);
-graph.add(5, 4.25, pHermano);
-graph.add(5, 2.75, pConyuge);
-graph.add(5, 2.25, pNovia);
+var GEN_SEPARATOR = 5;
+var FIRST_GEN_ROW = 0;
+var SECOND_GEN_ROW = FIRST_GEN_ROW + GEN_SEPARATOR;
+var THIRD_GEN_ROW = SECOND_GEN_ROW + GEN_SEPARATOR;
+var FOURTH_GEN_ROW = THIRD_GEN_ROW + GEN_SEPARATOR;
+var FIFTH_GEN_ROW = FOURTH_GEN_ROW + GEN_SEPARATOR;
+var SIXTH_GEN_ROW = FIFTH_GEN_ROW + GEN_SEPARATOR;
+x = 32.5;
+i = 2;
+x -= i;
+x = graph.addPeople(FIRST_GEN_ROW, x += i,
+    pObdulioHermelo, pVirginiaMoreno);
+    x = graph.addPeople(FIRST_GEN_ROW, x += i*6,
+    pMaria, pConcepcion
+);
+
+x = 24.5;
+i = 2;
+x -= i;
+x = graph.addPeople(SECOND_GEN_ROW, x += i,
+    pFrancisca, pMarina,
+    pLuisaNini,pCandida,  pMateo, pEmelina, pRaul, pSenoviaHermeloMoreno,
+    pIngracioFonteBano,  pChicho,pFlores,  pEmilio,
+    pMariana, pTeodora, pNieve, pAbelardo, pGabriel, pJuan);
+    x = graph.addPeople(SECOND_GEN_ROW, x += i*9.25,
+    pMercedesRivas);
+
+x = 1;
+i = 2;
+x -= i;
+x = graph.addPeople(THIRD_GEN_ROW, x += i*1.5,
+    pVictorFonte, pLuisaLago);
+    x = graph.addPeople(THIRD_GEN_ROW, x += i*3, pFelicia);
+    x = graph.addPeople(THIRD_GEN_ROW, x += i*2.5,pEldaGarcia);
+    x = graph.addPeople(THIRD_GEN_ROW, x += i*5.5, pIsidroFonte,
+    pMariaEchevarria);
+    x = graph.addPeople(THIRD_GEN_ROW, x += i*4.5, pIsidoro, 
+        pArelis);
+        x = graph.addPeople(THIRD_GEN_ROW, x += i*2.5, 
+            pDiosdadoFonte, pGloria,
+    pMagalysFonteArmelo, pTawfikSaif); 
+    x = graph.addPeople(THIRD_GEN_ROW, x += i*1.5, pAlexisRodriguez, pLazaroMateoTorresDiaz,pReinaldoFonteArmelo, pYoania);
+    x = graph.addPeople(THIRD_GEN_ROW, x += i*2,
+    pAlexanderFonte, pDianelisGonzalezRivas
+);
+
+
+x = 1;
+i = 2;
+x -= i;
+x = graph.addPeople(FOURTH_GEN_ROW, x += i,
+    pIdaniaFonte, pYamisdeyPlata, 
+    pMariaDeLosAngelesFonteLago); 
+    x = graph.addPeople(FOURTH_GEN_ROW, x += i*0.25,pManuelPereda);
+    x = graph.addPeople(FOURTH_GEN_ROW, x += i*0.75, pYakelina);
+    x = graph.addPeople(FOURTH_GEN_ROW, x += i*1.5,
+    pYenima);
+    x = graph.addPeople(FOURTH_GEN_ROW, x += i, pYaimara, pAdriel);
+    x = graph.addPeople(FOURTH_GEN_ROW, x += i,pDeilyFonte);
+    x = graph.addPeople(FOURTH_GEN_ROW, x += i*0.5, pMailinFonte,pEsposoDesconocido,
+    pOsvaldoOsuna, pOsnielGomez, pYoel); 
+    x = graph.addPeople(FOURTH_GEN_ROW, x += i*2.5,pYandy, pDamian, pReinier);
+    x = graph.addPeople(FOURTH_GEN_ROW, x += i*1.5,pOsmanyFonte, pYosvany, pYasmani, pAmalSaifFonte,
+    pJorgeAmadoSoriaRamirez);
+    x = graph.addPeople(FOURTH_GEN_ROW, x += i*0.5, 
+    pAmaliaRodriguezFonte, pJoseArmandoGonzalez);
+    x = graph.addPeople(FOURTH_GEN_ROW, x += i,  pDerekFonte);
+    x = graph.addPeople(FOURTH_GEN_ROW, x += i*0.5, pSaumelFonte,
+    pIdalmisRojas, pKleixanderFonteGonzalez, pKleivisLaidalyFonteGonzalez
+
+);
+
+x = 1;
+i = 2;
+x -= i;
+x = graph.addPeople(FIFTH_GEN_ROW, x += i,
+    pBeatrizPlataFonte, pVictorManuelPlataFonte,
+    pMileidysPeredaFonte);
+
+    x = graph.addPeople(FIFTH_GEN_ROW, x += i*0.5,pMirelisPeredaFonte,pMonica, pHijoDesconocido, pYeneri, pYaneri, pYosiel, pJonatan,
+    pYadiel, pLuisa, pAdonisNoNameFonte, pKevinNoNameFonte,
+    pYoerlanFonte, pDialeidisOsunaFonte, pVanesaGomezFonte);
+
+    x = graph.addPeople(FIFTH_GEN_ROW, x += i*0.5,pYeniferMaria);
+    x = graph.addPeople(FIFTH_GEN_ROW, x += i*3.5, pDayani);
+    x = graph.addPeople(FIFTH_GEN_ROW, x += i*2, pAlexanderFonteHijoOsmany, pHijoDesconocidoDeOsmany);
+    x = graph.addPeople(FIFTH_GEN_ROW, x += i*4.5,pNikolGonzalezRodriguez);
+    x = graph.addPeople(FIFTH_GEN_ROW, x += i*3, pEstefani, pMigdalia
+);
+
+
+x = 1;
+i = 2;
+x -= i;
+x = graph.addPeople(SIXTH_GEN_ROW, x += i*3,
+    pCheila, pKaterin, pDanielAlejandro);
+    x = graph.addPeople(SIXTH_GEN_ROW, x += i*6.5, pAnthony
+);
+
 
 //---------------------------------------------------------
 //relationship nodes. 
 //These also include the edges from all people related to the central relationship node, 
 //as well as any invisible node required for segmented edges, if present.
-graph.add(1, 5, mtAbuelaPaternaAbueloPaterno, [pAbuelaPaterna, pAbueloPaterno, pPadre]);
-graph.add(1, 3, mtAbueloMaternoAbuelaMaterna, [pAbueloMaterno, pAbuelaMaterna, pMadre]);
-graph.add(5, 3.25, mtHijoConyuge, [pHijo, pConyuge]);
-graph.add(4.25, 2.5, rlHijoNovia, [
-    [
-        pHijo, [4.25, 3.5],
-        [5, 3.5]
-    ],
-    [
-        pNovia, [4.25, 2.25]
-    ]
-]);
-graph.add(3, 4, mtPadreMadre, [
-    [pMadre],
-    [pPadre],
-    //hijo
-    [pHijo, [4, 4],
-        [4, 3.75]
-    ],
-    //hermano
-    [pHermano, [4, 4],
-        [4, 4.25]
-    ]
-]);
+graph.addRel(defMtNode, 1, pObdulioHermelo, pVirginiaMoreno,
+    pSenoviaHermeloMoreno, pLuisaNini, pCandida, pMateo, pEmelina, pRaul);
+graph.addRel(defMtNode, 1, pMaria, pConcepcion,
+    pIngracioFonteBano, pChicho, pFlores, pEmilio, pMariana, pTeodora, pNieve, pAbelardo, pGabriel, pJuan);
+    graph.addRel(defMtNode, 1, pSenoviaHermeloMoreno, pIngracioFonteBano,
+        pVictorFonte,pIsidroFonte,pIsidoro,pDiosdadoFonte,pMagalysFonteArmelo,pAlexanderFonte,pReinaldoFonteArmelo);
+graph.addRel(defRelNode,1,pVictorFonte,pLuisaLago,pIdaniaFonte,pMariaDeLosAngelesFonteLago);
+graph.addRel(defRelNode,0.75,pVictorFonte,pFelicia,pYakelina);
+graph.addRel(defRelNode,0.5,pVictorFonte,pEldaGarcia,pYenima,pYaimara);
+graph.addRel(defMtNode,1,pIdaniaFonte,pYamisdeyPlata,pBeatrizPlataFonte,pVictorManuelPlataFonte);
+graph.addRel(defRelNode,1,pMariaDeLosAngelesFonteLago,pManuelPereda,pMileidysPeredaFonte,pMirelisPeredaFonte);
+graph.addRel(defRelNode,1,pYaimara,pAdriel,pJonatan,pYadiel);
+graph.addRel(defRelNode,1,pIsidroFonte,pMariaEchevarria,pMailinFonte,pYoel);
+graph.addRel(defRelNode,1,pMailinFonte,pEsposoDesconocido,pYoerlanFonte);
+graph.addRel(defRelNode,0.75,pMailinFonte,pOsvaldoOsuna,pDialeidisOsunaFonte);
+graph.addRel(defRelNode,0.5,pMailinFonte,pOsnielGomez,pVanesaGomezFonte);
+graph.addRel(defMtNode,1,pIsidoro,pArelis,pYandy,pDamian,pReinier);
+graph.addRel(defMtNode,1,pDiosdadoFonte,pGloria,pOsmanyFonte,pYosvany,pYasmani);
+graph.addRel(defRelNode,1,pMagalysFonteArmelo,pTawfikSaif,pAmalSaifFonte);
+graph.addRel(defRelNode,0.75,pMagalysFonteArmelo,pAlexisRodriguez,pAmaliaRodriguezFonte);
+graph.addRel(defMtNode,0.5,pMagalysFonteArmelo,pLazaroMateoTorresDiaz);
+graph.addRel(defRelNode,1,pAmaliaRodriguezFonte,pJoseArmandoGonzalez,pNikolGonzalezRodriguez);
+graph.addRel(defMtNode,1,pAmalSaifFonte,pJorgeAmadoSoriaRamirez);
+graph.addRel(defMtNode,1,pSaumelFonte,pIdalmisRojas,pEstefani,pMigdalia);
+graph.addRel(defMtNode,1,pAlexanderFonte,pDianelisGonzalezRivas,pKleixanderFonteGonzalez,pKleivisLaidalyFonteGonzalez);
+graph.addRel(defRelNode,1,pReinaldoFonteArmelo,pYoania,pDerekFonte);
+
+graph.rels(4, 2, pAlexanderFonte,pSaumelFonte);
+graph.rels(0, 2, pMileidysPeredaFonte,pCheila);
+graph.rels(0, 2, pMercedesRivas,pDianelisGonzalezRivas);
+graph.rels(6, 2, pIsidroFonte,pDeilyFonte);
+graph.rels(0, 2, pDeilyFonte,pLuisa,pAdonisNoNameFonte,pKevinNoNameFonte);
+graph.rels(0, 2, pLuisa,pAnthony);
+graph.rels(0, 2, pDamian,pDayani);
+graph.rels(0, 2, pMirelisPeredaFonte,pKaterin,pDanielAlejandro);
+graph.rels(0, 2, pYakelina,pMonica,pHijoDesconocido);
+graph.rels(0, 2, pYenima,pYeneri,pYaneri,pYosiel);
+graph.rels(0, 2, pYoel,pYeniferMaria);
+graph.rels(7, 2, pObdulioHermelo, pFrancisca, pMarina);
+graph.rels(0, 2, pOsmanyFonte,pAlexanderFonteHijoOsmany,pHijoDesconocidoDeOsmany);
+
+graph.stdMore(pYosvany);
 //---------------------------------------------------------
 //END DRAWING
 //---------------------------------------------------------
