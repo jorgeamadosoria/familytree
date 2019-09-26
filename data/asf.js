@@ -460,7 +460,8 @@ var pYoania = {
 };
 var pObdulia = {
     gender: WOMAN,
-    name: 'Obdulia'
+    name: 'Obdulia',
+    comments:'Es la madre de Aracelis, la esposa del otro jimagua'
 };
 
 var pDerekFonte = {
@@ -471,7 +472,8 @@ var pDerekFonte = {
 
 var pAracelis = {
     gender: WOMAN,
-    name: 'Aracelis'
+    name: 'Aracelis',
+    comments:'Es la hija de Obdulia, la esposa del otro jimagua'
 };
 
 var pMercedesRivas = {
@@ -637,7 +639,7 @@ graph.rels(0, 2, pMirelisPeredaFonte,pKaterin,pDanielAlejandro);
 graph.rels(0, 2, pYakelina,pMonica,pHijoDesconocido);
 graph.rels(0, 2, pYenima,pYeneri,pYaneri,pYosiel);
 graph.rels(0, 2, pYoel,pYeniferMaria);
-graph.rels(7, 2, pObdulioHermelo, pFrancisca, pMarina);
+graph.rels(4, 2, pObdulioHermelo, pFrancisca, pMarina);
 graph.rels(0, 2, pOsmanyFonte,pAlexanderFonteHijoOsmany,pHijoDesconocidoDeOsmany);
 graph.rels(0, 1, pObdulia,pAracelis);
 

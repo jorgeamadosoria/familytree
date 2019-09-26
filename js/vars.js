@@ -66,7 +66,7 @@ class Graph {
     personNode(row, col, person) {
         person.id = idPerson++;
         //cytoscape node format
-        person.name = "(" + row + "," + col + ") " + person.name;
+      if (DEBUG) person.name = "(" + row + "," + col + ") " + person.name;
         return {
             data: {
                 row: row,
