@@ -318,7 +318,8 @@ var pArelis = {
 };
 var pYandy = {
     gender: MAN,
-    name: 'Yandy'
+    name: 'Yandy',
+    comments:'Vive en Estados Unidos, y tiene su propia familia'
 };
 var pDamian = {
     gender: MAN,
@@ -457,17 +458,26 @@ var pYoania = {
     gender: WOMAN,
     name: 'Yoania'
 };
+var pObdulia = {
+    gender: WOMAN,
+    name: 'Obdulia'
+};
+
 var pDerekFonte = {
     gender: MAN,
     name: 'Derek Fonte'
+};
+
+
+var pAracelis = {
+    gender: WOMAN,
+    name: 'Aracelis'
 };
 
 var pMercedesRivas = {
     gender: WOMAN,
     name: 'Mercedes Rivas'
 };
-
-
 
 
 //---------------------------------------------------------
@@ -498,7 +508,7 @@ x = graph.addPeople(FIRST_GEN_ROW, x += i,
     pMaria, pConcepcion
 );
 
-x = 24.5;
+x = 27.5;
 i = 2;
 x -= i;
 x = graph.addPeople(SECOND_GEN_ROW, x += i,
@@ -506,7 +516,7 @@ x = graph.addPeople(SECOND_GEN_ROW, x += i,
     pLuisaNini,pCandida,  pMateo, pEmelina, pRaul, pSenoviaHermeloMoreno,
     pIngracioFonteBano,  pChicho,pFlores,  pEmilio,
     pMariana, pTeodora, pNieve, pAbelardo, pGabriel, pJuan);
-    x = graph.addPeople(SECOND_GEN_ROW, x += i*9.25,
+    x = graph.addPeople(SECOND_GEN_ROW, x += i*10.75,
     pMercedesRivas);
 
 x = 1;
@@ -516,9 +526,10 @@ x = graph.addPeople(THIRD_GEN_ROW, x += i*1.5,
     pVictorFonte, pLuisaLago);
     x = graph.addPeople(THIRD_GEN_ROW, x += i*3, pFelicia);
     x = graph.addPeople(THIRD_GEN_ROW, x += i*2.5,pEldaGarcia);
-    x = graph.addPeople(THIRD_GEN_ROW, x += i*5.5, pIsidroFonte,
-    pMariaEchevarria);
-    x = graph.addPeople(THIRD_GEN_ROW, x += i*4.5, pIsidoro, 
+    x = graph.addPeople(THIRD_GEN_ROW, x += i*5.5, pIsidroFonte,pObdulia);
+    x = graph.addPeople(THIRD_GEN_ROW, x += i*2.5,pMariaEchevarria);
+    x = graph.addPeople(THIRD_GEN_ROW, x += i*2.5, pIsidoro,pAracelis);
+    x = graph.addPeople(THIRD_GEN_ROW, x += i*0.5, 
         pArelis);
         x = graph.addPeople(THIRD_GEN_ROW, x += i*2.5, 
             pDiosdadoFonte, pGloria,
@@ -540,11 +551,11 @@ x = graph.addPeople(FOURTH_GEN_ROW, x += i,
     x = graph.addPeople(FOURTH_GEN_ROW, x += i*1.5,
     pYenima);
     x = graph.addPeople(FOURTH_GEN_ROW, x += i, pYaimara, pAdriel);
-    x = graph.addPeople(FOURTH_GEN_ROW, x += i,pDeilyFonte);
+    x = graph.addPeople(FOURTH_GEN_ROW, x += i*4.5,pDeilyFonte);
     x = graph.addPeople(FOURTH_GEN_ROW, x += i*0.5, pMailinFonte,pEsposoDesconocido,
     pOsvaldoOsuna, pOsnielGomez, pYoel); 
-    x = graph.addPeople(FOURTH_GEN_ROW, x += i*2.5,pYandy, pDamian, pReinier);
-    x = graph.addPeople(FOURTH_GEN_ROW, x += i*1.5,pOsmanyFonte, pYosvany, pYasmani, pAmalSaifFonte,
+    x = graph.addPeople(FOURTH_GEN_ROW, x += i*1.5,pYandy, pDamian, pReinier);
+    x = graph.addPeople(FOURTH_GEN_ROW, x += i*2,pOsmanyFonte, pYosvany, pYasmani, pAmalSaifFonte,
     pJorgeAmadoSoriaRamirez);
     x = graph.addPeople(FOURTH_GEN_ROW, x += i*0.5, 
     pAmaliaRodriguezFonte, pJoseArmandoGonzalez);
@@ -562,12 +573,13 @@ x = graph.addPeople(FIFTH_GEN_ROW, x += i,
     pMileidysPeredaFonte);
 
     x = graph.addPeople(FIFTH_GEN_ROW, x += i*0.5,pMirelisPeredaFonte,pMonica, pHijoDesconocido, pYeneri, pYaneri, pYosiel, pJonatan,
-    pYadiel, pLuisa, pAdonisNoNameFonte, pKevinNoNameFonte,
+    pYadiel); 
+    x = graph.addPeople(FIFTH_GEN_ROW, x += i*3.5,pLuisa, pAdonisNoNameFonte, pKevinNoNameFonte,
     pYoerlanFonte, pDialeidisOsunaFonte, pVanesaGomezFonte);
 
     x = graph.addPeople(FIFTH_GEN_ROW, x += i*0.5,pYeniferMaria);
-    x = graph.addPeople(FIFTH_GEN_ROW, x += i*3.5, pDayani);
-    x = graph.addPeople(FIFTH_GEN_ROW, x += i*2, pAlexanderFonteHijoOsmany, pHijoDesconocidoDeOsmany);
+    x = graph.addPeople(FIFTH_GEN_ROW, x += i*2.5, pDayani);
+    x = graph.addPeople(FIFTH_GEN_ROW, x += i*2.5, pAlexanderFonteHijoOsmany, pHijoDesconocidoDeOsmany);
     x = graph.addPeople(FIFTH_GEN_ROW, x += i*4.5,pNikolGonzalezRodriguez);
     x = graph.addPeople(FIFTH_GEN_ROW, x += i*3, pEstefani, pMigdalia
 );
@@ -578,7 +590,7 @@ i = 2;
 x -= i;
 x = graph.addPeople(SIXTH_GEN_ROW, x += i*3,
     pCheila, pKaterin, pDanielAlejandro);
-    x = graph.addPeople(SIXTH_GEN_ROW, x += i*6.5, pAnthony
+    x = graph.addPeople(SIXTH_GEN_ROW, x += i*10, pAnthony
 );
 
 
@@ -598,11 +610,13 @@ graph.addRel(defRelNode,0.5,pVictorFonte,pEldaGarcia,pYenima,pYaimara);
 graph.addRel(defMtNode,1,pIdaniaFonte,pYamisdeyPlata,pBeatrizPlataFonte,pVictorManuelPlataFonte);
 graph.addRel(defRelNode,1,pMariaDeLosAngelesFonteLago,pManuelPereda,pMileidysPeredaFonte,pMirelisPeredaFonte);
 graph.addRel(defRelNode,1,pYaimara,pAdriel,pJonatan,pYadiel);
-graph.addRel(defRelNode,1,pIsidroFonte,pMariaEchevarria,pMailinFonte,pYoel);
+graph.addRel(defRelNode,1,pIsidroFonte,pObdulia,pDeilyFonte);
+graph.addRel(defRelNode,0.75,pIsidroFonte,pMariaEchevarria,pMailinFonte,pYoel);
 graph.addRel(defRelNode,1,pMailinFonte,pEsposoDesconocido,pYoerlanFonte);
 graph.addRel(defRelNode,0.75,pMailinFonte,pOsvaldoOsuna,pDialeidisOsunaFonte);
 graph.addRel(defRelNode,0.5,pMailinFonte,pOsnielGomez,pVanesaGomezFonte);
-graph.addRel(defMtNode,1,pIsidoro,pArelis,pYandy,pDamian,pReinier);
+graph.addRel(defRelNode,1,pIsidoro,pAracelis,pYandy);
+graph.addRel(defMtNode,0.75,pIsidoro,pArelis,pDamian,pReinier);
 graph.addRel(defMtNode,1,pDiosdadoFonte,pGloria,pOsmanyFonte,pYosvany,pYasmani);
 graph.addRel(defRelNode,1,pMagalysFonteArmelo,pTawfikSaif,pAmalSaifFonte);
 graph.addRel(defRelNode,0.75,pMagalysFonteArmelo,pAlexisRodriguez,pAmaliaRodriguezFonte);
@@ -616,7 +630,6 @@ graph.addRel(defRelNode,1,pReinaldoFonteArmelo,pYoania,pDerekFonte);
 graph.rels(4, 2, pAlexanderFonte,pSaumelFonte);
 graph.rels(0, 2, pMileidysPeredaFonte,pCheila);
 graph.rels(0, 2, pMercedesRivas,pDianelisGonzalezRivas);
-graph.rels(6, 2, pIsidroFonte,pDeilyFonte);
 graph.rels(0, 2, pDeilyFonte,pLuisa,pAdonisNoNameFonte,pKevinNoNameFonte);
 graph.rels(0, 2, pLuisa,pAnthony);
 graph.rels(0, 2, pDamian,pDayani);
@@ -626,8 +639,10 @@ graph.rels(0, 2, pYenima,pYeneri,pYaneri,pYosiel);
 graph.rels(0, 2, pYoel,pYeniferMaria);
 graph.rels(7, 2, pObdulioHermelo, pFrancisca, pMarina);
 graph.rels(0, 2, pOsmanyFonte,pAlexanderFonteHijoOsmany,pHijoDesconocidoDeOsmany);
+graph.rels(0, 1, pObdulia,pAracelis);
 
 graph.stdMore(pYosvany);
+graph.stdMore(pYandy);
 //---------------------------------------------------------
 //END DRAWING
 //---------------------------------------------------------
