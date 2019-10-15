@@ -30,7 +30,9 @@ var pJorgeLuisSoriaMaceira = {
     name: 'Jorge Luis',
     gender: MAN,
     birth: '20 junio 1953',
-    comments: 'Jorge Luis Soria Maceira (fecha equivocada de carnet de identidad 19 enero 1954)'
+    comments: 'Jorge Luis Soria Maceira (fecha equivocada de carnet de identidad 19 enero 1954)',
+    profile:"https://i.ibb.co/8jM23cc/jorgeluissoriamaceira-profile.png",
+    photos:["https://i.ibb.co/R4DS2Wc/adby8.jpg"]
 };
 var pJorgeLuisSoriaRamirez = {
     name: 'Jorge Luis',
@@ -39,7 +41,8 @@ var pJorgeLuisSoriaRamirez = {
     birth: '11 may 1984',
 
     comments: 'Jorge Luis Soria Ramirez',
-    profile: defaultProfile
+    profile: 'https://i.ibb.co/K5H8fwk/jorgeluissoriaramirrez.png',
+    photos:['https://i.ibb.co/D5N003k/IMAG0018.jpg',"https://i.ibb.co/qxt4cKz/yarisket.jpg"]
 };
 var pMiguelSoria = {
     name: 'Miguel',
@@ -84,7 +87,7 @@ var pTaniaSoriaMaceira = {
 
 
     comments: 'Tania "Taniecita" Soria Maceira',
-    profile: defaultProfile
+    profile: "https://i.ibb.co/9hTXVm5/tania-soria-profile.png"
 };
 var pBernardinoPenaHernandez = {
     name: 'Bernardino',
@@ -102,7 +105,8 @@ var pMarietaPenaHernandez = {
 
 
     comments: 'Marieta Peña Hernandez (n. 19 de julio)',
-    profile: defaultProfile
+    profile: "https://i.ibb.co/D9yCqpY/marieta-profile.png",
+    photos: ["https://i.ibb.co/6RryHNh/IMAG0050.jpg"]
 };
 var pNonameVidal = {
     gender: MAN,
@@ -174,7 +178,8 @@ var pTamaraSoriaMaceira = {
     gender: WOMAN,
 
 
-    comments: 'Tamara Soria Maceira'
+    comments: 'Tamara Soria Maceira',
+    photos: ['https://i.ibb.co/kxqbq91/IMAG0059.jpg']
 };
 var pCharlesFreeman = {
     name: 'Charles',
@@ -312,12 +317,10 @@ var pAdrianSoriaCanela = {
 };
 var pIsmaelAdrianSoria = {
     name: 'Ismael Adrian',
-
     gender: MAN,
-
-
     comments: 'Ismael Adrian Soria',
-    profile: defaultProfile
+    profile: 'https://i.ibb.co/jV7qL16/ismael.png',
+    photos: ['https://i.ibb.co/4J34sk0/ismael.jpg']
 };
 var pAbrahamAhmedSoria = {
     name: 'Abraham Ahmed',
@@ -326,7 +329,8 @@ var pAbrahamAhmedSoria = {
     birth: 'nov 2011',
 
     comments: 'Abraham Ahmed Soria',
-    profile: defaultProfile
+    profile: 'https://i.ibb.co/yWP3vp7/abraham.png',
+    photos: ['https://i.ibb.co/gMjbBJ5/abraham.jpg']
 };
 var pJorgeMiguelSoriaCasero = {
     name: 'Jorge Miguel',
@@ -641,7 +645,8 @@ var pJustina = {
 var pLuisSoria = {
     name: 'Luis',
     gender: MAN,
-    comments: 'Luis Soria'
+    comments: 'Luis Soria',
+    profile: "https://i.ibb.co/F36T9VX/Luis-Soria-profile.png"
 };
 var pRafaelSoria = {
     name: 'Rafael',
@@ -676,28 +681,23 @@ var pLourdesSoria = {
 };
 var pUrsulaBenitezPerez = {
     name: 'Ursula',
-
     gender: WOMAN,
-
-
-    comments: 'Ursula Benitez Perez'
+    comments: 'Ursula Benitez Perez',
+    profile:'https://i.ibb.co/JCrsFWT/ursula-benitez-profile.png',
+    photos: ['https://i.ibb.co/Ny2vdZC/ursula-benitez.jpg']
 };
 var pJoseMaceira = {
     name: 'Jose',
-
     gender: MAN,
-
-
-    comments: 'Jose Maceira (tuvo mas de 36 hijos por la zona de Santiago y el Cristo, algunos conocidos y otros no. En la zona agricultural conocida como los llanos de Maceira)',
-    profile: defaultProfile
+    comments: 'Jose Maceira (tuvo mas de 36 hijos por la zona de Santiago y el Cristo, algunos conocidos y otros no. En la zona agricultural conocida como los llanos de Maceira)'
 };
 var pCarmenMaceiraPerez = {
     name: 'Carmen',
-
     gender: WOMAN,
     birth: '28 nov 1924',
     death: '6 ago 2014',
-    comments: 'Carmen Maceira Perez (inscrita por error como Perez, pero al final se enorgullecia de eso)'
+    comments: 'Carmen Maceira Perez (inscrita por error como Perez, pero al final se enorgullecia de eso)',
+    profile: "https://i.ibb.co/X8GfxTZ/carmen-profile.png"
 };
 var pSaraMaceiraBenitez = {
     name: 'Sara',
@@ -893,7 +893,7 @@ var pEloyMaceiraBenitez = {
 };
 var pCarmen = {
     name: 'Carmen',
-    gender: WOMAN,
+    gender: WOMAN
 };
 var pEloyMaceira = {
     name: 'Eloy',

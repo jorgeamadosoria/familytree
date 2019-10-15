@@ -66,7 +66,7 @@ class Graph {
     personNode(row, col, person) {
         person.id = idPerson++;
         //cytoscape node format
-      if (DEBUG) person.name = "(" + row + "," + col + ") " + person.name;
+        if (DEBUG) person.name = "(" + row + "," + col + ") " + person.name;
         return {
             data: {
                 row: row,
@@ -194,6 +194,7 @@ class Graph {
         if (typeof person.name === 'undefined') {
             person.name = '???';
         }
+        console.log(person.name +   " : " + person.profile);
         if (typeof person.profile === 'undefined') {
             person.profile = defaultProfile;
         }
@@ -242,7 +243,7 @@ class Graph {
                 ]
             ))
         );
-        console.log(peopleArray);
+     //   console.log(peopleArray);
     }
 
     addCustom(node, height, col, ...peopleArray) {
@@ -272,11 +273,11 @@ class Graph {
             moreSourceNode = this.relNode(row, col, node, peopleArray);
             this.elements.push(...moreSourceNode);
             moreSourceNode = moreSourceNode[0];
-            if (node.more)         
-            console.log("node more: " + JSON.stringify(moreSourceNode));
+            if (node.more)
+                console.log("node more: " + JSON.stringify(moreSourceNode));
         }
 
-        if (node.more){
+        if (node.more) {
             moreSourceNode.row = moreSourceNode.data.row;
             moreSourceNode.col = moreSourceNode.data.col;
             this.stdMore(node);
@@ -472,8 +473,9 @@ class Graph {
         };
         this.cy.on('mouseover', 'node.marriage,node.relationship,node.more', function (evt) {
             var node = evt.target;
-            var tippyA = makeTippy(node, node.data().relationship.tip);
-            tippyA.show();
+            if (!node.tippy)
+                node.tippy = makeTippy(node, node.data().relationship.tip);
+            node.tippy.show();
         });
         /*
                 this.cy.on('mouseup', 'node.marriage,node.relationship,node.more', function (evt) {

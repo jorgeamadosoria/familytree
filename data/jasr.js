@@ -74,9 +74,9 @@ var pJorgeLuisSoriaRamirez = {
     nickname: '',
     gender: MAN,
     birth: '11 may 1984',
-
     comments: 'Jorge Luis Soria Ramirez',
-    profile: defaultProfile
+    profile: 'https://i.ibb.co/K5H8fwk/jorgeluissoriaramirrez.png',
+    photos:['https://i.ibb.co/D5N003k/IMAG0018.jpg',"https://i.ibb.co/qxt4cKz/yarisket.jpg"]
 };
 var pAmadoMarcelinoRamirezMatos = {
     name: 'Amado Marcelino',
@@ -170,15 +170,7 @@ var pAntoniodeMarcosRamirezMatos = {
     comments: 'Antonio de Marcos Ramirez Matos, nacido Marco Antonio',
     profile: defaultProfile
 };
-var pCarmenMaceiraPerez = {
-    name: 'Carmen',
-    nickname: 'Carmita',
-    gender: WOMAN,
 
-
-    comments: 'Carmen "Carmita" Maceira Perez',
-    profile: defaultProfile
-};
 var pTaniaSoriaMaceira = {
     name: 'Tania',
     nickname: 'Taniecita',
@@ -210,7 +202,9 @@ var pAnnelisPerezLegon = {
     nickname: 'Nelin',
     gender: WOMAN,
     birth: '26 junio 1972',
-    comments: 'Annelis "Nelin" Perez Legon'
+    comments: 'Annelis "Nelin" Perez Legon',
+    profile:'https://i.ibb.co/cYwZPrN/annelis.png',
+    photos: ['https://i.ibb.co/jZ1DTQ3/20170222-180238.jpg','https://i.ibb.co/D5N003k/IMAG0018.jpg']
 };
 var pCarmenHelenestherSoriaPerez = {
     name: 'Carmen Helenesther',
@@ -220,7 +214,7 @@ var pCarmenHelenestherSoriaPerez = {
     comments: 'Carmen Helenesther Soria Perez (el segundo nombre era una combinacion de Helena y Esther debido a que en su momento no se podian poner tres nombres)'
 };
 var pJorgeLuisSoriaPerez = {
-    name: 'JorgeLuis',
+    name: 'Jorge Luis',
     nickname: 'Mondongo, Cabeza de Zapote, Mongopavia',
     gender: MAN,
     birth: '2 oct 2011',
@@ -246,17 +240,11 @@ var pAdrianSoriaCanela = {
 };
 var pCarmenMaceiraPerez = {
     name: 'Carmen',
-
+    nickname: 'Carmita',
     gender: WOMAN,
     birth: '28 nov 1924',
     death: '6 ago 2014',
     comments: 'Carmen Maceira Perez (inscrita por error como Perez, pero al final se enorgullecia de eso)'
-};
-var pAnnelisPerezLegon = {
-    name: 'Annelis',
-    gender: WOMAN,
-
-    comments: 'Annelis Perez Legon',
 };
 
 //---------------------------------------------------------

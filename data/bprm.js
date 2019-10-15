@@ -24,8 +24,8 @@ var pBlancaMatosGuisado = {
     //birth: '',
 
     comments: 'Blanca "Abuela Blanca" Matos Guisado',
-    profile: defaultProfile,
-    //photos: []
+    profile: "https://i.ibb.co/CnWLGsM/abuela-blanca-profile.png",
+    photos: ["https://i.ibb.co/s5GkqxC/abuela-blanca-1.png"]
 };
 
 var pAbelina = {
@@ -83,7 +83,8 @@ var pMarcelinoMatosRondon = {
 
 
     comments: 'Marcelino Matos Rondon',
-    profile: defaultProfile
+    profile: "https://i.ibb.co/72dqyCc/papa-matos-profile.png",
+    photos: ["https://i.ibb.co/vdkh503/papa-matos-1.png"]
 };
 
 var pFela = {
@@ -132,7 +133,8 @@ var pBlancaDeLaPurificacionRamirezMatos = {
     birth: '2 mayo 1950',
 
     comments: 'Blanca de la purificacion ramirez matos',
-    profile: defaultProfile
+    profile: "https://i.ibb.co/CwFKb4L/blancapuraramirezmatos.png",
+    photos:["https://i.ibb.co/n3Nnpd9/blancapura.jpg","https://i.ibb.co/R4DS2Wc/adby8.jpg"]
 };
 
 var pJorgeLuisSoriaMaceira = {
@@ -172,7 +174,8 @@ var pJorgeLuisSoriaRamirez = {
     birth: '11 may 1984',
 
     comments: 'Jorge Luis Soria Ramirez',
-    profile: defaultProfile
+    profile: 'https://i.ibb.co/K5H8fwk/jorgeluissoriaramirrez.png',
+    photos:['https://i.ibb.co/D5N003k/IMAG0018.jpg',"https://i.ibb.co/qxt4cKz/yarisket.jpg"]
 };
 var pAmadoMarcelinoRamirezMatos = {
     name: 'Amado Marcelino',
@@ -181,7 +184,8 @@ var pAmadoMarcelinoRamirezMatos = {
     birth: '13 feb 1947?',
 
     comments: 'Amado Marcelino Ramirez Matos',
-    profile: defaultProfile
+    profile: 'https://i.ibb.co/dGdv8Sz/marcelino-matos.png',
+    photos: ['https://i.ibb.co/8xC9Ywb/marcelino-matos.jpg']
 };
 
 var pCaridadMartinAlvarez = {
@@ -229,7 +233,10 @@ var pCarlosEnriqueRamirezMartin = {
     birth: '02/10/1985',
 
     comments: 'Carlos Enrique Ramirez Martin',
-    profile: defaultProfile
+    profile: "https://i.ibb.co/t8vFQ0M/Carlos-Ramirez-Martin-profile.png",
+    photos: ["https://i.ibb.co/xszmmCG/giselita-d-miguel.jpg"    ]
+    
+    
 };
 
 var pRaulRamirezMartin = {
@@ -239,9 +246,10 @@ var pRaulRamirezMartin = {
     birth: '2 mayo',
 
     comments: 'Raul Ramirez Martin',
-    profile: defaultProfile
-    //photos: []
-};
+    profile: "https://i.ibb.co/RzVzsyr/Raul-Ramirez-Martin-profile.png",
+    
+    
+    photos: ["https://i.ibb.co/xszmmCG/giselita-d-miguel.jpg"    ]};
 var pMiguelEnriqueRamirezMatos = {
     name: 'Miguel',
 
@@ -249,7 +257,7 @@ var pMiguelEnriqueRamirezMatos = {
     birth: '3 oct 1948 - 9 ?',
 
     comments: 'Miguel Enrique Ramirez Matos',
-    profile: defaultProfile
+    profile: "https://i.ibb.co/L9tNqFP/Miguel-profile.png"
 };
 var pAnaPerezFonseca = {
     name: 'Ana',
@@ -306,7 +314,8 @@ var pYaritskeRamirezPerez = {
     birth: '??/04/1976',
 
     comments: 'Yaritské Ramirez Perez',
-    profile: defaultProfile
+    profile: "https://i.ibb.co/BGYrn1v/yarisket-profile.png",
+    photos: ["https://i.ibb.co/qxt4cKz/yarisket.jpg"]
 };
 
 var pRolando = {
@@ -326,17 +335,16 @@ var pRoxana = {
 
 
     comments: 'Roxana ? ?',
-    profile: defaultProfile
+    
+profile:"https://i.ibb.co/jLVHFDh/roxana-profile.png",
+photos: ["https://i.ibb.co/yBM5XK5/roxana.png","https://i.ibb.co/fMrWYg2/roxana-y-rolandito.png"]
 };
 
 var pRolandito = {
     name: 'Rolando',
-
-    gender: WOMAN,
-
-
-    comments: '',
-    profile: defaultProfile
+    gender: MAN,
+    profile: "https://i.ibb.co/pZKpmWd/rolandito-profile.png",
+    photos: ["https://i.ibb.co/fMrWYg2/roxana-y-rolandito.png"]
 };
 
 var pWilfredo = {
@@ -366,7 +374,9 @@ var pGiselaHija = {
 
 
     comments: '',
-    profile: defaultProfile
+    profile: "https://i.ibb.co/LkRJ2xX/giselita-d-miguel-profile.png",
+    photos: ["https://i.ibb.co/xszmmCG/giselita-d-miguel.jpg"    ]
+    
 };
 
 var pAntoniodeMarcosRamirezMatos = {
@@ -376,7 +386,7 @@ var pAntoniodeMarcosRamirezMatos = {
     birth: '18 oct 1953',
 
     comments: 'Antonio de Marcos Ramirez Matos, nacido Marco Antonio',
-    profile: defaultProfile
+    profile: "https://i.ibb.co/L1Lx7bv/marcos-ramirez-profile.png"
 };
 
 var pGladysAberasturis = {
@@ -426,7 +436,8 @@ var pMonicaMariaRamirez = {
 
 
     comments: 'Monica Maria Ramirez',
-    profile: defaultProfile
+    profile: 'https://i.ibb.co/ygmvVCt/monica.png',
+    photos:['https://i.ibb.co/nLpvb9V/monica.jpg']
 };
 
 
@@ -595,7 +606,8 @@ var pRubenAguileraAcuna = {
 var pKeniaAguileraMatos = {
     name: 'Kenia',
     gender: WOMAN,
-    comments: 'Kenia Aguilera Matos'
+    comments: 'Kenia Aguilera Matos',
+    profile: "https://i.ibb.co/4JYxwqv/kenia-profile.png"
 };
 
 var pGerardoPelaez = {
@@ -766,7 +778,7 @@ var pManuelAmadoRamirezFlores = {
 
 
     comments: 'Manuel Amado Ramirez Flores',
-    profile: defaultProfile
+    profile: "https://i.ibb.co/kBjhq7C/manuel-amado-profile.png"
 };
 
 var pErnestinaRamirezFlores = {
@@ -944,7 +956,8 @@ var pObduliaRamirezMilan = {
 
 
     comments: 'Obdulia Ramirez Milan',
-    profile: defaultProfile
+    profile: defaultProfile,
+    photos: ["https://i.ibb.co/xXd8VSJ/obdulia-1.png"]
 };
 
 var pTomasFerrandiSayasBazan = {
