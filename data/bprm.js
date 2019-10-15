@@ -1072,7 +1072,7 @@ var pLioberNoNameMatos = {
     name: 'Liober',
     gender: MAN,
     comments: 'hijo mayor, no es del mismo matrimonio que los otros dos'
-}
+};
 
 var pLiannaLiensMatos = {
     name: 'Lianna Liens Matos',
