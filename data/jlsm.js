@@ -944,6 +944,15 @@ var pErnestoManzano = {
     comments: 'Ernesto Manzano (medico, muy blanco, muy rubicundo, muy gordo) '
 };
 
+var pJorgeAlanSoriaFonte = {
+    name: 'Jorge Alan',
+    nickname: null,
+    gender: MAN,
+    birth: '19 abr 2020',
+    death: null,
+    comments: 'nacido en Mérida, Yucatán'
+};
+
 //---------------------------------------------------------
 //END DATA
 //---------------------------------------------------------
@@ -1102,7 +1111,9 @@ x = graph.addPeople(FIFTH_GEN_ROW, x += i,
     pRaylenisSoria);
 x = graph.addPeople(FIFTH_GEN_ROW, x += i,
     pCarmenHelenestherSoriaPerez, pJorgeLuisSoriaPerez);
-x = graph.addPeople(FIFTH_GEN_ROW, x += i * 2.5,
+    x = graph.addPeople(FIFTH_GEN_ROW, x += i*0.5,
+    pJorgeAlanSoriaFonte);
+x = graph.addPeople(FIFTH_GEN_ROW, x += i,
     pDianetVidalPena, pSaulo,
     pBerenice, pEleonora,
     pCarlosFreeman,
@@ -1161,7 +1172,7 @@ graph.addRel(defMtNode, 1, pRolandoSoriaRamos, pFernanda, pReyterSoria, pTeresaS
 graph.addRel(defMtNode, 1, pMarietaPenaHernandez, pNonameVidal, pDianetVidalPena);
 graph.addRel(defMtNode, 1, pJorgeLuisSoriaRamirez, pYordankaTitoMoreira);
 graph.addRel(defMtNode, 0.75, pJorgeLuisSoriaRamirez, pAnnelisPerezLegon, pCarmenHelenestherSoriaPerez, pJorgeLuisSoriaPerez);
-graph.addRel(defMtNode, 1, pJorgeAmadoSoriaRamirez, pAmalSaifFonte);
+graph.addRel(defMtNode, 1, pJorgeAmadoSoriaRamirez, pAmalSaifFonte,pJorgeAlanSoriaFonte);
 graph.addRel(defMtNode, 1, pIlianaVazquezQuevedo, pNonameToranzo, pValkisToranzoVazquez, pBelkisToranzoVazquez);
 graph.addRel(defMtNode, 1, pBertaQuevedoSoria, pNonameDominguez, pRafaelDominguezQuevedo, pEnrique);
 graph.addRel(defMtNode, 1, pBelkisQuevedoSoria, pNonameVazquez, pGabrielVazquezQuevedo, pIlianaVazquezQuevedo, pAlexanderVazquezQuevedo);

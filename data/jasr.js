@@ -247,6 +247,15 @@ var pCarmenMaceiraPerez = {
     comments: 'Carmen Maceira Perez (inscrita por error como Perez, pero al final se enorgullecia de eso)'
 };
 
+var pJorgeAlanSoriaFonte = {
+    name: 'Jorge Alan',
+    nickname: null,
+    gender: MAN,
+    birth: '19 abr 2020',
+    death: null,
+    comments: 'nacido en Mérida, Yucatán'
+};
+
 //---------------------------------------------------------
 //END DATA
 //---------------------------------------------------------
@@ -305,6 +314,7 @@ x -= i;
 x = graph.addPeople(FOURTH_GEN_ROW, x += i*4.5,
     pCarmenHelenestherSoriaPerez,
     pJorgeLuisSoriaPerez);
+    graph.addPeople(FOURTH_GEN_ROW, x += i*0.5,pJorgeAlanSoriaFonte);
 
 //RELATIONSHIP DATA
 /*
@@ -324,7 +334,7 @@ graph.rels(0,2,pMiguelEnriqueRamirezMatos,pYanitsiaRamirezPerez,pYaritskeRamirez
 graph.addRel(defMtNode,1,pAmadoMarcelinoRamirezMatos,pCaridadMartinAlvarez,pCarlosEnriqueRamirezMartin, pRaulRamirezMartin);
 graph.addRel(defMtNode,1,pBlancaDeLaPurificacionRamirezMatos,pJorgeLuisSoriaMaceira,pJorgeLuisSoriaRamirez,pJorgeAmadoSoriaRamirez);
 graph.addRel(defMtNode,1,pJorgeLuisSoriaRamirez,pAnnelisPerezLegon,pCarmenHelenestherSoriaPerez,pJorgeLuisSoriaPerez);
-graph.addRel(defMtNode,1,pJorgeAmadoSoriaRamirez,pAmalSaifFonte);
+graph.addRel(defMtNode,1,pJorgeAmadoSoriaRamirez,pAmalSaifFonte,pJorgeAlanSoriaFonte);
 
 
 graph.stdMore(pMarietaPenaHernandez);

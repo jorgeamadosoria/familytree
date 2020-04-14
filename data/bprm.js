@@ -1099,6 +1099,15 @@ var pKarel = {
     gender: MAN
 };
 
+var pJorgeAlanSoriaFonte = {
+    name: 'Jorge Alan',
+    nickname: null,
+    gender: MAN,
+    birth: '19 abr 2020',
+    death: null,
+    comments: 'nacido en Mérida, Yucatán'
+};
+
 //---------------------------------------------------------
 //END DATA
 //---------------------------------------------------------
@@ -1211,6 +1220,7 @@ x = graph.addPeople(FIFTH_GEN_ROW, x += i * 5.5,
 x = graph.addPeople(FIFTH_GEN_ROW, x += i * 3,
     pCarmenHelenestherSoriaPerez,
     pJorgeLuisSoriaPerez);
+    graph.addPeople(FIFTH_GEN_ROW, x += i * 0.5,pJorgeAlanSoriaFonte);
 x = graph.addPeople(FIFTH_GEN_ROW, x += i * 16.5, pIsabela);
 
 //RELATIONSHIP DATA
@@ -1288,7 +1298,7 @@ graph.addRel(defMtNode, 1,
     pJorgeLuisSoriaRamirez
 );
 
-graph.addRel(defMtNode, 1, pJorgeAmadoSoriaRamirez,    pAmalSaifFonte);
+graph.addRel(defMtNode, 1, pJorgeAmadoSoriaRamirez,    pAmalSaifFonte,pJorgeAlanSoriaFonte);
 graph.addRel(defMtNode, 1, pAmadoMarcelinoRamirezMatos, pCaridadMartinAlvarez,    pCarlosEnriqueRamirezMartin,    pRaulRamirezMartin);
 
 //NO FUNCIONA AUN
